@@ -167,7 +167,7 @@
 
 /* After my username */
 .name[data-v-5445dac8]::after {
-    content: "Complete Garbage";
+    content: "Daisuki! ♡";
     font-family: 'Wild Words';
     position: relative;
     left: 10px;
@@ -945,3 +945,43 @@ h2[data-v-82d0a8cc],
 .about > .content-wrap {
   transform: scale(1) !important;
   max-height: none !important;
+
+}
+
+/* adds background image */
+body {
+    background-image: url("https://files.catbox.moe/7j36qz.png");
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+/* Removes Banner */
+.banner {
+  visibility: hidden;
+}
+.banner > .container {
+  visibility: visible;
+  justify-content: center;
+}
+
+/* CURSOR */
+* {
+    cursor: url(https://files.catbox.moe/xdy9p4.png), auto;
+}
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
+    cursor: url(https://files.catbox.moe/febpgc.png), auto;
+}
+a,
+a:link img {
+    cursor: url(https://files.catbox.moe/febpgc.png), auto !important;
+}
