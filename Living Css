@@ -950,7 +950,7 @@ h2[data-v-82d0a8cc],
 
 /* adds background image */
 body {
-    background-image: url("https://files.catbox.moe/7j36qz.png");
+    background-image: url("https://files.catbox.moe/i5uq98.jpg");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
