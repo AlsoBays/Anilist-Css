@@ -1,4 +1,9 @@
-/* adds background image */
+/* Yes You could Just Use all this Code that's why it's here bro - 
+I tried to make it as informative as possible. 
+Make Sure to change any image Links into what you want them to be
+Also You Could Just copy these little notes into your Css, they don't effect anything */
+
+/* Adds Background Image */
 body {
     background-image: url("https://files.catbox.moe/i5uq98.jpg");
     background-position: 50% 50%;
@@ -16,7 +21,7 @@ body {
   justify-content: center;
 }
 
-/* Cursor Change */
+/* Change Cursor */
 * {
     cursor: url(https://files.catbox.moe/xdy9p4.png), auto;
 }
@@ -39,7 +44,7 @@ a:link img {
     display: none;
 }
 
-/* remove 'using custom css' notice */
+/* Removes 'using custom css' notice */
 .about[data-v-2cf72664] .markdown h5 a {
     display: none;
 }
@@ -98,7 +103,7 @@ a:link img {
 
 }
 
-/*Removing that stupid genres widget*/
+/* Removes that stupid Genres Overview Widget */
 
 .desktop[data-v-aedb6876] {
     height: 0;
@@ -113,7 +118,7 @@ a:link img {
       color: #ffffff
   }
   
-  /* Adds text in message boxes */
+  /* Adds text at bottom of activity boxes */
   .activity-markdown[data-v-64116ff5]:after {
       content: "Daisuki! ♡                 ";
       white-space: pre-wrap;
@@ -122,7 +127,7 @@ a:link img {
       display: flex;
   }
 
-/* Changes the Container */
+/* Changes the Container - Transarent Border around everything */
   .header-wrap > .nav-wrap {
     max-width: 80%;
     margin: 0 auto;
@@ -270,12 +275,12 @@ a:link img {
       transform: scale(1.05);
   }
  
- /* changes the logo */
+ /* Al Home Logo Change */
 .logo img[data-v-4fbac4e1] {
     content: url(https://files.catbox.moe/2c4z3q.png);
 }
 
-/* changes the top navbar */
+/* Changes Top Navbar */
 .wrap[data-v-4fbac4e1] {
     max-width: 69%;
     position: relative;
@@ -295,7 +300,7 @@ a:link img {
     background-color: rgba(255,255,255,0) !important;
 }
 
-/* changes the username */
+/* Changes Username Font */
 .name[data-v-5445dac8] {
     font-size: 5rem;
     padding: 10px 15px 11px 15px;
@@ -305,7 +310,7 @@ a:link img {
     align-items: center;
 }
 
-/* more username font stuffs */
+/* More Username Font Stuffs - Use this and the one Above Together*/
 @font-face {
   font-family: 'Satisfy';
   font-style: normal;
@@ -315,7 +320,7 @@ a:link img {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* large stats */
+/* Large Anime & Manga Stats */
 .favourite[data-v-5d0e8ada] {
     border-radius: 7px !important;
 }
@@ -369,7 +374,7 @@ a:link img {
     background-color: rgba(var(--color-text-light));
 }
 
-  /* add search anilist thing*/
+  /* Adds Search Anilist Bar at Top Navbar */
   .nav .wrap {
       display: grid;
       grid-template-columns: 70px auto auto 70px;
@@ -398,7 +403,7 @@ a:link img {
       grid-row-start: 1;
   }
   
-/* Make Bio Longer */
+/* Makes Bio Longer */
 .about > .content-wrap {
   transform: scale(1) !important;
   max-height: none !important;
