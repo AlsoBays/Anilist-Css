@@ -5,8 +5,6 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
 }
 
 /* Removes Banner */
@@ -18,7 +16,7 @@ body {
   justify-content: center;
 }
 
-/* CURSOR */
+/* Cursor Change */
 * {
     cursor: url(https://files.catbox.moe/xdy9p4.png), auto;
 }
@@ -44,38 +42,6 @@ a:link img {
 /* remove 'using custom css' notice */
 .about[data-v-2cf72664] .markdown h5 a {
     display: none;
-}
-
-/* After my username */
-.name[data-v-5445dac8]::after {
-    content: "Daisuki! ♡";
-    position: relative;
-    left: 10px;
-    top: -1px;
-    background-color: transparent;
-    background-image: url('https://files.catbox.moe/yon0xe.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 5px 8px;
-    margin-bottom: 20px;
-    margin-right: 16px;
-    font-size: 1.2rem;
-}
-
-.banner[data-v-5445dac8] {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    border-radius: 20px;
-}
-
-.hohDownload {
-    display: none;
-
-
 }
 
 /* Chrome scrollbar */
@@ -139,6 +105,299 @@ a:link img {
     visibility: hidden;
 }
 
+ /* Adds text before 'activity' */
+  .section-header[data-v-09492909]::before {
+      transition: transform .7s ease-in-out;
+      visibility: visible;
+      content: "Send Lewds<3 on Bays's";
+      color: #ffffff
+  }
+  
+  /* Adds text in message boxes */
+  .activity-markdown[data-v-64116ff5]:after {
+      content: "Daisuki! ♡                 ";
+      white-space: pre-wrap;
+      font-style: italic;
+      justify-content: flex-end;
+      display: flex;
+  }
+
+/* Changes the Container */
+  .header-wrap > .nav-wrap {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 30px 30px 0 0;
+    box-shadow: var(--nutella-ns);
+    position: relative;
+  }
+  .nav > .link {
+    position: relative;
+  }
+  .nav > .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: rgb(var(--color-blue));
+    transition: all 0.3s ease-in-out;
+  }
+  .nav > .router-link-active::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue-dim));
+  }
+  .nav > .link:hover::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+  }
+  .content.container {
+    background: rgba(var(--color-foreground-grey),0.3);
+    max-width: 80%;
+    padding: 30px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: var(--nutella-bs);
+  }
+
+/* Changes stuff inside container(hover and other features) */
+  .content > .overview {
+    margin-top: 0;
+  }
+  .stats-wrap > .content-wrap, .desktop > .content-wrap, .activity-entry > .wrap, .favourites-wrap > .favourite, .scroller > .load-more, .user-page-unscoped .markdown-editor, .el-textarea__inner, .input {
+    border-radius: 20px !important;
+    box-shadow: var(--nutella-bs);
+    transition: all 0.69s ease-in-out;
+  }
+  .history-day:hover {
+    transform: scale(1.2);
+  }
+  .history-day[data-v-514856af] {
+      border-radius: 20px;
+  }
+  .activity-entry > .wrap {
+    transition: all 0.69s ease-in-out;
+    max-height: none /*70px*/;
+  }
+  .activity-entry:hover .wrap {
+    transform: scale(1.02); 
+    max-height: none /*663px*/; /*  663 560px max height, 28px margin, 70px header, 5px idk? kek */
+  }
+  .wrap > .text {
+    padding-top: 15px;
+  }
+  .text > .activity-markdown > .markdown {
+    max-height: none;
+  }
+  .header > .avatar, .list > .cover {
+    opacity: var(--nutella-vo);
+    transition: all 0.69s ease-in-out;
+  }
+  .wrap:hover .cover {
+    opacity: 1;
+  }
+  .wrap:hover .header > .avatar, .users > .user:hover, .reply:hover .header > .avatar {
+    opacity: 1;
+    border-color: rgb(var(--color-blue));
+  }
+  .header > .name {
+    transition: all 0.69s ease-in-out;
+  }
+  .wrap:hover .header > .name {
+    opacity: 1;
+  }
+  .activity-entry, .input, svg:not(:root).svg-inline--fa {
+  transition: all 0.69s ease-in-out;
+  }
+  .list .title, .input .el-textarea__inner {
+    opacity: var(--nutella-vo);
+    transition: all 0.69s ease-in-out;
+  }
+  .activity-manga_list:hover, .activity-anime_list:hover {
+    transform: scale(1.05);  
+  }
+  .activity-manga_list:hover .title, .activity-anime_list:hover .title {
+    opacity: 1;
+  }
+  .input:hover {
+    transform: scale(1.025);
+  }
+  .input:hover .el-textarea__inner {
+    opacity: 1;
+  }
+  .scroller > .load-more {
+    margin-top: 0;
+  }
+  .scroller > .load-more:hover {
+    color: rgb(var(--color-blue));
+    box-shadow: var(--nutella-bs);
+    transform: scale(1.025);
+  }
+  .activity-replies > .reply {
+    border-radius: 20px;
+  }
+  .reply:hover .header > .name {
+    opacity: 1;
+  }
+ 
+ /*  favourites section bugfix */
+  .favourites-wrap[data-v-1496db1c]{
+      overflow: visible;
+  }
+
+  /* hover for different things */
+  .overview .favourites > .favourites-wrap {
+    overflow: visible;
+  }
+
+  /* favourites section hover */
+  .favourites .favourite:hover {
+    transition: transform 0.69s ease-in-out;
+    transform: scale(1.15);
+    z-index: 20;
+  }
+  .genre-overview[data-v-aedb6876] {
+      transition: transform 0.5s;
+  }
+  .genre-overview:hover {
+      transform: scale(1.05);
+  }
+  .activity-history[data-v-514856af] {
+      transition: transform 0.5s;
+  }
+  .activity-history:hover {
+      transform: scale(1.05);
+  }
+ 
+ /* changes the logo */
+.logo img[data-v-4fbac4e1] {
+    content: url(https://files.catbox.moe/2c4z3q.png);
+}
+
+/* changes the top navbar */
+.wrap[data-v-4fbac4e1] {
+    max-width: 69%;
+    position: relative;
+    margin: 1vw 0;
+    background-color: rgba(255,255,255,0.05) !important;
+    padding: 0 60px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+.wrap[data-v-4fbac4e1] {
+    align-items: center;
+    display: flex;
+    height: 75%;
+    width: 100%;
+}
+.nav[data-v-4fbac4e1] {
+    background-color: rgba(255,255,255,0) !important;
+}
+
+/* changes the username */
+.name[data-v-5445dac8] {
+    font-size: 5rem;
+    padding: 10px 15px 11px 15px;
+    color: #fff;
+    font-family: "Satisfy";
+    display: flex;
+    align-items: center;
+}
+
+/* more username font stuffs */
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/satisfy/v11/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* large stats */
+.favourite[data-v-5d0e8ada] {
+    border-radius: 7px !important;
+}
+.stats-wrap[data-v-815ccddc] {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 20px 40px;
+    text-align: left;
+}
+.stat[data-v-815ccddc]:nth-child(1) {
+    grid-row-start: span 2;
+}
+.stat:nth-child(1) .value[data-v-815ccddc] {
+    font-size: 5.5rem;
+}
+.stat .value[data-v-815ccddc] {
+    font-size: 2rem;
+    padding-bottom: 0px;
+}
+.stat .label[data-v-815ccddc] {
+    font-size: 1.2rem;
+}
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 19px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
+    display: flex;
+    align-items: center;
+    color: rgb(var(--color-text-light));
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+
+  /* add search anilist thing*/
+  .nav .wrap {
+      display: grid;
+      grid-template-columns: 70px auto auto 70px;
+  }
+  .nav .wrap .links {
+      grid-column-start: 3;
+      margin-left: -25px;
+  }
+  .nav .wrap .search {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      padding: 10px;
+      background: rgb(16 16 16);
+      border-radius: 35px;
+      width: 100%;
+      cursor: text;
+      font-family: "Overpass"
+  }
+  .nav .wrap .search:after {
+      content: "Search AniList";
+      margin-left: 10px;
+      color: #777a9e;
+  }
+  .nav .wrap .user {
+      grid-column-start: 4;
+      grid-row-start: 1;
+  }
+  
 /* Make Bio Longer */
 .about > .content-wrap {
   transform: scale(1) !important;
