@@ -365,7 +365,7 @@ a:link img {
   
   /* Adds a gif or image to search button */
 .search[data-v-4fbac4e1]:hover svg {
-    background: url(https://cdn.discordapp.com/attachments/809136394273816617/829796231563051048/kanna_search_gif.gif);
+    background: url(https://files.catbox.moe/ah4mqn.gif);
     background-repeat: no-repeat;
     background-size: contain;
     color: #0010FF00;
