@@ -1,0 +1,1812 @@
+/* https://anilist.co/user/TEMPOUPA/ CSS */
+
+.name[data-v-5445dac8]::after{
+	content: "STAR PLATINUM";
+	position: relative;
+	left: 10px;
+	top: -1px;
+	background: rgba(var(--color-blue),.8);
+	border-radius: 20px;
+	color: rgba(255,225,255, 1);
+	padding: 5px 8px;
+	margin-bottom: 20px;
+	margin-right: 16px;
+	transition: .4s;
+	font-size: 1.2rem;
+	transition: .5s;
+	text-transform: capitalize;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-name: rainbow;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+
+#app {
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+/* Background image */
+body {
+    background-color: rgb(var(--color-background));
+    background: url("https://assets.cytoid.io/levels/bundles/3p8ga5uvtjINzIM0wdR0Dj1g8hG0mYh8hYILNdCabLK0YEOV9b7MVZYSVkhLj9vMc/bg.jpg");
+
+    background-position: center / 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Transparent banner image */
+.banner[data-v-5445dac8] {
+    background-image: none !important;
+    background-color: rgb(36,37,56,0);
+}
+
+
+
+/* Banner Name Changes - Change Font and Colour */
+.banner-content > .name[data-v-5445dac8] {
+    font-family: "Comic Sans MS", Times, serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* Banner Name Changes on hover - Change colour / highlight */
+.banner-content > .name[data-v-5445dac8]:hover {
+    font-family: "Comic Sans MS", Times, serif;
+    font-weight: bold;
+    color: rgba(160, 0, 255, 0.5);
+}
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur108.cur), auto !important;}
+
+/*  ----------------------------------| STATS | ACTIVITIES | COMMENTS |-------------------------------------- */
+/* Stats and Milestones - Add rounded border */
+.list-stats {
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Stats and Milestones on hover - Change colour / highlight */
+.list-stats:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+/* Activity creator - Add rounded border */
+.input {
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+}
+
+
+/* Activity creator on hover - Change colour / highlight */
+.input:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+/* Activities [Avatar] and Activity Comments [Avatar] Changes - Add rounded border */
+.text .avatar[data-v-6c3dc0b8], .reply .avatar[data-v-5a191921]{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Activities [Avatar] and Activity Comments [Avatar] on hover - Change colour / highlight */
+.text .avatar[data-v-6c3dc0b8]:hover, .reply .avatar[data-v-5a191921]:hover{
+    border-color: rgba(160, 0, 155, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* borders for profile*/
+.wrap[data-v-64116ff5],
+  .content-wrap,
+ .reply[data-v-7ce9ffb8] {
+ border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.5);
+   
+
+    overflow: visible;
+}
+.wrap[data-v-64116ff5],
+ .reply[data-v-7ce9ffb8]{
+    transition: transform 0.7s; overflow: hidden;
+} 
+.wrap[data-v-64116ff5]:hover,
+ .reply[data-v-7ce9ffb8]:hover {
+
+    border-color: rgba(160, 0, 155, 0.5);
+ 
+
+}
+.wrap[data-v-64116ff5]:hover,
+ .reply[data-v-7ce9ffb8]:hover {
+    transform: scale(1.05); overflow: hidden;}
+
+
+}
+
+
+
+
+.activity-entry > .wrap, .content-wrap, .load-more, .el-textarea {
+     border-style: solid;
+    border-width: thin;
+border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.45s ease-in-out;
+}
+.activity-entry > .wrap:hover, .content-wrap:hover, .load-more:hover, .el-textarea:hover {
+     border-color: rgba(160, 0, 255, 0.5);
+    transform: scale(1.05);
+    transition: all 0.45s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Load More button - Add rounded border, Change font, Change Font Colour and Change button size */
+.load-more[data-v-6f203cf2]{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgb(255,105,180);
+
+    font-family: 'Comic Sans MS', Times, serif;
+    font-size: 2rem;
+    color: rgb(255,105,180);
+    margin:auto;
+    max-width: 1000px;
+}
+
+/*  -----------------------------| PROFILE | FAVOURITES |----------------------------------- */
+
+.favourite[data-v-0317d914] {
+      border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0,0.5);
+}
+
+
+
+/* favourites section hover */
+.favourites .favourite:hover {
+transition: transform 0.69s ease-in-out;
+  transform: scale(1.33);
+  z-index: 20;
+  border-color: rgba(160, 0, 155, 0.5);
+}
+
+/*  favourites section bugfix */
+.favourites-wrap[data-v-1496db1c]{
+    overflow: visible;
+}
+/* hover for different things */
+.overview .favourites > .favourites-wrap {
+  overflow: visible;
+}
+/* Content - Favorites */
+.favourites {
+  margin-top: 0 !important;
+}
+.favourite[data-v-5d0e8ada] {
+    border-radius: 7px !important;
+}
+
+
+
+
+
+/* About section - Add rounded border */
+.user .about > .content-wrap[data-v-5c30286e] {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(255,105,180 ,1 );
+}
+
+/* About section on hover - Change colour / highlight and set scrollbar colours */
+.user .about > .content-wrap[data-v-5c30286e]:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+
+    scrollbar-width: thin;
+    scrollbar-color: rgb(160, 0, 255) rgba(30, 35, 45, 0.2);
+}
+
+/* Activity history section - Add rounded border */
+.desktop > .activity-history[data-v-514856af] {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Activity history section on hover - Change colour / highlight */
+.desktop > .activity-history[data-v-514856af]:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+
+/* Hide Genre Overview section */
+.desktop:nth-of-type(3) {
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* (If visible) Genre overview section - Add rounded border */
+.desktop > .genre-overview[data-v-aedb6876] {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+/* (If visible) Genre overview section on hover - Change colour / highlight */
+.desktop > .genre-overview[data-v-aedb6876]:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+
+/* Favourites section - Add rounded border */
+.favourite[data-v-1496db1c] {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+/* Favourites section [BugFix] */
+.favourites-wrap[data-v-1496db1c]{
+    overflow: visible;
+}
+
+/*  -----------------------------| EXTRAS | BUG-FIXES |-------------------------------------- */
+
+/* Horizontal rule border settings */
+.markdown hr {
+    border: solid 1px rgb(160, 0, 255);
+    border-radius: 1px;
+}
+
+/* Blockquotes centered */
+.markdown blockquote {
+    margin-right: auto;
+}
+
+/* Hides hoh download button (Sorry HoH) */
+.hohDownload {
+    display: none;
+}
+
+/*  ------------------------------| BROWSER: CHROME |--------------------------------------- */
+
+/* Chrome scrollbar - Background colour */
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgba(30, 35, 45, 0)
+}
+
+/* Chrome scrollbar - Edges of background colour */
+::-webkit-scrollbar-corner {
+    background: rgba(30, 35, 45, 0)
+}
+
+/* Chrome scrollbar - Thumb colour and size / width (thing that goes up and down when you scroll) */
+::-webkit-scrollbar-thumb {
+    background: #a000ff;
+    -webkit-border-radius: 1ex;
+}
+
+/*  ------------------------------| BROWSER: FIREFOX |--------------------------------------- */
+
+/* Changes scrollbar for whole page (Firefox) */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(160, 0, 255) rgba(30, 35, 45, 0);
+}
+
+/*  ------------------------------| THEME COLOUR FIXES |--------------------------------------- */
+
+/* Site background - Adds site wide (dark theme) transparency */
+.site-theme-dark{
+    --color-foreground: 16,24,35, 0.9;
+}
+
+/* Top navbar - Changes to transparent background */
+.site-theme-dark .nav-unscoped.transparent {
+    background: rgb(var(--color-foreground), 0.2);
+}
+
+/* Top navbar on hover - Change colour / highlights */
+.site-theme-dark .nav-unscoped.transparent:hover {
+    background: rgb(16, 24, 35, 0.2);
+}
+
+/* Top navbar - More changes to transparency */
+.site-theme-dark .nav-unscoped {
+    background: rgb(var(--color-foreground), 0.2);
+}
+
+/* Top navbar on hover - More changes to transparency */
+.site-theme-dark .nav-unscoped:hover {
+    background: rgb(16, 24, 35, 0.2);
+}
+
+/*  ---------------------------------| SHORT NAV BAR |----------------------------------------- */
+
+/* Profile nav bar - Short nav bar, Added rounded border */
+.nav-wrap[data-v-5445dac8] {
+    background: rgb(var(--color-foreground));
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.5);
+
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Profile nav bar on hover - Changes colour / highlights */
+.nav-wrap[data-v-5445dac8]:hover {
+    border-color: rgba(160, 0, 255, 0.5);
+}
+
+/* Profile nav bar - Adds padding (Might be moved to section above) */
+.nav[data-v-5445dac8] {
+    padding: 0px;
+}
+
+/* --------------------| ALIGNMENT FIXES |-------------------- */
+
+/* Re-aligns Banner PFP and Name. Part of short navbar */
+.banner .container[data-v-5445dac8] {
+    max-width: 70%;
+}
+
+/* Re-aligns main container. Part of shorter navbar */
+.content.container {
+    max-width: 75%;
+    padding: 1%;
+    padding-top: 0.5%;
+}
+
+/* Re-aligns profile and overviews. Re-aligns activities and activity replies. Part of shorter navbar */
+.activity-feed-wrap[data-v-09492909], .stats-wrap[data-v-5c30286e] {
+    padding-left: 5%;
+    max-width: 100%
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------| https://anilist.co/user/Bluetaku/ CSS |-------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* adds background */
+body {
+    background: linear-gradient(rgb(var(--color-background),0.2),rgb(var(--color-background),0.8)),url(https://i.imgur.com/kISBu3v.jpg) center/100% fixed !important
+}
+/* changes the logo */
+.logo img[data-v-4fbac4e1] {
+    content: url(https://i.imgur.com/18hkE0V.png);
+}
+/* changes the top navbar */
+.wrap[data-v-4fbac4e1] {
+    max-width: 1000px;
+    position: relative;
+    margin: 1vw 0;
+    background-color: rgba(255,255,255,0.04) !important;
+    padding: 0 60px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+}
+.wrap[data-v-4fbac4e1] {
+    align-items: center;
+    display: flex;
+    height: 75%;
+    width: 100%;
+}
+.nav[data-v-4fbac4e1] {
+    background-color: rgba(255,255,255,0) !important;
+}
+/* changes scrollbar */
+::-webkit-scrollbar       {background-color: rgba(255, 255, 255, 0); width: 0.4em;}
+::-webkit-scrollbar-track {background-color: rgb(13, 13, 13);}
+::-webkit-scrollbar-thumb {background-color: #E7203A; border-radius:10px; width: 3px}
+/* changes the username */
+.name[data-v-5445dac8] {
+    font-size: 5rem;
+    padding: 10px 15px 11px 15px;
+    color: #fff;
+    font-family: "Satisfy";
+    display: flex;
+    align-items: center;
+}
+/* Banner */
+.banner {
+  visibility: hidden;
+}
+.banner > .container {
+  visibility: visible;
+  justify-content: center;
+}
+/* Re-aligns profile picture and name. Part of shorter navbar */
+.banner .container[data-v-5445dac8]
+{
+    max-width: 80%;
+}
+/* makes about section longer */
+.about > .content-wrap {
+    max-height: none !important;
+}
+.banner[data-v-5445dac8] {
+    background-image: none !important;
+    background-color: rgb(36,37,56,0);
+}
+/* Changes the Container */
+  .header-wrap > .nav-wrap {
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: 15px 15px 0 0;
+    box-shadow: var(--nutella-ns);
+    position: relative;
+  }
+  .nav > .link {
+    position: relative;
+  }
+  .nav > .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: rgb(var(--color-blue));
+    transition: all 0.3s ease-in-out;
+  }
+  .nav > .router-link-active::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue-dim));
+  }
+  .nav > .link:hover::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+  }
+  .content.container {
+    background: rgba(var(--color-foreground-grey),0.3);
+    max-width: 75%;
+    padding: 30px 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--nutella-bs);
+  }
+/* large stats */
+.favourite[data-v-5d0e8ada] {
+    border-radius: 7px !important;
+}
+.stats-wrap[data-v-815ccddc] {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 20px 40px;
+    text-align: left;
+}
+.stat[data-v-815ccddc]:nth-child(1) {
+    grid-row-start: span 2;
+}
+.stat:nth-child(1) .value[data-v-815ccddc] {
+    font-size: 5.5rem;
+}
+.stat .value[data-v-815ccddc] {
+    font-size: 2rem;
+    padding-bottom: 0px;
+}
+.stat .label[data-v-815ccddc] {
+    font-size: 1.2rem;
+}
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 19px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
+    display: flex;
+    align-items: center;
+    color: rgb(var(--color-text-light));
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+/* adds hover to favs */
+.favourite[data-v-0317d914] {
+transition: transform .2s;
+border-radius: 20%;
+position: static;
+overflow:visible;
+}
+.favourite[data-v-0317d914]:hover {
+transform: scale(1.6);
+position: static;
+overflow:visible;
+}
+.favourites.preview .favourites-wrap .favourite[data-v-3f86aedd], .favourites.preview .favourites-wrap>div[data-v-3f86aedd]{
+overflow:visible;
+}
+.favourites-wrap[data-v-3f86aedd]{
+overflow: visible;
+}
+/* cursor */
+* { 
+    cursor: url(https://i.imgur.com/tY4GomX.png), auto;
+}
+/* adds badge on messages */
+.name[data-v-5a191921]::after, .name[data-v-64116ff5]::after {
+    content: 'Lv. 14 Yeagerist';
+    position: relative;
+    top: -1px;
+    left: 4px;
+    padding: 5px 8px;
+    font-size: 1.2rem;
+    color: #E7203A;
+}
+.avatar[data-v-5445dac8] {
+    color: #E7203A;
+}
+.site-theme-dark {
+--color-background: 18, 18, 18;
+--color-foreground: 26, 26, 26;
+--color-foreground-grey: 26, 26, 26;
+--color-foreground-grey-dark: 18, 18, 18;
+}
+
+:root {
+--color-background: 18, 18, 18;
+--color-foreground: 26, 26, 26;
+--color-foreground-grey: 26, 26, 26;
+--color-foreground-grey-dark: 18, 18, 18;
+}
+
+.site-theme-contrast{
+--color-background: 18, 18, 18;
+--color-foreground: 26, 26, 26;
+--color-foreground-grey: 26, 26, 26;
+--color-foreground-grey-dark: 18, 18, 18;
+}
+Dark Theme
+.site-theme-dark {
+    --color-background:             15, 23, 25;
+    --color-foreground:             28, 36, 38;
+    --color-foreground-grey:        20, 28, 30;
+    --color-foreground-grey-dark:   15, 23, 25;
+    --color-text:                   141, 138, 134; 
+    --color-text-light:             156, 153, 149;
+    --color-text-lighter:           161, 168, 164;
+    --color-text-bright:            176, 183, 179;
+    --color-blue:                   169, 126, 73;
+    --color-blue-dim:               91, 75, 64;
+    --color-green:                  169, 126, 73;
+} 
+/* box shadow */
+:root, .site-theme-dark, .site-theme-contrast {
+    --nutella-bs: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                 rgba(0, 0, 0, 0.07) 0px 2px 4px,
+                 rgba(0, 0, 0, 0.07) 0px 4px 8px,
+                 rgba(0, 0, 0, 0.07) 0px 8px 16px;
+    --nutella-ns: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                 rgba(0, 0, 0, 0.07) 0px 2px 4px;
+  }</style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* --------------------| https://anilist.co/user/nutellaa/ CSS |-------------------- */
+  
+/* Be careful since its intended for my profile, you will have to change a few things around for your own */
+
+/* box shadow */
+:root, .site-theme-dark, .site-theme-contrast {
+  --nutella-bs: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+               rgba(0, 0, 0, 0.07) 0px 2px 4px,
+               rgba(0, 0, 0, 0.07) 0px 4px 8px,
+               rgba(0, 0, 0, 0.07) 0px 8px 16px;
+  --nutella-ns: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+               rgba(0, 0, 0, 0.07) 0px 2px 4px;
+}
+/* animation for avatar */
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+@keyframes shakeY {
+    0%,
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0)
+    }
+}
+.animate__shakeY {
+    -webkit-animation-name: shakeY;
+    animation-name: shakeY
+}
+
+/* CODE */
+
+/* adds background image */
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/809136394273816617/839542945795407952/purpleb.gif");
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* changes the top navbar */
+#nav {
+  background: rgb(var(--color-foreground)) none repeat scroll 0% 0% !important;
+  border-radius: 0 0 30px 30px;
+  left: calc((100% - 75%) / 2);
+  width: 75%;
+  box-shadow: var(--nutella-bs);
+  transition: background 0.8s ease 0s, top 0.5s ease 0s !important;
+  backdrop-filter: blur(4px);
+  height: 60px;
+}
+/* search section fix(only use with the code above) */
+.quick-search.visible[data-v-bcbe965e] {
+    left: auto;
+}
+/* navbar buttons hover */
+.link[data-v-4fbac4e1] {
+    transition: transform 0.69s ease-in-out;
+}
+.link[data-v-4fbac4e1]:hover {
+    transform: scale(1.2);
+    color: #B368E6
+}
+/* changes logo and adds hover */
+.logo img[data-v-4fbac4e1] {
+    content: url(https://cdn.discordapp.com/attachments/809136394273816617/834643759228649472/images-removebg-preview.png);
+}
+.logo:hover {
+    transition: transform 0.69s ease-in-out;
+    transform: scale(1.6);
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* avatar */
+.avatar[data-v-5445dac8] {
+max-width: 240px;
+}
+
+/* Adds a gif or image to search button */
+.search[data-v-4fbac4e1]:hover svg {
+    background: url(https://cdn.discordapp.com/attachments/809136394273816617/829796231563051048/kanna_search_gif.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #0010FF00;
+    transform: scale(10) translate(0px, 13px) !important;
+}
+/* Removes Banner */
+.banner {
+  visibility: hidden;
+}
+.banner > .container {
+  visibility: visible;
+  justify-content: center;
+}
+
+/* Changes the Container */
+.header-wrap > .nav-wrap {
+  max-width: 75%;
+  margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+  box-shadow: var(--nutella-ns);
+  position: relative;
+}
+.nav > .link {
+  position: relative;
+}
+.nav > .link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background: rgb(var(--color-blue));
+  transition: all 0.3s ease-in-out;
+}
+.nav > .router-link-active::after {
+  left: 0;
+  width: 100%;
+  background: rgb(var(--color-blue-dim));
+}
+.nav > .link:hover::after {
+  left: 0;
+  width: 100%;
+  background: rgb(var(--color-blue));
+}
+.content.container {
+  background: rgba(var(--color-foreground-grey),0.3);
+  max-width: 75%;
+  padding: 30px 30px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: var(--nutella-bs);
+}
+  /* Re-aligns profile picture and name. Part of shorter navbar */
+.banner .container[data-v-5445dac8]
+{
+    max-width: 80%;
+}
+
+/* Changes stuff inside container(hover and other features) */
+.content > .overview {
+  margin-top: 0;
+}
+.stats-wrap > .content-wrap, .desktop > .content-wrap, .activity-entry > .wrap, .favourites-wrap > .favourite, .scroller > .load-more, .user-page-unscoped .markdown-editor, .el-textarea__inner, .input {
+  border-radius: 15px 15px 15px 15px !important;
+  box-shadow: var(--nutella-bs);
+  transition: all 0.69s ease-in-out;
+}
+.history-day:hover {
+  transform: scale(1.2);
+}
+.history-day[data-v-514856af] {
+    border-radius: 10px;
+}
+.activity-entry > .wrap {
+  transition: all 0.69s ease-in-out;
+  max-height: none /*70px*/;
+}
+.activity-entry:hover .wrap {
+  transform: scale(1.05); 
+  max-height: none /*663px*/; /*  663 560px max height, 28px margin, 70px header, 5px idk? kek */
+}
+.wrap > .text {
+  padding-top: 15px;
+}
+.text > .activity-markdown > .markdown {
+  max-height: none;
+}
+.header > .avatar, .list > .cover {
+  opacity: var(--nutella-vo);
+  transition: all 0.69s ease-in-out;
+}
+.wrap:hover .cover {
+  opacity: 1;
+}
+.header > .avatar, .users > .user {
+  opacity: var(--nutella-vo);
+  transition: all 0.69s ease-in-out;
+  border-radius: 255px !important;
+}
+.wrap:hover .header > .avatar, .users > .user:hover, .reply:hover .header > .avatar {
+  opacity: 1;
+  border-color: rgb(var(--color-blue));
+}
+.header > .name {
+  transition: all 0.69s ease-in-out;
+}
+.wrap:hover .header > .name {
+  opacity: 1;
+}
+.activity-entry, .input, svg:not(:root).svg-inline--fa {
+  transition: all 0.69s ease-in-out;
+}
+.list .title, .input .el-textarea__inner {
+  opacity: var(--nutella-vo);
+  transition: all 0.69s ease-in-out;
+}
+.activity-manga_list:hover, .activity-anime_list:hover {
+  transform: scale(1.05);  
+}
+.activity-manga_list:hover .title, .activity-anime_list:hover .title {
+  opacity: 1;
+}
+.input:hover {
+  transform: scale(1.025);
+}
+.input:hover .el-textarea__inner {
+  opacity: 1;
+}
+.scroller > .load-more {
+  margin-top: 0;
+}
+.scroller > .load-more:hover {
+  color: rgb(var(--color-blue));
+  box-shadow: var(--nutella-bs);
+  transform: scale(1.025);
+}
+.activity-replies > .reply {
+  border-radius: 15px;
+}
+.reply:hover .header > .name {
+  opacity: 1;
+}
+/*  favourites section bugfix */
+.favourites-wrap[data-v-1496db1c]{
+    overflow: visible;
+}
+/* hover for different things */
+.overview .favourites > .favourites-wrap {
+  overflow: visible;
+}
+/* favourites section hover */
+.favourites .favourite:hover {
+  transition: transform 0.69s ease-in-out;
+  transform: scale(1.33);
+  z-index: 20;
+}
+.genre-overview[data-v-aedb6876] {
+    transition: transform 0.5s;
+}
+.genre-overview:hover {
+    transform: scale(1.05);
+}
+.activity-history[data-v-514856af] {
+    transition: transform 0.5s;
+}
+.activity-history:hover {
+    transform: scale(1.05);
+}
+/* Small avatar circle frame */
+.text .avatar[data-v-64116ff5] {
+    border-radius: 100%;
+    transition: transform .25s ease-in-out;
+}
+/* Comments section avatar -> circle frame */
+.avatar[data-v-5a191921]  {
+    border-radius: 100%;
+}
+/* Small avatar hover */
+.text .avatar[data-v-64116ff5]:hover {
+    transform: scale(2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+}
+::-webkit-scrollbar-thumb {
+background: rgba(var(--color-text-light),.5);
+border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
+background: #B368E6;
+}
+::-webkit-scrollbar-track {
+background: rgb(var(--color-background));
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* Content - Anime List / Manga List */
+.content > .medialist {
+  margin-top: 0;
+}
+/* Content - Favorites */
+.favourites {
+  margin-top: 0 !important;
+}
+/* Content - Stats */
+.content > .stats {
+  margin-top: 0;
+}
+/* Content - Social */
+.content > .user-social {
+  margin-top: 0;
+}
+.filter-group span:hover {
+  background: rgb(var(--color-foreground));
+  color: rgb(var(--color-blue));
+}
+.follow-card {
+  opacity: var(--nutella-vo);
+  border-radius: 255px;
+  transition: all 0.69s ease-in-out;
+}
+.follow-card > .avatar {
+  border: 4px solid rgb(var(--color-background));
+  border-radius: 255px !important;
+  transition: all 0.69s ease-in-out;
+}
+.follow-card:hover, .follow-card > .avatar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  border-color: rgb(var(--color-blue));
+}
+.follow-card > .name {
+      background: rgba(var(--color-shadow),.4);
+}
+/* Changes Footer */
+.wrap > .footer {
+  position: relative;
+  background: rgb(0,0,0,0.8);
+  border-radius: 30px 30px 0 0;
+  left: calc((100% - 85%) / 2);
+  width: 85%;
+  box-shadow: var(--nutella-bs);
+}
+.theme-selector > .dark {
+  background: #000;
+}
+.theme-selector > h2 {
+  color: #B368E6;
+}
+a, a:visited {
+    color: rgb(var(--color-text));
+}
+
+/* CURSOR */
+* {
+    cursor: url(https://cdn.discordapp.com/attachments/809136394273816617/827963044248158268/miss-kobayashi-s-dragon-maid-kanna-and-dragon-form-cursor.png), auto;
+}
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
+    cursor: url(https://cdn.discordapp.com/attachments/809136394273816617/827963046839189554/miss-kobayashi-s-dragon-maid-kanna-and-dragon-form-pointer.png), auto;
+}
+a,
+a:link img {
+    cursor: url(https://cdn.discordapp.com/attachments/809136394273816617/827963046839189554/miss-kobayashi-s-dragon-maid-kanna-and-dragon-form-pointer.png), auto !important;
+}
+
+/* Adds text before 'activity' */
+.section-header[data-v-09492909]::before {
+    transition: transform .7s ease-in-out;
+    visibility: visible;
+    content: "Send thigh pics♡ on nutella's";
+    color: #B368E6
+}
+
+/* Adds text in message boxes */
+.activity-markdown[data-v-64116ff5]:after {
+    content: "nutellaa likes you <3&lrm;&lrm;&lrm;&lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm;&lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm; &lrm;&lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&rlm;&lrm; &lrm;&rlm;&lrm;&rlm;&rlm;&lrm;&lrm;";
+    white-space: pre-wrap;
+    font-style: italic;
+    justify-content: flex-end;
+    display: flex;
+}
+
+/* Adds special hover to stats overview */
+.list-stats:nth-child(1), .list-stats:nth-child(2) {
+  height: calc(165px - 45px);
+}
+.list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
+  height: 165px;
+}
+.stats-wrap[data-v-5c30286e] {
+    grid-column-gap: 7px;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-row-gap: 5px;
+}
+
+/* large stats */
+.favourite[data-v-5d0e8ada] {
+    border-radius: 7px !important;
+}
+.stats-wrap[data-v-815ccddc] {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 20px 40px;
+    text-align: left;
+}
+.stat[data-v-815ccddc]:nth-child(1) {
+    grid-row-start: span 2;
+}
+.stat:nth-child(1) .value[data-v-815ccddc] {
+    font-size: 5.5rem;
+}
+.stat .value[data-v-815ccddc] {
+    font-size: 2rem;
+    padding-bottom: 0px;
+}
+.stat .label[data-v-815ccddc] {
+    font-size: 1.2rem;
+}
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 19px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label,
+.list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label {
+    display: flex;
+    align-items: center;
+    color: rgb(var(--color-text-light));
+    margin-right: 23px;
+}
+.list-stats[data-v-815ccddc]:nth-child(2) .stat[data-v-815ccddc]:nth-child(1) .label:before {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+
+.banner-content[data-v-5445dac8] {
+    position: relative;
+}
+/* changes name size */
+.name[data-v-5445dac8] {
+    font-size: 3rem;
+    padding-bottom: 14px;
+    padding-left: 0px;
+}
+.header-wrap .banner {
+    height: 333px;
+}
+.banner .container[data-v-5445dac8],
+.banner .container .banner-content {
+    align-items: center;
+}
+.name[data-v-5445dac8] {
+    font-size: 5rem;
+    padding: 30px 50px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.banner-content[data-v-5445dac8] {
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Changes the follow button */
+.actions[data-v-5445dac8] {
+    min-width: 1px;
+    display: flex;
+    align-items: center;
+    margin-left: -290px;
+}
+.dropdown[data-v-5445dac8] {
+    margin-top: 150px;
+    margin-left: -242px;
+    background: rgba(var(--color-overlay), 0);
+}
+.dropdown[data-v-5445dac8]:hover {
+    background: rgba(var(--color-overlay), 0);
+}
+.nav-btn[data-v-5445dac8] {
+    margin-top: 150px;
+    margin-left: 46px;
+    border-radius: 20px;
+    width: 200px;
+}
+.nav-btn[data-v-5445dac8] {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-timing-function: ease-in-out;
+}
+.nav .link[data-v-5445dac8] {
+    margin: 0 30px;
+    font-size: 1.7rem;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    transition: 0.5s;
+}
+.nav .link[data-v-5445dac8]:nth-child(7),
+.nav .link[data-v-5445dac8]:nth-child(8) {
+    width: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+.nav .link[data-v-5445dac8] {
+    margin: 0 30px;
+    font-size: 1.7rem;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    transition: 0.5s;
+}
+.nav .link[data-v-5445dac8]:nth-child(7),
+.nav .link[data-v-5445dac8]:nth-child(8) {
+    width: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+/* Changes 'follows you' to a tick */ 
+.mod-badge[data-v-5445dac8] {
+    position: absolute;
+    left: 435px;
+    bottom: 53px;
+    content: "Yes";
+    font-size: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-timing-function: ease-in-out;
+}
+.mod-badge[data-v-5445dac8]:after {
+    content: "✓";
+    font-size: 1.6rem;
+    margin-left: -2px;
+}
+.donator-badge[data-v-5445dac8] {
+    visibility: hidden;
+}
+/* makes comments and like button bigger */
+.actions .action[data-v-64116ff5] {
+    font-size: 1.75rem;
+}
+.actions .count[data-v-64116ff5] {
+    font-size: 1.75rem;
+}
+
+/* Adds a custom badge for users who send you a message*/
+.name[data-v-5a191921]::after, .name[data-v-64116ff5]::after {
+  position: relative;
+  top: -1px;
+  left: 4px;
+  border-radius: 7px;
+  color: rgba(255,225,255, 1);
+  padding: 3px 6px;
+  margin-bottom: 3px;
+  margin-right: 16px;
+  transition: .4s;
+  font-size: 1.2rem;
+  transition: .5s;  
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: rainbow;
+  animation-timing-function: ease-in-out;
+  letter-spacing: .03em;
+}
+/*a[href="/user/???/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "???";
+} */
+a[href="/user/nutellaa/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "addict";
+}
+a[href="/user/shinon/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "kouhai <3";
+}
+a[href="/user/SkylarSays/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "most popular guy on anilist";
+}
+a[href="/user/candy/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "my 3d waifu";
+}
+a[href="/user/ForeverAnimeX/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "photoshop addict";
+}
+a[href="/user/paprikaosk/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "neko";
+}
+a[href="/user/Duvet/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "poopsock";
+}
+a[href="/user/Suck/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "amogus";
+}
+a[href="/user/ChriSenpai/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "css buddy";
+}
+a[href="/user/bishoujo69/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "fellow takayan simp";
+}
+a[href="/user/Vereen/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "𝓶𝓪𝓷𝓱𝔀𝓪 𝓼𝓹𝓮𝓬𝓲𝓪𝓵𝓲𝓼𝓽";
+}
+a[href="/user/yurie/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "♡";
+}
+a[href="/user/Pepper/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "Chili pepper";
+}
+a[href="/user/voidghoulish/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "horny lmao got rickrolled";
+}
+a[href="/user/ditto/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "best pokemon";
+}
+a[href="/user/kitkat/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+  content: "polish";
+}
+
+/* changes color of left border */
+.activity-message .text {
+    border-left: solid 5px #b368e6;
+}
+.activity-text .text {
+    border-left: solid 5px #b368e6;
+}
+.about .content-wrap[data-v-5c30286e] {
+    max-height: 900px;
+}
+.history-day.lv-1[data-v-514856af], .tooltip .circle.lv-1[data-v-514856af] {
+    background: transparent;
+    content: url(https://cdn.discordapp.com/emojis/746208584257372220.gif?v=1);
+}
+.history-day.lv-9[data-v-514856af], .tooltip .circle.lv-1[data-v-514856af] {
+    background: transparent;
+    content: url(https://cdn.discordapp.com/emojis/746208584257372220.gif?v=1);
+}
+
+.action.likes .button .fa-heart, .like-wrap.thread_comment .button .fa-heart {
+    color: #0000;
+    stroke: white;
+    stroke-width: 80;
+}
+.action.likes .button.liked .fa-heart, .like-wrap.thread_comment .button.liked .fa-heart {
+    color: var(--color-red);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width: 0;
+}
+.activity-message .wrap > .text .activity-markdown,
+.activity-text .wrap > .text .activity-markdown {
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(var(--color-text), 0.1);
+}
+
+.activity-feed .liked {
+    animation: bounceIn 1s;
+}
+
+.activity-feed .activity-entry
+.wrap .actions {
+    z-index: 1;
+}
+
+.activity-feed .activity-entry,
+.activity-feed .activity-replies .reply {
+    animation: zoomIn 0.2s;
+}
+/* More Animations for content */
+@keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1)
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03)
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.animate__bounceIn {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-duration: calc(var(--animate-duration)*0.75);
+    animation-duration: calc(var(--animate-duration)*0.75);
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+.animate__zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}
+
+/* add search anilist thing*/
+.nav .wrap {
+    display: grid;
+    grid-template-columns: 70px auto auto 70px;
+}
+.nav .wrap .links {
+    grid-column-start: 3;
+    margin-left: -25px;
+}
+.nav .wrap .search {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 10px;
+    background: rgb(16 16 16);
+    border-radius: 35px;
+    width: 100%;
+    cursor: text;
+    font-family: "Overpass"
+}
+.nav .wrap .search:after {
+    content: "Search AniList";
+    margin-left: 10px;
+    color: #777a9e;
+}
+.nav .wrap .user {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+/* adds avatar spin on messages */
+.wrap:hover .header > .avatar, .users > .user:hover, .reply:hover .header > .avatar {
+    border-color: #B368E6;
+    transform: scale(1.5) rotate(360deg);
+}
+.wrap:hover .header > .avatar, .users > .user:hover, .reply:hover .header > .avatar {
+    opacity: var(--nutella-vo);
+    transition: all 0.69s ease-in-out;
+    border: 2px solid #B368E6;
+}
+/* moves avatar to the center */
+.banner-content[data-v-5445dac8] {
+    width: 50%;
+}
+
+/* Overlay (written by cakes) */
+.overview > .section > .about > .content-wrap > .markdown b[href="overlay"] {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: -500px;
+  background: rgb(var(--color-foreground));
+  z-index: 100;
+
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+  transition: left 0.3s ease-in-out;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]:focus-within {
+  left: 0;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="arrow"] {
+  width: 40px;
+  height: 100px;
+  background: rgb(var(--color-foreground));
+
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+  position: fixed;
+  top: calc(50% - 50px);
+  left: 0;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="arrow"]
+  > a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="arrow"]
+  > a::after {
+    content: '';
+    mask: url(https://criolaservice.by/AL-css/svg/chevron-right.svg) no-repeat 50% 50%;
+    -webkit-mask: url(https://criolaservice.by/AL-css/svg/chevron-right.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    background-color: rgba(var(--color-text-light));
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]:focus-within
+  > b[href="arrow"] {
+  width: 100%;
+  height: 100%;
+  transition: all 0s linear;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]:focus-within
+  > b[href="arrow"]
+  > a {
+  width: 0;
+  height: 0;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]:focus-within
+  > b[href="arrow"]
+  > a::after {
+  content: "";
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]:focus-within
+  > a[href="#"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="list"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+  pointer-events: none;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="list"]
+  > a {
+  width: 90%;
+  text-align: center;
+  padding: 70px 0px;
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+  border-radius: 20px !important;
+  pointer-events: auto;
+  transition: background linear 0.35s;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="list"]
+  > a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background linear 0.1s;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="list"]
+  > a:nth-of-type(1)::after {
+    content: 'aaaaa';
+    background-image: url(https://cdn.discordapp.com/attachments/809136394273816617/819372281943687228/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgba(0,0,0,0);
+    padding: 50px 30px;
+}
+.overview
+  > .section
+  > .about
+  > .content-wrap
+  > .markdown
+  b[href="overlay"]
+  > b[href="list"]
+  > a:nth-of-type(2)::after {
+    content: 'aaaaa';
+    background-image: url(https://cdn.discordapp.com/attachments/809136394273816617/819372316039446578/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgba(0,0,0,0);
+    padding: 50px 30px;
+  }
+/* changes the font for a few things */
+.name[data-v-5445dac8] {
+    font-family: cursive;
+}
+body {
+    font-family: cursive;
+}
+.link[data-v-4fbac4e1] {
+    font-family: cursive;
+}
+.nav .link[data-v-5445dac8] {
+    font-family: cursive;
+}
+/* animation on avatar */
+.avatar[data-v-5445dac8] {
+    margin-top: 15px;
+    animation: shakeY 30s;
+    animation-iteration-count: infinite;
+}
+
+/* kanna walking animation */
+.header-wrap .banner-content:after {
+    content: "";
+    background: url(https://cdn.discordapp.com/attachments/809136394273816617/840247436127240202/tumblr_olm2o2DeZJ1sdb5e7o1_250.gif) no-repeat 0 0;
+    z-index: 9999;
+    height: 500px;
+    width:500px;
+    transform: scaleX(-1);
+    position: fixed;
+    left: 0;
+    top: 70.4%;
+  animation: moveLeftToRight 15s linear infinite;
+  transition: all 1s ease;
+}
+
+@-moz-keyframes moveLeftToRight {
+  0%   { left: -800px; }
+  100% { left: 100%; }
+}
+@-ms-keyframes moveLeftToRight {
+  0%   { left: -800px; }
+  100% { left: 100%; }
+}
+@keyframes moveLeftToRight {
+  0%   { left: -800px; }
+  100% { left: 100%; }
+}
+@-webkit-keyframes moveLeftToRight {
+  0%   { left: -800px; }
+  100% { left: 100%; }
+}
+
+@-webkit-keyframes shine {
+0%, 10% {
+  background-position: -1000px;
+}
+100% {
+  background-position: 1000px;
+}
+}
+
+@keyframes inandout {
+  0%  {
+      transform: scale(1);
+  }
+  50%  {
+      transform: scale(1.1);
+  }
+}
+
+/*changes the bio video borders */
+.markdown video {
+  border-radius: 15px;
+}
+/* hover in bio socials ty bartho */
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372285059268646/6.png"],
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372316039446578/3.png"],
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372281943687228/1.png"] {
+  transition: transform 0.3s linear;
+}
+
+/*img[src="https://i.imgur.com/mT8zWua.png"]:hover,
+img[src="https://i.imgur.com/1JyDZCA.png"]:hover,*/
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372285059268646/6.png"]:hover,
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372316039446578/3.png"]:hover,
+img[src="https://cdn.discordapp.com/attachments/809136394273816617/819372281943687228/1.png"]:hover {
+  transform: scale(1.2)
+}
+
+/* shine effect (thanks to cakes) */
+.banner-content .name {
+background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+-webkit-background-size: 200px;
+color: rgba(255, 255, 255, .6);
+-webkit-background-clip: text;
+-webkit-animation-name: shine;
+-webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}</style>
