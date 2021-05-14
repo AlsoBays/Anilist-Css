@@ -23,7 +23,7 @@ body {
 
 /* Change Cursor */
 * {
-    cursor: url(https://files.catbox.moe/xdy9p4.png), auto;
+    cursor: url(https://files.catbox.moe/a25jxf.png), auto;
 }
 a[href],
 input[type='submit'],
@@ -32,11 +32,11 @@ label[for],
 select,
 button,
 .pointer {
-    cursor: url(https://files.catbox.moe/febpgc.png), auto;
+    cursor: url(https://files.catbox.moe/sr0ii2.png), auto;
 }
 a,
 a:link img {
-    cursor: url(https://files.catbox.moe/febpgc.png), auto !important;
+    cursor: url(https://files.catbox.moe/sr0ii2.png), auto !important;
 }
 
 /* Disable 'follows you' badge */
@@ -286,7 +286,7 @@ a:link img {
 
 /* Changes AL Home Logo & Adds Hover */
 .logo img[data-v-4fbac4e1] {
-    content: url(https://files.catbox.moe/2c4z3q.png);
+    content: url(https://files.catbox.moe/uerses.png);
 }
 .logo:hover {
     transition: transform 0.69s ease-in-out;
