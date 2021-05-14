@@ -5,7 +5,7 @@ Also You Could Just copy these little notes into your Css, they don't effect any
 
 /* Adds Background Image */
 body {
-    background-image: url("https://files.catbox.moe/i5uq98.jpg");
+    background-image: url("https://files.catbox.moe/qcogry.gif");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
