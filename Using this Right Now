@@ -12,7 +12,9 @@ body {
     background-attachment: fixed;
 }
 
-/* Removes Banner */
+/*==================================================
+                   Removes Banner 
+==================================================*/
 .banner {
   visibility: hidden;
 }
@@ -21,7 +23,9 @@ body {
   justify-content: center;
 }
 
-/* Change Cursor */
+/*==================================================
+                    Change Cursor 
+==================================================*/
 * {
     cursor: url(https://files.catbox.moe/a25jxf.png), auto;
 }
@@ -39,17 +43,23 @@ a:link img {
     cursor: url(https://files.catbox.moe/sr0ii2.png), auto !important;
 }
 
-/* Disable 'follows you' badge */
+/*==================================================
+             Disable 'follows you' badge 
+==================================================*/
 .follower-badge[data-v-5445dac8] {
     display: none;
 }
 
-/* Removes 'using custom css' notice */
+/*==================================================
+          Removes 'using custom css' notice 
+==================================================*/
 .about[data-v-2cf72664] .markdown h5 a {
     display: none;
 }
 
-/* Chrome scrollbar */
+/*==================================================
+                    Chrome scrollbar 
+==================================================*/
 ::-webkit-scrollbar {
     width: 6px;
     background: rgb(36,37,56,0);
@@ -62,7 +72,9 @@ a:link img {
     -webkit-border-radius: 1ex;
 }
 
-/* Changes "Overview/Anime List/Manga List..." nav section. - shorter navbar*/
+/*==================================================
+       Changes Nav section. - Shorter navbar
+==================================================*/
 .nav-wrap[data-v-5445dac8] {
     background: rgb(var(--color-foreground));
     width: 80%;
@@ -73,7 +85,9 @@ a:link img {
     padding: 0px;
 }
 
-/* Re-aligns more stuff... Part of shorter navbar*/
+/*==================================================
+   Re-aligns more stuff... Part of shorter navbar
+==================================================*/
 .content.container {
     max-width: 80%;
     padding-left: 0px;
@@ -87,7 +101,9 @@ a:link img {
     margin-left: 1%;
 }
 
-/* Scrollbar */
+/*==================================================
+                       Scrollbar 
+==================================================*/
 *::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -103,22 +119,28 @@ a:link img {
 
 }
 
-/* Removes that stupid Genres Overview Widget */
+/*==================================================
+    Removes that stupid Genres Overview Widget 
+==================================================*/
 
 .desktop[data-v-aedb6876] {
     height: 0;
     visibility: hidden;
 }
 
- /* Adds text before 'activity' */
+/*==================================================
+             Adds text before 'activity' 
+==================================================*/
   .section-header[data-v-09492909]::before {
       transition: transform .7s ease-in-out;
       visibility: visible;
       content: "Send Lewds<3 on Bays's";
       color: #ffffff
   }
-  
-  /* Adds text at bottom of activity boxes */
+ 
+/*==================================================
+       Adds text at bottom of activity boxes 
+==================================================*/
   .activity-markdown[data-v-64116ff5]:after {
       content: "Daisuki! ♡                 ";
       white-space: pre-wrap;
@@ -127,7 +149,9 @@ a:link img {
       display: flex;
   }
 
-/* Changes the Container - Transarent Border around everything */
+/*==================================================
+      Transparent Container around everything
+==================================================*/
   .header-wrap > .nav-wrap {
     max-width: 80%;
     margin: 0 auto;
@@ -166,7 +190,9 @@ a:link img {
     box-shadow: var(--nutella-bs);
   }
 
-/* Changes stuff inside container(hover and other features) */
+/*==================================================
+Changes stuff inside container(hover and other stuff) 
+==================================================*/
   .content > .overview {
     margin-top: 0;
   }
@@ -246,17 +272,23 @@ a:link img {
     opacity: 1;
   }
  
- /*  favourites section bugfix */
+ /*==================================================
+                Favorites section bugfix 
+ ==================================================*/
   .favourites-wrap[data-v-1496db1c]{
       overflow: visible;
   }
 
-  /* hover for different things */
+  /*==================================================
+               Hover for different things 
+  ==================================================*/
   .overview .favourites > .favourites-wrap {
     overflow: visible;
   }
 
-  /* favourites section hover */
+  /*==================================================
+                Favorites section hover 
+  ==================================================*/
   .favourites .favourite:hover {
     transition: transform 0.69s ease-in-out;
     transform: scale(1.15);
@@ -275,7 +307,9 @@ a:link img {
       transform: scale(1.05);
   }
  
- /* Navbar Buttons Hover */
+ /*==================================================
+                 Navbar Buttons Hover 
+ ==================================================*/
 .link[data-v-4fbac4e1] {
     transition: transform 0.69s ease-in-out;
 }
@@ -284,7 +318,9 @@ a:link img {
     color: #B368E6
 }
 
-/* Changes AL Home Logo & Adds Hover */
+/*==================================================
+         Changes AL Home Logo & Adds Hover 
+==================================================*/
 .logo img[data-v-4fbac4e1] {
     content: url(https://files.catbox.moe/uerses.png);
 }
@@ -295,7 +331,9 @@ a:link img {
     overflow: hidden;
 }
 
-/* Changes Top Navbar */
+/*==================================================
+                 Changes Top Navbar 
+==================================================*/
 .wrap[data-v-4fbac4e1] {
     max-width: 75%;
     position: relative;
@@ -314,7 +352,9 @@ a:link img {
     background-color: rgba(255,255,255,0) !important;
 }
 
-/* Changes Username Font */
+/*==================================================
+                Changes Username Font 
+==================================================*/
 .name[data-v-5445dac8] {
     font-size: 5rem;
     padding: 10px 15px 11px 15px;
@@ -324,7 +364,9 @@ a:link img {
     align-items: center;
 }
 
-/* More Username Font Stuffs - Use this and the one Above Together*/
+/*==================================================
+   More Username Font Stuffs - Use that one too^^
+==================================================*/
 @font-face {
   font-family: 'Satisfy';
   font-style: normal;
@@ -334,7 +376,9 @@ a:link img {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-  /* Adds Search Anilist Bar at Top Navbar */
+/*==================================================
+       Adds Search Anilist Bar at Top Navbar 
+==================================================*/
   .nav .wrap {
       display: grid;
       grid-template-columns: 70px auto auto 70px;
@@ -363,7 +407,9 @@ a:link img {
       grid-row-start: 1;
   }
   
-  /* Adds a gif or image to search button */
+/*==================================================
+       Adds a gif or image to search button 
+==================================================*/
 .search[data-v-4fbac4e1]:hover svg {
     background: url(https://files.catbox.moe/ah4mqn.gif);
     background-repeat: no-repeat;
@@ -372,19 +418,27 @@ a:link img {
     transform: scale(10) translate(0px, 13px) !important;
 }
 
-/* Content - Anime List & Manga List */
+/*==================================================
+            Content - Anime & Manga List 
+==================================================*/
 .content > .medialist {
   margin-top: 0;
 }
-/* Content - Favorites */
+/*==================================================
+                 Content - Favorites 
+==================================================*/
 .favourites {
   margin-top: 0 !important;
 }
-/* Content - Stats */
+/*==================================================
+                   Content - Stats 
+==================================================*/
 .content > .stats {
   margin-top: 0;
 }
-/* Content - Social */
+/*==================================================
+                  Content - Social 
+==================================================*/
 .content > .user-social {
   margin-top: 0;
 }
@@ -411,7 +465,9 @@ a:link img {
       background: rgba(var(--color-shadow),.4);
 }
 
-/* Changes Footer */
+/*==================================================
+                    Changes Footer
+==================================================*/
 .wrap > .footer {
   position: relative;
   background: rgb(0,0,0,0.5);
@@ -438,7 +494,9 @@ a, a:visited {
   height: 165px;
 }
 
-/* large stats */
+/*==================================================
+                     Large Stats 
+==================================================*/
 .favourite[data-v-5d0e8ada] {
     border-radius: 7px !important;
 }
@@ -497,7 +555,9 @@ a, a:visited {
     position: relative;
 }
 
-/* changes the font for a few things */
+/*================================================== 
+         Changes the font for a few things 
+==================================================*/
 body {
     font-family: cursive;
 }
@@ -513,7 +573,9 @@ body {
   border-radius: 15px;
 }
 
-/* Makes Bio Longer */
+/*==================================================
+                  Makes Bio Longer 
+==================================================*/
 .about > .content-wrap {
   transform: scale(1) !important;
   max-height: none !important;
