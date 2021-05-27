@@ -4,6 +4,14 @@ Make Sure to change any image Links into what you want them to be
 Also You Could Just copy these little notes into your Css, they don't effect anything */
 
 /*==================================================
+                  Makes Bio Longer 
+==================================================*/
+.about > .content-wrap {
+  transform: scale(1) !important;
+  max-height: none !important;
+}
+
+/*==================================================
                Adds Background Image 
 ==================================================*/
 body {
@@ -46,6 +54,30 @@ a:link img {
 }
 
 /*==================================================
+         Changes AL Home Logo & Adds Hover 
+==================================================*/
+.logo img[data-v-4fbac4e1] {
+    content: url(https://files.catbox.moe/uerses.png);
+}
+.logo:hover {
+    transition: transform 0.69s ease-in-out;
+    transform: scale(1.6);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*==================================================
+       Adds a gif or image to search button 
+==================================================*/
+.search[data-v-4fbac4e1]:hover svg {
+    background: url(https://files.catbox.moe/ah4mqn.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #0010FF00;
+    transform: scale(10) translate(0px, 13px) !important;
+}
+
+/*==================================================
              Disable 'follows you' badge 
 ==================================================*/
 .follower-badge[data-v-5445dac8] {
@@ -60,7 +92,7 @@ a:link img {
 }
 
 /*==================================================
-                    Chrome scrollbar 
+                   Chrome scrollbar 
 ==================================================*/
 ::-webkit-scrollbar {
     width: 6px;
@@ -138,7 +170,7 @@ a:link img {
 /*==================================================
        Adds text at bottom of activity boxes 
 ==================================================*/
-  .activity-markdown[data-v-64116ff5]:after {
+  .activity-markdown[data-v-1bf2cf4e]:after {
       content: "Daisuki! ♡                 ";
       white-space: pre-wrap;
       font-style: italic;
@@ -243,7 +275,7 @@ Changes stuff inside container(hover and other stuff)
     transition: all 0.69s ease-in-out;
   }
   .activity-manga_list:hover, .activity-anime_list:hover {
-    transform: scale(1.05);  
+    transform: scale(1.01);  
   }
   .activity-manga_list:hover .title, .activity-anime_list:hover .title {
     opacity: 1;
@@ -313,19 +345,6 @@ Changes stuff inside container(hover and other stuff)
 .link[data-v-4fbac4e1]:hover {
     transform: scale(1.2);
     color: #808080
-}
-
-/*==================================================
-         Changes AL Home Logo & Adds Hover 
-==================================================*/
-.logo img[data-v-4fbac4e1] {
-    content: url(https://files.catbox.moe/uerses.png);
-}
-.logo:hover {
-    transition: transform 0.69s ease-in-out;
-    transform: scale(1.6);
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 /*==================================================
@@ -403,17 +422,6 @@ Changes stuff inside container(hover and other stuff)
       grid-column-start: 4;
       grid-row-start: 1;
   }
-  
-/*==================================================
-       Adds a gif or image to search button 
-==================================================*/
-.search[data-v-4fbac4e1]:hover svg {
-    background: url(https://files.catbox.moe/ah4mqn.gif);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #0010FF00;
-    transform: scale(10) translate(0px, 13px) !important;
-}
 
 /*==================================================
             Content - Anime & Manga List 
@@ -483,7 +491,9 @@ a, a:visited {
     color: rgb(var(--color-text));
 }
 
-/* Adds special hover to stats overview */
+/*==================================================
+        Adds special hover to stats overview 
+==================================================*/
 .list-stats:nth-child(1), .list-stats:nth-child(2) {
   height: calc(165px - 45px);
 }
@@ -504,19 +514,26 @@ a, a:visited {
     grid-template-columns: auto auto;
     padding: 20px 40px;
     text-align: left;
+    font-family: cursive;
+
 }
 .stat[data-v-815ccddc]:nth-child(1) {
     grid-row-start: span 2;
+    font-family: cursive;
 }
 .stat:nth-child(1) .value[data-v-815ccddc] {
     font-size: 5.5rem;
+    font-family: cursive;
 }
 .stat .value[data-v-815ccddc] {
     font-size: 2rem;
+    font-family: cursive;
     padding-bottom: 0px;
 }
 .stat .label[data-v-815ccddc] {
     font-size: 1.2rem;
+    font-family: cursive;
+
 }
 .list-stats[data-v-815ccddc]:nth-child(1) .stat[data-v-815ccddc]:nth-child(1) .label:before {
     content: '';
@@ -609,12 +626,12 @@ body {
                   Badge next to name
 ==================================================*/
   .name[data-v-4f7beb35]::after {
-    content: "Soaking in the Rain";
+    content: "Drowning in the Rain";
     position: relative;
     left: 10px;
     top: 10px;
     background: rgba(var(--color-blue),.8);
-    border-radius: 4px;
+    border-radius: 10px;
     color: rgba(255,225,255, 1);
     padding: 5px 8px;
     margin-bottom: 20px;
@@ -628,11 +645,42 @@ body {
     animation-name: rainbow;
     animation-timing-function: ease-in-out;
 }
-  
+
 /*==================================================
-                  Makes Bio Longer 
+             Badge next to People's names
 ==================================================*/
-.about > .content-wrap {
-  transform: scale(1) !important;
-  max-height: none !important;
-}</style>
+.text > .header > .name::after, .reply > .header > .name::after {
+     content: 'Soaked';
+     position: relative;
+     top: -1px;
+     left: 4px;
+     padding: 5px 8px;
+     border-radius: 10px;
+     font-size: 1.2rem;
+     font-family: cursive;
+     font-weight: bold;
+     color: #fff;
+     transition: .5s;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     animation-name: rainbow;
+     animation-timing-function: ease-in-out;
+}
+
+/*==================================================
+     Changes Peoples Usernames Font in activities
+==================================================*/
+.name[data-v-1bf2cf4e] {
+    font-family: "Satisfy";
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/*==================================================
+       Special Badges - Only for Certain People
+==================================================*/
+a[href="/user/Bays/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Drowning'; }
+
+a[href="/user/Polaarr/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Drenched'; }
+
+a[href="/user/Yokina/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Moist Mother'; }
