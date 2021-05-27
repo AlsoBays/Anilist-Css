@@ -312,7 +312,7 @@ Changes stuff inside container(hover and other stuff)
 }
 .link[data-v-4fbac4e1]:hover {
     transform: scale(1.2);
-    color: #B368E6
+    color: #808080
 }
 
 /*==================================================
@@ -352,7 +352,7 @@ Changes stuff inside container(hover and other stuff)
 /*==================================================
                 Changes Username Font 
 ==================================================*/
-.name[data-v-5445dac8] {
+.name[data-v-4f7beb35] {
     font-size: 5rem;
     padding: 10px 15px 11px 15px;
     color: #fff;
