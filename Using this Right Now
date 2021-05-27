@@ -3,7 +3,9 @@ I tried to make it as informative as possible.
 Make Sure to change any image Links into what you want them to be
 Also You Could Just copy these little notes into your Css, they don't effect anything */
 
-/* Adds Background Image */
+/*==================================================
+               Adds Background Image 
+==================================================*/
 body {
     background-image: url("https://files.catbox.moe/qcogry.gif");
     background-position: 50% 50%;
@@ -102,7 +104,7 @@ a:link img {
 }
 
 /*==================================================
-                       Scrollbar 
+                      Scrollbar 
 ==================================================*/
 *::-webkit-scrollbar {
     width: 0.5em;
@@ -114,6 +116,9 @@ a:link img {
     border-radius: 10px;
 }
 
+/*==================================================
+            Black Border Around Everything
+==================================================*/
 .overview .wrap, .overview .content-wrap {
     border: 3px solid #000;
 
@@ -568,7 +573,9 @@ body {
     font-family: cursive;
 }
 
-/*changes the bio video borders */
+/*==================================================
+           Rounds the bio video borders 
+==================================================*/
 .markdown video {
   border-radius: 15px;
 }
