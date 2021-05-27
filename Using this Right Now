@@ -117,14 +117,6 @@ a:link img {
 }
 
 /*==================================================
-            Black Border Around Everything
-==================================================*/
-.overview .wrap, .overview .content-wrap {
-    border: 3px solid #000;
-
-}
-
-/*==================================================
     Removes that stupid Genres Overview Widget 
 ==================================================*/
 
@@ -578,6 +570,21 @@ body {
 ==================================================*/
 .markdown video {
   border-radius: 15px;
+}
+
+/*==================================================
+  Black Border Around Everything (except Favorites)
+==================================================*/
+.overview .wrap, .overview .content-wrap {
+    border: 3px solid #000;
+
+}
+
+/*==================================================
+           Black Border around Favorites 
+==================================================*/
+.favourite[data-v-0317d914] {
+    border: 3px solid #000;
 }
 
 /*==================================================
