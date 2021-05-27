@@ -573,7 +573,7 @@ body {
 }
 
 /*==================================================
-  Black Border Around Everything (except Favorites)
+      Black Border Around (almost) Everything
 ==================================================*/
 .overview .wrap, .overview .content-wrap {
     border: 3px solid #000;
@@ -587,6 +587,24 @@ body {
     border: 3px solid #000;
 }
 
+ /*==================================================
+             Activity Creator Black Border
+  ==================================================*/
+.input {
+    border: 3px solid #000;
+    overflow: hidden;
+}
+
+/*==================================================
+                 About section hover 
+  ==================================================*/
+.about[data-v-5c30286e] {
+      transition: transform 0.69s;
+  }
+  .about:hover {
+      transform: scale(1.015);
+  }
+  
 /*==================================================
                   Makes Bio Longer 
 ==================================================*/
