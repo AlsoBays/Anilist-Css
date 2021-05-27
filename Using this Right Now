@@ -605,6 +605,30 @@ body {
       transform: scale(1.015);
   }
   
+  /*==================================================
+                  Badge next to name
+==================================================*/
+  .name[data-v-4f7beb35]::after {
+    content: "Soaking in the Rain";
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background: rgba(var(--color-blue),.8);
+    border-radius: 4px;
+    color: rgba(255,225,255, 1);
+    padding: 5px 8px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    transition: .4s;
+    font-size: 1.8rem;
+    transition: .5s;
+    text-transform: capitalize;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-timing-function: ease-in-out;
+}
+  
 /*==================================================
                   Makes Bio Longer 
 ==================================================*/
