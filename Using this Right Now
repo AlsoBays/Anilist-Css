@@ -381,7 +381,7 @@ Changes stuff inside container(hover and other stuff)
 }
 
 /*==================================================
-   More Username Font Stuffs - Use that one too^^
+       More Username Font Stuffs - Use both^^
 ==================================================*/
 @font-face {
   font-family: 'Satisfy';
@@ -590,7 +590,7 @@ body {
 }
 
 /*==================================================
-      Black Border Around (almost) Everything
+          Border Around (almost) Everything
 ==================================================*/
 .overview .wrap, .overview .content-wrap {
     border: 3px solid #000;
@@ -598,14 +598,14 @@ body {
 }
 
 /*==================================================
-           Black Border around Favorites 
+               Border around Favorites 
 ==================================================*/
 .favourite[data-v-0317d914] {
     border: 3px solid #000;
 }
 
  /*==================================================
-             Activity Creator Black Border
+             Border around Activity Creator
   ==================================================*/
 .input {
     border: 3px solid #000;
@@ -683,4 +683,4 @@ a[href="/user/Bays/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::aft
 
 a[href="/user/Polaarr/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Drenched'; }
 
-a[href="/user/Yokina/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Moist Mother'; }
+a[href="/user/UselessYokina/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Moist Mother'; }
