@@ -492,13 +492,13 @@ a, a:visited {
 }
 
 /*==================================================
-        Adds special hover to stats overview 
+           Adds Hover to Stats Overview
 ==================================================*/
 .list-stats[data-v-815ccddc]{
       transition: transform 0.69s;
   }
   .list-stats:hover {
-      transform: scale(1.015);
+      transform: scale(1.02);
   }
 
 /*==================================================
