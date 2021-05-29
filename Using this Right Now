@@ -185,7 +185,7 @@ a:link img {
     max-width: 80%;
     margin: 0 auto;
     border-radius: 30px 30px 0 0;
-    box-shadow: var(--nutella-ns);
+    box-shadow: var(--bays-ns);
     position: relative;
   }
   .nav > .link {
@@ -216,7 +216,7 @@ a:link img {
     max-width: 80%;
     padding: 30px;
     border-radius: 0 0 30px 30px;
-    box-shadow: var(--nutella-bs);
+    box-shadow: var(--bays-bs);
   }
 
 /*==================================================
@@ -227,7 +227,7 @@ Changes stuff inside container(hover and other stuff)
   }
   .stats-wrap > .content-wrap, .desktop > .content-wrap, .activity-entry > .wrap, .favourites-wrap > .favourite, .scroller > .load-more, .user-page-unscoped .markdown-editor, .el-textarea__inner, .input {
     border-radius: 20px !important;
-    box-shadow: var(--nutella-bs);
+    box-shadow: var(--bays-bs);
     transition: all 0.69s ease-in-out;
   }
   .history-day:hover {
@@ -242,7 +242,7 @@ Changes stuff inside container(hover and other stuff)
   }
   .activity-entry:hover .wrap {
     transform: scale(1.02); 
-    max-height: none /*663px*/; /*  663 560px max height, 28px margin, 70px header, 5px idk? kek */
+    max-height: none;
   }
   .wrap > .text {
     padding-top: 15px;
@@ -251,7 +251,7 @@ Changes stuff inside container(hover and other stuff)
     max-height: none;
   }
   .header > .avatar, .list > .cover {
-    opacity: var(--nutella-vo);
+    opacity: var(--bays-vo);
     transition: all 0.69s ease-in-out;
   }
   .wrap:hover .cover {
@@ -271,7 +271,7 @@ Changes stuff inside container(hover and other stuff)
   transition: all 0.69s ease-in-out;
   }
   .list .title, .input .el-textarea__inner {
-    opacity: var(--nutella-vo);
+    opacity: var(--bays-vo);
     transition: all 0.69s ease-in-out;
   }
   .activity-manga_list:hover, .activity-anime_list:hover {
@@ -291,7 +291,7 @@ Changes stuff inside container(hover and other stuff)
   }
   .scroller > .load-more:hover {
     color: rgb(var(--color-blue));
-    box-shadow: var(--nutella-bs);
+    box-shadow: var(--bays-bs);
     transform: scale(1.025);
   }
   .activity-replies > .reply {
@@ -410,7 +410,7 @@ Changes stuff inside container(hover and other stuff)
       border-radius: 35px;
       width: 100%;
       cursor: text;
-      font-family: "Overpass"
+      font-family: cursive;
   }
   .nav .wrap .search:after {
       content: "Search AniList";
@@ -452,7 +452,7 @@ Changes stuff inside container(hover and other stuff)
   color: rgb(var(--color-blue));
 }
 .follow-card {
-  opacity: var(--nutella-vo);
+  opacity: var(--bays-vo);
   border-radius: 255px;
   transition: all 0.69s ease-in-out;
 }
@@ -479,7 +479,7 @@ Changes stuff inside container(hover and other stuff)
   border-radius: 30px 30px 0 0;
   left: calc((100% - 85%) / 2);
   width: 85%;
-  box-shadow: var(--nutella-bs);
+  box-shadow: var(--bays-bs);
 }
 .theme-selector > .dark {
   background: #000;
@@ -494,12 +494,12 @@ a, a:visited {
 /*==================================================
         Adds special hover to stats overview 
 ==================================================*/
-.list-stats:nth-child(1), .list-stats:nth-child(2) {
-  height: calc(165px - 45px);
-}
-.list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
-  height: 165px;
-}
+.list-stats[data-v-815ccddc]{
+      transition: transform 0.69s;
+  }
+  .list-stats:hover {
+      transform: scale(1.015);
+  }
 
 /*==================================================
                      Large Stats 
@@ -565,6 +565,16 @@ a, a:visited {
     background-color: rgba(var(--color-text-light));
 }
 
+.milestones[data-v-815ccddc] {
+    display: none;
+    visibility: hidden;
+}
+
+.footer[data-v-815ccddc] {
+    display: none;
+    visibility: hidden;
+}
+
 .banner-content[data-v-5445dac8] {
     position: relative;
 }
@@ -576,10 +586,27 @@ body {
     font-family: cursive;
 }
 .link[data-v-4fbac4e1] {
-    font-family: cursive;
+    font-family: "Satisfy";
+    font-size: 2rem;
 }
 .nav .link[data-v-5445dac8] {
     font-family: cursive;
+}
+
+.section-header[data-v-514856af] {
+     font-size: 2rem;
+     font-family: "Satisfy";
+}
+
+.section-header[data-v-3f86aedd] {
+     font-size: 2rem;
+     font-family: "Satisfy";
+}
+
+.load-more[data-v-6f203cf2] {
+     font-size: 2rem;
+     font-family: "Satisfy";
+     border: 3px solid #000;
 }
 
 /*==================================================
@@ -626,14 +653,34 @@ body {
                     Changes the Spoiler
   ==================================================*/
 .markdown .markdown-spoiler::before {
-     color: #ffffff;
+     color: #fff;
      font-weight: 500;
-     background: #808080;
      border-radius: 20px;
      border: 1px solid  #000;
      content: "Release the Showers ☂";
      font-size: 1.3rem;
      padding: 4px 7px;
+}
+
+/*==================================================
+Deletes the "Submissions" & "Reviews" Link on Navbar
+==================================================*/
+.link[data-v-4f7beb35]:nth-child(7) {
+    display: none;
+    visibility: hidden;
+}
+
+.link[data-v-4f7beb35]:nth-child(8) {
+    display: none;
+    visibility: hidden;
+}
+
+/*==================================================
+              Changes Navbar Links font
+==================================================*/
+.link[data-v-4f7beb35] {
+    font-family: cursive;
+    font-size: 2rem;
 }
 
   /*==================================================
