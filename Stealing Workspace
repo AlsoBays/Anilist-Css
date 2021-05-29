@@ -1359,4 +1359,556 @@ color: rgba(255, 255, 255, .6);
 -webkit-animation-duration: 5s;
 -webkit-animation-iteration-count: infinite;
 text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
-}</style>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+
+/* Background image (change the URL to change the image) */
+body {
+     background: rgb(var(--color-background));
+	 background: url("https://i.imgur.com/0tOmFt8.jpg") center/100% fixed;
+     background-repeat: no-repeat;
+     background-size: cover;}
+
+/*GENERAL TWEAKS */
+body, p, h2, h3, h4, h5, h6,
+.time[data-v-1bf2cf4e],
+.actions .time[data-v-732ef224] {
+     font-family: 'Gugi';
+}
+h1 { font-family: 'Libre Barcode 128 Text'}
+/* Don't need these [display: none] */
+.user .chevron[data-v-4fbac4e1],
+#nav .links > .link:nth-of-type(3),
+#nav .links > .link:nth-of-type(4),
+.input .hint[data-v-bcbe965e],
+.dropdown[data-v-0bb70ffa] .footer,
+.nav-wrap .nav.container .link:nth-of-type(7),
+.nav-wrap .nav.container .link:nth-of-type(8),
+.footer[data-v-815ccddc],
+.percentage-bar[data-v-aedb6876],
+.hohDownload {
+     display: none;
+}
+.link {
+     font-family: 'Gugi';
+     font-weight: bold;
+     letter-spacing: 4px;
+}
+.hohMilestones .stat .label,
+.stat .label[data-v-815ccddc],
+.nav .link[data-v-de544782],
+.time[data-v-1bf2cf4e],
+.load-more[data-v-6f203cf2],
+.markdown-editor>div {
+ 	 color: white;
+}
+
+/* TOP BAR */
+.nav {
+     background-color: #0000 !important;
+}
+#nav .wrap > .logo img {
+	 filter: hue-rotate(158deg);
+}
+#nav .links {
+	 color: #fff;
+	 letter-spacing: .2em;
+}
+#nav .link:hover {
+     letter-spacing: .01em;
+     padding: 18px 16px;
+     font-size: 2.5rem;
+	 color: red;
+}
+
+.nav .link[data-v-4f7beb35] {
+    color: white;}
+
+/*  BANNER */
+/*.header-wrap .banner {
+     background-image: url(https://cdn.discordapp.com/attachments/565889320175796224/845979500578603028/b726270-nRmloM5dBjH6.jpg) !important;
+     background-color: rgb(36, 37, 56, 0);
+}*/
+/*  BANNER */
+.header-wrap .banner {
+     background-image: none !important;
+     background-color: rgb(36, 37, 56, 0);
+}
+.banner-content > .avatar {
+     position: relative;
+     width: 0;
+     margin-left: 35%;
+     height: 0;
+     padding: 105px;
+     background: url(https://cdn.discordapp.com/attachments/565889320175796224/845974807215996968/b726270-2CFqriwJYKT0.png);
+     background-size: 75%;
+     background-repeat: no-repeat;
+     background-position: 43% 55%;
+     transition: all 1s ease-in-out;
+     z-index: 100;
+}
+.header-wrap h1.name {
+     color: rgb(var(--color-text-bright));
+     display: inline-block;
+     font-weight: 500;
+     font-size: 7rem;
+     padding: 22px 25px 22px 0px;
+     margin-bottom: 30px;
+}
+.banner-content > .name::after {
+     position: absolute;
+     content: 'bruh';
+     color: white;
+     border-radius: 20px;
+     margin-left: -91%;
+     margin-top: 34%;
+     text-align: center;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     animation-name: rainbow;
+     animation-timing-function: ease-in-out;
+     transition: .5s;
+     font-family: 'Gugi';
+     padding: 7px 10px;
+     font-size: 1.9rem;
+}
+.banner-content > .follower-badge {
+     background: red;
+}
+.banner-content > .mod-badge-wrap {
+     position: initial;
+	 content: "Yes";
+	 font-size: 0;
+	 border-radius: 40%;
+	 width: 25px;
+	 height: 25px;
+	 margin-bottom: 92px;
+	 margin-left: -10px;
+	 padding: 5px 8px;
+}
+.banner-content > .mod-badge-wrap:after {
+     content: "✓";
+     font-size: 1.6rem;
+     margin-left: -2px;
+}
+.actions > .nav-btn {
+     margin-top: -40px;
+     color: #fff;
+     border-radius: 20px;
+     width: 100px;
+     background: linear-gradient(
+		 180deg,
+		 rgb(255 0 0) 0%, rgb(255 133 7) 46%,
+		 rgb(255 225 77) 100%);
+     display: inline-block;
+     position: static;
+     margin-left: -120%;
+     padding: 10px 12px;
+     text-align: center;
+     transition: .4s;
+}
+#app > div.page-content > div > div.header-wrap > div.banner > div.container > div > div.actions > div.dropdown.el-dropdown {
+     display: none;
+}
+
+/* 2ND NAVIGATION PART */
+.header-wrap .nav-wrap {
+     width: max-content;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: inherit;
+     padding-right: inherit;
+     border-radius: 10px;
+     background: rgb(0,0,0,0.4);
+     border: 2px solid red;
+     backdrop-filter: blur(10px)!important;
+	 transition: transform 0.7s ease-in-out;
+}
+
+/* STATS */
+.section > .stats-wrap {
+     display: grid;
+	 padding: 0px 10px;
+     grid-auto-flow: column;
+     grid-row-gap: 10px;
+     text-align: center;
+     grid-template-columns: auto auto;
+}
+.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(1) {
+     border-radius: 10px 0px 0px 10px;
+     background: rgb(0,0,0,0.4);
+     border: 2px solid red;
+     backdrop-filter: blur(3px)!important;
+	 transition: transform 0.7s ease-in-out;
+}
+.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2) {
+     border-radius: 0px 10px 10px 0px;
+     background: rgb(0,0,0,0.4);
+     border: 2px solid red;
+     backdrop-filter: blur(3px)!important;
+	 transition: transform 0.7s ease-in-out;
+}
+
+.stats-wrap .stat:nth-child(1) .value {
+     font-size: 5.5rem;
+	 font-family: 'Gugi';
+     background-image: linear-gradient(left, #3acfd5 0%, #bf6c19 100%);
+     background-clip: text;
+     text-fill-color: transparent;
+}
+.stats-wrap .stat:nth-child(1) .value {
+     font-size: 5.5rem;
+	 font-family: 'Gugi';
+     background-image: linear-gradient(left, #3acfd5 0%, red 100%);
+     background-clip: text;
+     text-fill-color: transparent;
+}
+.stats-wrap {
+     display: grid;
+     grid-auto-flow: column;
+     grid-row-gap: 10px;
+     grid-template-columns: auto auto;
+     text-align: center;
+}
+.stats-wrap .stat .value {
+     color: #ff8f3f;
+	 font-family: 'Gugi';
+     font-size: 1.6rem;
+     font-weight: 700;
+     padding-bottom: 8px;
+}
+.stats-wrap .stat .label {
+     color: white;
+     font-weight: normal;
+     font-size: 1.2rem;
+     font-family: 'Gugi';
+}
+.user-page-unscoped.pink .progress .bar {
+     background: red;
+}
+.stat:nth-child(1) {
+     grid-row-start: span 2;
+}
+.section > .stats-wrap > .list-stats:nth-child(1) .stat:nth-child(1) .label:before {
+     content: '';
+     mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+     -webkit-mask: url(https://criolaservice.by/AL-css/svg/tv.svg) no-repeat 50% 50%;
+     mask-size: cover;
+     -webkit-mask-size: cover;
+     width: 19px;
+     height: 16px;
+     margin-right: 5px;
+     background-color: yellow;
+}
+.list-stats:nth-child(2) .stat:nth-child(1) .label,
+.list-stats:nth-child(1) .stat:nth-child(1) .label {
+     display: inline-flex;
+     align-items: center;
+     color: yellow;
+}
+.section > .stats-wrap > .list-stats:nth-child(2) .stat:nth-child(1) .label:before {
+     content: '';
+     mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+     -webkit-mask: url(https://criolaservice.by/AL-css/svg/book.svg) no-repeat 50% 50%;
+     mask-size: cover;
+     -webkit-mask-size: cover;
+     width: 13px;
+     height: 16px;
+     margin-right: 5px;
+     background-color: yellow;
+}
+
+/* LEFT SIDE OF THE PROFILE + STATS */
+/* CONTAINER BORDERS */
+.overview .section-header {
+     margin-bottom: 10px;
+     padding-left: 12px;
+     color: yellow;
+	 font-weight: 500;
+     font-size: 2rem;
+	 filter: drop-shadow(0px 4px 4px black);
+}
+.section > .about .content-wrap {
+     border: 2px solid red;
+	 transition: transform 0.7s ease-in-out;
+     background: rgb(0,0,0,0.5);
+	 border-radius: 20px;
+     backdrop-filter: blur(5px)!important;}
+
+.about .content-wrap .markdown {
+     line-height: 1.4;
+     color: Yellow;
+     font-family: 'Gugi';
+}
+.markdown a, .markdown a:visited {
+     color: #72abff;
+}
+.markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown-spoiler.spoiler-visible span {
+     background: transparent;
+     border-radius: 3px;
+     display: inline;
+}
+.markdown .markdown-spoiler.spoiler-visible i.hide-spoiler {
+    color: red;
+    cursor: pointer;
+    opacity: 1;
+    position: initial;
+}                
+.content.container > div > div:nth-child(1) > div:nth-child(2) > div {
+     border: 2px solid red;
+	 transition: transform 0.7s ease-in-out;
+     background: rgb(0,0,0,0.5);
+	 border-radius: 20px;
+     backdrop-filter: blur(5px)!important;
+}
+.overview .genres {
+     display:none;
+}
+#app > div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(3) > h2 {
+	 display: none;
+}
+
+/* FAVORITE PARTS */
+.overview .favourites > .favourites-wrap {
+	 background: transparent;
+}
+.favourites .favourite {
+	 border-radius: 4px;
+     border: 2px solid #a11515;
+}
+.favourites .favourite:hover {
+     transition: transform 0.5s;
+     transform: scale(1.2);
+     z-index: 20;
+}
+.favourites > .favourites-wrap {
+    overflow: visible;
+}
+
+/* ACTIVITIES FRAME */
+.activity-feed .wrap {
+     border: 3px solid maroon;
+	 transition: transform 0.7s ease-in-out;
+     background: rgb(0,0,0,0.5);
+	 border-radius: 8px;
+     backdrop-filter: blur(3px)!important;
+	 color: #fff;
+}
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5 {
+     font-weight: 400;
+     line-height: 1.2;
+     margin-bottom: .5rem;
+     margin-top: 0;
+     color: orange;
+}
+.activity-feed-wrap > .section-header::before {
+     visibility: visible;
+	 color: #417dcc;
+     content: "All the talk on SKY's";
+}
+.home .activity-feed-wrap .section-header .el-dropdown-menu__item,
+.user .activity-feed-wrap .section-header .el-dropdown-menu__item {
+     display: inline;
+     color: white;
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-left: -2px !important;
+     padding: 0px 15px;
+	 box-shadow:
+			 rgba(0, 0, 0, 0.07) 0px 1px 2px,
+             rgba(0, 0, 0, 0.07) 0px 2px 4px,
+             rgba(0, 0, 0, 0.07) 0px 4px 8px,
+             rgba(0, 0, 0, 0.07) 0px 8px 16px;
+}
+.list.small .details {
+     color: yellow;
+}
+.activity-entry.activity-text > .wrap {
+     border: 2px solid red;
+     background: rgb(0,0,0,0.5);
+	 border-radius: 10px;
+     backdrop-filter: blur(5px)!important;
+}
+
+.activity-message .wrap > .text .activity-markdown {
+     color: white;
+     font-size: 1.4rem;
+     line-height: 1.4;
+     overflow-wrap: break-word;
+     word-break: break-word;
+}
+.activity-feed .activity-replies .reply {
+	 transition: transform 0.7s ease-in-out;
+     border-radius: 10px;
+     font-size: 1.3rem;
+     margin-bottom: 15px;
+     padding: 14px;
+     padding-bottom: 4px;
+     position: relative;
+     background: rgb(0,0,0,0.5);
+     border: 2px solid red;
+}
+.activity-entry .time:hover {
+	 background: none !important;
+}
+.activity-feed .activity-replies .reply .markdown {
+     color: #fff;
+     line-height: 1.4;
+     max-height: 560px;
+     overflow: hidden;
+}
+.header > .name {
+     color: orange;
+     display: inline-block;
+     font-size: 1.4rem;
+     font-weight: bold;
+}
+ .markdown-editor {
+	 transition: transform .7s ease-in-out;
+     border-radius: 10px;
+     color: rgb(var(--color-text));
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 12px;
+     padding: 12px 20px;
+     background: rgb(0,0,0,0.5);
+     border: 1px solid red;
+}
+.input .el-textarea__inner {
+	 transition: transform 0.7s ease-in-out;
+     font-size: 1.3rem;
+	 color: yellow;
+     padding: 6px 15px 0px;
+     border: 1px solid red;
+     background: black;
+     resize: none;
+}
+.activity-edit .text .activity-markdown {
+	 color: yellow;
+}
+.activity-edit .button {
+    transition: 0.7s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-timing-function: ease-in-out;}
+
+.scroller .load-more {
+     box-shadow: 0 2px 20px 0 rgb(6 13 34 / 5%);
+	 color: yellow;
+     background: rgb(0,0,0,0.5);
+     border: 2px solid red;
+     backdrop-filter: blur(10px)!important;
+     border-radius: 10px;
+     font-family: 'Gugi';
+     font-size: 1.4rem;
+     font-weight: 600;
+     margin-top: 20px;
+     padding: 14px;
+     text-align: center;
+     transition: .2s;
+}
+
+.activity-edit .button.cancel[data-v-c574a71c] {
+    background: rgb(var(--color-white));
+    color: rgb(var(--color-text-lighter));
+}
+/*SPOILER*/
+.markdown .markdown-spoiler::before {
+     text-transform: uppercase;
+     color: #ffffff;
+     font-weight: 500;
+     background: #ff0000;
+     border-radius: 20px;
+     content: "Face the Ride 🛹";
+     font-size: 1.3rem;
+     padding: 4px 7px;
+}
+.wrap > .text > .header > .avatar, .reply > .header > .avatar {
+    border-radius: 20px;
+    border: 1px solid maroon;
+    transition: transform .2s;
+    transform: scale(1.2);}
+
+.wrap > .text > .header > .avatar:hover, .reply > .header > .avatar:hover{
+    transform: scale(1.65);
+}
+
+/* NICKNAMES */
+/* USER NICKNAME */
+.text > .header > .name::after, .reply > .header > .name::after {
+     content: 'Dope as soap';
+     position: relative;
+     top: -1px;
+     left: 4px;
+     padding: 5px 8px;
+     border-radius: 10px;
+     font-size: 1.2rem;
+     color: #fff;
+	 transition: .5s;
+	 animation-duration: 10s;
+	 animation-iteration-count: infinite;
+	 animation-name: rainbow;
+	 animation-timing-function: ease-in-out;
+}
+a[href="/user/Cyriese/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'MyGirl'; }
+
+a[href="/user/ChriSenpai/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after{ content: 'CSS Panda God'; }
+
+a[href="/user/Axis/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'BestBoii'; }
+
+a[href="/user/nutellaa/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'nutella4dayz'; }
+
+a[href="/user/SkylarSays/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after{ content: 'GoSk8'; }
+
+a[href="/user/Tulsidas/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'MySidas'; }
+
+a[href="/user/NEMESIS007/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after{ content: 'NEME'; }
+
+a[href="/user/sakibb/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'sacutie'; }
+
+a[href="/user/uiriamu/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'sillywillie'; }
+
+a[href="/user/Abudi/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'BigB00bieBudi'; }
+
+a[href="/user/Sally/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'StankyLegSaloozi'; }
+
+a[href="/user/Hyperixn/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'GiveNoFux'; }
+
+/* HOVER */
+.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(1):hover,
+.content.container > div > div:nth-child(2) > div.stats-wrap > div:nth-child(2):hover,
+.input .el-textarea__inner:hover,
+.section > .about .content-wrap:hover,
+.content.container > div > div:nth-child(1) > div:nth-child(2) > div:hover,
+.activity-feed .wrap:hover,
+.activity-replies > .reply:hover,
+.markdown-editor:hover,
+.header-wrap .nav-wrap:hover {
+     transform: scale(1.05);
+     overflow: visible;
+}
+
+/* FOOTER */
+.wrap > .footer {
+    border-top: 2px solid red;
+    background-color: rgb(0,0,0,0.75);
+    backdrop-filter: blur(10px)!important;
+}
