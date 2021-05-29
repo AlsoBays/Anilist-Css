@@ -623,6 +623,42 @@ body {
   }
   
   /*==================================================
+                    Changes the Spoiler
+  ==================================================*/
+.markdown .markdown-spoiler::before {
+     color: #ffffff;
+     font-weight: 500;
+     background: #808080;
+     border-radius: 20px;
+     border: 1px solid  #000;
+     content: "Release the Showers ☂";
+     font-size: 1.3rem;
+     padding: 4px 7px;
+}
+
+  /*==================================================
+     Circle Avatars in Activities (also adds hover)
+  ==================================================*/
+.wrap > .text > .header > .avatar, .reply > .header > .avatar {
+    border-radius: 20px;
+    border: 1px solid  #000;
+    transition: transform 0.69s;
+    transform: scale(1.2);}
+
+.wrap > .text > .header > .avatar:hover, .reply > .header > .avatar:hover{
+    transform: scale(1.65);
+}
+ 
+ /*==================================================
+     Changes Peoples Usernames Font in activities
+==================================================*/
+.name[data-v-1bf2cf4e] {
+    font-family: "Satisfy";
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+  /*==================================================
                   Badge next to name
 ==================================================*/
   .name[data-v-4f7beb35]::after {
@@ -665,15 +701,6 @@ body {
      animation-iteration-count: infinite;
      animation-name: rainbow;
      animation-timing-function: ease-in-out;
-}
-
-/*==================================================
-     Changes Peoples Usernames Font in activities
-==================================================*/
-.name[data-v-1bf2cf4e] {
-    font-family: "Satisfy";
-    font-weight: bold;
-    font-size: 1.6rem;
 }
 
 /*==================================================
