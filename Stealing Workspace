@@ -1912,3 +1912,1024 @@ a[href="/user/Hyperixn/"]:not(.avatar):not(.user):not(.link):not(.primary-link):
     background-color: rgb(0,0,0,0.75);
     backdrop-filter: blur(10px)!important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------in which i die by the hands of based lycan god. sayonara.-----------*/
+
+/*#nav > div.wrap > div.links > a[href="/user/ToothlessHawkins/"]::after {
+    content: "yo banned lmao";
+    font-size: 45vh;
+    color: rgb(var(--color-text));
+    height: 100vh;
+    width: 100vw;
+    background: rgb(var(--color-background));
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    z-index: 420420420;
+}*/
+
+/*------IMPORTANT MESSAGE FROM ARAKI-----*/
+
+a[href="speechbubble"] > b {
+    content: url("https://i.imgur.com/xCWysbR.png");
+    position: absolute;
+    top: 5vh;
+    left: 22vw;
+    pointer-events: none;
+}
+
+/*------THREEEEEEE DIMENSIONNNNNNNNNNNNSSSSS-----*/
+
+del {
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 
+		1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/*------go disable yourself------*/
+
+a[href="disable"] > div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 100px;
+    z-index: 10000;
+    animation: rainbow-bg 10s linear;
+    animation-iteration-count: infinite;
+}
+
+a[href="disable"] > div:after {
+    font-family: "Comic Sans MS";
+    color: black;
+    content: "disable css";
+}
+
+a[href="disable"] > div:hover {
+    background-color: black;
+    width: 100000px;
+    height: 100000px;
+    top: 0px;
+    left: 0px;
+    content: "buasgd8a";
+    z-index: 9999999999999999;
+}
+
+/*------fun opera finding game for kids free online 2020 free download--------*/
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    * {
+    	filter: brightness(60%) blur(0.5px);
+    }
+
+    div:hover {
+	filter: brightness(100%);
+    }
+}
+
+/*------youkoso, orangu-tan-----*/
+
+@keyframes moveXo { from { left: 80%; } to { left: 0%; } }
+@keyframes moveYo { from { top: 0%; } to { top: 100%; } }
+
+a[href="BOUNCIE"] > b {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    content: url("https://i.pinimg.com/originals/2a/41/a1/2a41a1f4cde1b191d70a5cc87d362b4a.gif");
+    pointer-events: none;
+    max-width: 20%;
+    z-index: 0;
+    
+    animation: moveXo 3.521624s linear 0s infinite alternate, moveYo 31.3s linear 0s infinite alternate;
+}
+
+/*------sweeshee's AL bounciebouncie---------------*/
+
+@keyframes moveX { from { margin-left: 0; } to { margin-left: 100%; } }
+@keyframes moveY { from { margin-top: 0; } to { margin-top: 800%; } }
+.logo[data-v-4fbac4e1] {
+    animation: moveX 3.05s linear 0s infinite alternate, 
+    moveY 27.2s linear 0s infinite alternate;
+}
+
+/*-----THE MADOKA GENRE--------*/
+
+div[data-v-aedb6876].name {
+    visibility: hidden;
+    position: relative;
+}
+
+div[data-v-aedb6876].name:after {
+    visibility: visible;
+    background-color: red;
+    content: "madoka";
+    border-radius: 4px;
+	text-align: center;
+    margin-bottom: 8px;
+	padding: 6px 15px;
+    
+    animation: rainbow-bg 6s infinite;
+}
+
+/*-----swishis heart embiggener and barrel roller------------*/
+
+.button[data-v-b23584ce]:hover {
+    animation: thumpthump 1s infinite;
+}
+
+@keyframes thumpthump {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(20); }
+}
+
+/*body { animation: starfoxReference 2s 1; }
+
+@keyframes starfoxReference {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}*/
+
+/*-----ahem tink tink i have an announcement. ahem. FUCK ALL FIREFOX USERS----*/
+
+@supports (-moz-appearance:none) {
+    * {
+        visibility: hidden;
+    }
+    *::before {
+        content: "lmao fuck firefox";
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    * {
+        display: none;
+    }
+}
+
+/*----swishi matrix mode---*/
+
+* { border: rgb(255, 26, 26) 1px solid !important; }
+
+/*---swishi gloobool 2---*/
+
+.section-header[data-v-09492909] { visibility: hidden; }
+.section-header[data-v-09492909]::before {
+    visibility: visible;
+    content: 'global 2';
+}
+
+/*-----delycan megoocie----*/
+
+/*@font-face {
+    font-family: 'MedukaRunes';
+    src: url('https://files.weebsquad.moe/pgcmeFYe.woff2') format('woff2'),
+    url('https://files.weebsquad.moe/TIkNZbsq.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: MedukaRunes; !important
+    text-transform: uppercase !important;
+}*/
+
+/*----------swishi's light mode user fucker 5000*/
+
+.site-theme-dark {
+    visibility: visible;
+    transform: translate(0, -29px);
+}
+
+:root { visibility: hidden; }
+:root::before {
+    content: 'Turn off light mode you filthy degenerate.';
+    font-family: 'Comic Sans MS';
+    font-size: 2rem;
+    visibility: visible;
+}
+
+/*-----lourkeise----*/
+
+* {
+    text-transform: lowercase !important;
+}
+
+/*---------------------IN WHICH LYCAN GOD BECOMES MOD GOD-----------------*/
+
+a[href="/user/DatLycan/"]:not(.avatar):not(.user):not(.link):not(.primary-link){
+    visibility: hidden;
+    position: relative;
+}
+
+a[href="/user/DatLycan/"]:not(.avatar):not(.user):not(.link):not(.primary-link):after {
+    visibility: visible;
+    content: "ModChan";
+       position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a[href="/user/DatLycan/"]:not(.name):not(.user):not(.link):not(.primary-link){
+    background-image: url(https://s4.anilist.co/file/anilistcdn/user/avatar/large/b4-KUYDpSQ69Z5l.png) !important;
+}
+
+a[href="/user/DatLycan/"] ~ .donator-badge {
+    visibility: hidden;
+    position: relative;
+}
+
+a[href="/user/DatLycan/"] ~ .donator-badge::after {
+    visibility: visible;
+    content: "Mod";
+    background: rgb(var(--color-background));
+    border-radius: 3px;
+    color: rgb(var(--color-text));
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: .03em;
+    margin-left: 13px;
+    overflow: hidden;
+    padding: 3px 6px;
+    position: relative;
+    top: 2px;
+    right: 25px;
+}
+
+/*---------------------LYCAN GOD'S WHO NOTICE----------*/
+
+a[href="HealthConcern"] > b, a[href="HealthConcern"] > b > b {
+animation: HealthConcernMain 100s infinite linear;
+pointer-events: none;
+opacity: 0;
+}
+
+a[href="HealthConcern"] > b {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 90vh;
+width: 90vw;
+background: rgb(var(--color-foreground));
+border-radius: 4px;
+z-index: 9999999;
+}
+
+a[href="HealthConcern"] > b > b {
+z-index: 99999999;
+display: block;
+}
+
+a[href="HealthConcern"] > b > b:nth-child(1){
+position: relative;
+height: 15vh;
+width: 100%;
+content: url(https://files.weebsquad.moe/pDVEYova.png);
+}
+
+a[href="HealthConcern"] > b > b:nth-child(2)::after {
+font-size: 4rem;
+line-height: 1.4;
+content: "!!! WARNING !!!";
+animation: HealthConcernWarning 0.7s infinite linear;
+}
+
+a[href="HealthConcern"] > b > b:nth-child(3)::after {
+font-size: 3rem;
+line-height: 1.4;
+content: "You've been viewing this profile for an extended period of time!";
+}
+
+a[href="HealthConcern"] > b > b:nth-child(4)::after {
+font-size: 3rem;
+line-height: 1.4;
+content: "We advise you to stare at the following picture for the given amount of time in order to relax you're eyes!";
+}
+
+a[href="HealthConcern"] > b > b:nth-child(5)::after {
+font-size: 1rem;
+line-height: 1.4;
+color: transparent;
+content: "I hate CSS tbh";
+}
+
+a[href="HealthConcern"] > b > b:nth-child(6) {
+height: 40vh;
+width: 90%;
+content: url(https://files.weebsquad.moe/RBOWawoY.jpg);
+}
+
+a[href="HealthConcern"] > b > b:nth-child(7)::after {
+font-size: 3rem;
+line-height: 2;
+content: "Time remaining:";
+}
+
+a[href="HealthConcern"] > b > b:nth-child(8)::after {
+font-size: 10rem;
+animation: HealthConcernTimer 100s infinite linear;
+content: "0";
+}
+
+@-webkit-keyframes HealthConcernMain {
+89% {
+opacity: 0;
+}
+90% {
+opacity: 1;
+}
+99% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+@-webkit-keyframes HealthConcernWarning {
+0% {
+color: red;
+}
+50% {
+color: red;
+}
+51% {
+color: rgb(var(--color-text-lighter));
+}
+100% {
+color: rgb(var(--color-text-lighter));
+}
+}
+
+
+@-webkit-keyframes HealthConcernTimer {
+
+90% {
+content: "10";
+}
+91% {
+content: "9";
+}
+92% {
+content: "8";
+}
+93% {
+content: "7";
+}
+94% {
+content: "6";
+}
+95% {
+content: "5";
+}
+96% {
+content: "4";
+}
+97% {
+content: "3";
+}
+98% {
+content: "2";
+}
+99% {
+content: "1";
+}
+}
+
+/*---------------------HOME BUTTON---------------*/
+
+a[href="/home"].link:hover {
+    content: "";
+}
+
+a[href="/home"].link:hover::after {
+    content: "-NO WAIT PLEAWSE DONT LEAVE ME NOOOOOOOOOOOOOOOO";
+}
+
+/*---------------------GAIGES'S COLOR BOOB----*/
+
+.reply {
+background-color: rgba(var(--color-foreground), 0.75);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+
+.wrap[data-v-5e514b1e] {
+border-radius: 0px 15px;
+background-color: rgba(var(--color-foreground), 0.8);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.el-textarea__inner {
+background-color: rgba(var(--color-foreground), 0.75);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner {
+background-color: rgba(var(--color-foreground), 0.75);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.markdown-editor {
+background-color: rgba(var(--color-foreground), 0.75);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.wrap[data-v-568e7548] {
+background-color: rgba(var(--color-foreground), 0.5);
+border-radius: 0px 20px 0px 20px;
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.overview[data-v-2cf72664] .content-wrap {
+background-color: rgba(var(--color-foreground), 0.3);
+border-radius: 2px;
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+.reply[data-v-0bf5aadf] {
+background-color: rgba(var(--color-foreground), 0.8);
+animation: rainbow-bg 10s linear;
+animation-iteration-count: infinite;
+}
+@keyframes rainbow-bg{
+100%,0%{
+background-color: rgb(255,0,0);
+}
+8%{
+background-color: rgb(255,127,0);
+}
+16%{
+background-color: rgb(255,255,0);
+}
+25%{
+background-color: rgb(127,255,0);
+}
+33%{
+background-color: rgb(0,255,0);
+}
+41%{
+background-color: rgb(0,255,127);
+}
+50%{
+background-color: rgb(0,255,255);
+}
+58%{
+background-color: rgb(0,127,255);
+}
+66%{
+background-color: rgb(0,0,255);
+}
+75%{
+background-color: rgb(127,0,255);
+}
+83%{
+background-color: rgb(255,0,255);
+}
+91%{
+background-color: rgb(255,0,127);
+}
+}
+@keyframes rainbow{
+100%,0%{
+color: rgb(255,0,0);
+}
+8%{
+color: rgb(255,127,0);
+}
+16%{
+color: rgb(255,255,0);
+}
+25%{
+color: rgb(127,255,0);
+}
+33%{
+color: rgb(0,255,0);
+}
+41%{
+color: rgb(0,255,127);
+}
+50%{
+color: rgb(0,255,255);
+}
+58%{
+color: rgb(0,127,255);
+}
+66%{
+color: rgb(0,0,255);
+}
+75%{
+color: rgb(127,0,255);
+}
+83%{
+color: rgb(255,0,255);
+}
+91%{
+color: rgb(255,0,127);
+}
+}
+
+/*---------------------COOBIES--------------------------*/
+
+a[href="Coobie"] > div {
+    content: url(https://files.weebsquad.moe/iNDzQvi8.png) !important;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    animation: BestGirlHawkins 10s infinite linear;
+    z-index: 696969;
+    pointer-events:none;
+    opacity: 0;
+}
+
+a[href="Coobie"] > div:nth-child(1) {
+    left: 5vw;
+       animation-delay: 1s;
+}
+
+a[href="Coobie"] > div:nth-child(2) {
+    left: 15vw;
+       animation-delay: 4s;
+}
+
+a[href="Coobie"] > div:nth-child(3) {
+    left: 25vw;
+       animation-delay: 3s;
+}
+
+a[href="Coobie"] > div:nth-child(4) {
+    left: 35vw;
+       animation-delay: 7s;
+}
+
+a[href="Coobie"] > div:nth-child(5) {
+    left: 45vw;
+       animation-delay: 6s;
+}
+
+a[href="Coobie"] > div:nth-child(6) {
+    left: 55vw;
+       animation-delay: 4s;
+}
+
+a[href="Coobie"] > div:nth-child(7) {
+    left: 65vw;
+       animation-delay: 9s;
+}
+
+a[href="Coobie"] > div:nth-child(8) {
+    left: 75vw;
+       animation-delay: 2s;
+}
+
+a[href="Coobie"] > div:nth-child(9) {
+    left: 85vw;
+       animation-delay: 11s;
+}
+
+a[href="Coobie"] > div:nth-child(10) {
+    left: 95vw;
+       animation-delay: 5s;
+}
+
+@-webkit-keyframes BestGirlHawkins {
+0% {
+    opacity: 1;
+    transform: translate(0, -10vh) rotateZ(0deg);
+    }
+100% {
+    opacity: 1;
+    transform: translate(0, 110vh) rotateZ(360deg);
+    }
+}
+
+/* ----------------HOMUVERSE----------------- */
+
+a[href="Cursed"] > div:nth-child(1) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 40px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 1s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+a[href="Cursed"] > div:nth-child(2) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 60px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 2s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+a[href="Cursed"] > div:nth-child(3) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 80px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 3s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+a[href="Cursed"] > div:nth-child(4) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 100px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 4s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+a[href="Cursed"] > div:nth-child(5) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 120px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 5s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+a[href="Cursed"] > div:nth-child(6) {
+    content: url("https://i.imgur.com/CSijkWd.png");
+    max-width: 140px;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    animation: guruguru 6s linear infinite;
+    pointer-events: none;
+    z-index: 88888888;
+}
+
+@keyframes guruguru {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+.markdown[data-v-5e514b1e]:after { /* Appends to the end of posts */
+    content: '\A (C) Copyright Global 2 all rights reserved.';
+    white-space: pre-wrap; /* Makes the \A line break */
+    font-style: italic;
+}
+
+.markdown[data-v-5a191921]:after { /* Appends to the end of replys */
+    content: '\A (C) Copyright Global 2 all rights reserved.';
+    white-space: pre-wrap; /* Makes the \A line break */
+    font-style: italic;
+}
+
+.markdown[data-v-2cf72664]:after {
+    content: 'Powered by Automail and Lycan Industries';
+    font-style: italic;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/** {
+    animation: wahwah 1s both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes wahwah {
+    0% {transform: scale(0.9995);}
+    100% {transform: scale(1);}
+}*/
+
+div.banner-content > div.actions > div.nav-btn:hover > span {
+    visibility: hidden;
+}
+
+div.banner-content > div.actions > div.nav-btn:hover > span::after {
+    visibility: visible;
+    content: "bugger off cunt i don't need your wankstained mitts on me profile";
+    font-size: 40px;
+}
+
+div.banner-content > div.actions > div.nav-btn:hover {
+    transform: translate(0, 50px);
+    /*animation: fuckYou 0.1s both;*/
+    backface-visibility: hidden;
+}
+
+@keyframes fuckYou {
+    0% { transform: translate(0px, 0px);}
+    100% { transform: translate(-500px, 0px);}
+}
+
+/*
+* {
+animation: shakeyshakey2 50s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+*/
+/*.favourite[data-v-4dea9e03] {
+opacity: 1;
+height: 100px;
+animation: shakeyshakey 0.25s;
+animation-iteration-count: infinite;
+}*/
+@keyframes shakeyshakey {
+0% { transform: translate(-1px, 2px) rotate(0deg); }
+10% { transform: translate(0px, -2px) rotate(-1deg); }
+20% { transform: translate(-2px, 2px) rotate(4deg); }
+30% { transform: translate(-3px, -3px) rotate(0deg); }
+40% { transform: translate(5px, 0px) rotate(4deg); }
+50% { transform: translate(-3px, 1px) rotate(-4deg); }
+60% { transform: translate(4px, 1px) rotate(0deg); }
+70% { transform: translate(1px, 5px) rotate(-3deg); }
+80% { transform: translate(-4px, 4px) rotate(3deg); }
+90% { transform: translate(1px, 4px) rotate(-2deg); }
+100% { transform: translate(-5px, 1px) rotate(-5deg); }
+}
+@keyframes shakeyshakey2 {
+0% { transform: translate(-1px, 2px) rotate(0deg); }
+10% { transform: translate(0px, -2px) rotate(-0.1deg); }
+20% { transform: translate(-2px, 2px) rotate(0deg); }
+30% { transform: translate(-3px, -3px) rotate(0.1deg); }
+40% { transform: translate(5px, 0px) rotate(0deg); }
+50% { transform: translate(-3px, 1px) rotate(-0.1deg); }
+60% { transform: translate(4px, 1px) rotate(0deg); }
+70% { transform: translate(1px, 5px) rotate(0.1deg); }
+80% { transform: translate(-4px, 4px) rotate(0deg); }
+90% { transform: translate(1px, 4px) rotate(-0.1deg); }
+100% { transform: translate(-5px, 1px) rotate(0deg); }
+}
+
+
+/** {
+    -webkit-animation: color 30s infinite linear;
+}
+
+@-webkit-keyframes color {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}*/
+
+::-webkit-scrollbar {
+  width: 200px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgba(var(--color-blue),.8);
+border-radius: 4px;
+color: rgb(var(--color-white));
+padding: 5px 8px;
+margin-bottom: 20px;
+margin-right: 16px;
+transition: .4s;
+font-size: 1.2rem;
+transition: .5s;
+text-transform: capitalize;
+
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-name: rainbow;
+animation-timing-function: ease-in-out;
+}
+
+/*--------------------------------------*/
+
+div.activity-history.content-wrap > div:last-child {
+    background: rgb(var(--color-foreground-grey-dark));
+    pointer-events: none;
+}
+
+div.activity-history.content-wrap > div:nth-last-child(2) {
+    background: rgb(var(--color-foreground-grey-dark));
+    pointer-events: none;
+}
+
+.activity-entry[data-v-568e7548]{
+    transition: 500s;
+}
+
+.activity-entry[data-v-568e7548]:hover{
+    transform: translate(-10000px);
+}
+
+#app > div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a{
+    content: url(https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11757-Q9P2zjCPICq5.jpg);
+    transition: 50s;
+}
+
+#app > div.page-content > div > div.content.container > div > div:nth-child(1) > div:nth-child(4) > div > a:hover{
+      transform: scale(420);
+    z-index: 9999;
+}
+
+.favourites-wrap[data-v-45543a61]{
+     overflow: visible;
+}
+
+#app > div.page-content > div{
+
+    background-image: url(https://i.imgur.com/tfkdDr8.png);
+    background-size: cover;
+    background-position: center;
+    transition: 10s;
+    
+    animation-name: uwu;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes uwu{
+    0%{ background-image: url(https://i.imgur.com/tjOOdWs.gif)}
+    20%{ background-image: url(https://i.imgur.com/8nGYncZ.png)}
+    40%{ background-image: url(https://i.imgur.com/vFueYJG.jpg)}
+    60%{ background-image: url(https://i.redd.it/hrvj8gk5twd41.png)}
+    80%{ background-image: url(https://files.weebsquad.moe/exHi1Zar.jpg)}
+    100%{ background-image: url(https://i.imgur.com/tfkdDr8.png)}
+}
+/*aaa*/
+/*div.banner{
+background-image: url(https://i.fiery.me/0qDKY.webp) !important;
+}*/
+
+* {
+    cursor:url(https://i.imgur.com/HmgfFz7.png), auto;
+}
+
+.name[data-v-5445dac8]::after{
+content: "global 2\2122  mod";
+position: relative;
+left: 10px;
+top: -1px;
+
+background: rgba(var(--color-blue),.8);
+border-radius: 4px;
+color: rgb(var(--color-white));
+padding: 5px 8px;
+margin-bottom: 20px;
+margin-right: 16px;
+transition: .4s;
+font-size: 1.2rem;
+transition: .5s;
+text-transform: capitalize;
+
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-name: rainbow;
+animation-timing-function: ease-in-out;
+}
+
+.follower-badge[data-v-5445dac8]{
+position: relative;
+left: -15px;
+}
+
+/*[data-v-4dea9e03].media {
+    background-image: url(https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11981-aiVnvftA1xPC.jpg);
+}
+
+.lv-1 {
+    background: rgb(16,20,25);
+}
+
+.banner[data-v-66e5278e] {
+    background-image: url("https://i.imgur.com/gzt14Sh.gif");
+}*/
+
+/*:root {
+transform: rotate(1deg);
+position: relative;
+top: -20px;
+}*/
+
+/*.about:hover {
+    -webkit-animation: rotate 0.1s infinite linear;
+}
+
+* {
+background: url(https://s4.anilist.co/file/anilistcdn/user/banner/b175868-xSQmwrJ2y90w.jpg);
+}*/
+
+a[href="/home"].link {
+    
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translate(0px,0px);
+    }
+    to {
+        -webkit-transform: translate(1000px,1000px);
+    }
+}
+
+@-webkit-keyframes embiggen {
+    from {
+        -webkit-transform: scale(160px,160px);
+    }
+    to {
+        -webkit-transform: scale(1000px,1000px);
+    }
+}
+
+/*img[src="/img/icons/icon.svg"] {
+    content: url("https://i.imgur.com/Vljavbs.jpg");
+    width: 500px;
+    position:fixed;
+    -webkit-animation: bounce 10s infinite linear;
+}*/
+
+.activity-entry activity-manga_list {
+    -webkit-animation: rotation 10s infinite linear;
+}
