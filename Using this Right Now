@@ -238,7 +238,7 @@ a:link img {
   }
   .activity-entry > .wrap {
     transition: all 0.69s ease-in-out;
-    max-height: none /*70px*/;
+    max-height: none;
   }
   .activity-entry:hover .wrap {
     transform: scale(1.02); 
