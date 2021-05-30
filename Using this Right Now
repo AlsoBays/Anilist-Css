@@ -113,23 +113,6 @@ a:link img {
 }
 
 /*╔══════════════════════════════════════════════════╗
-                   
-                   Chrome scrollbar 
-                   
-  ╚══════════════════════════════════════════════════╝*/
-::-webkit-scrollbar {
-    width: 6px;
-    background: rgb(36,37,56,0);
-}
-::-webkit-scrollbar-corner {
-    background: rgb(36,37,56,0);
-}
-::-webkit-scrollbar-thumb {
-    background: rgb(36,37,56,0);
-    -webkit-border-radius: 1ex;
-}
-
-/*╔══════════════════════════════════════════════════╗
            
            Changes Nav section - Shorter navbar
            
@@ -164,17 +147,11 @@ a:link img {
 
 /*╔══════════════════════════════════════════════════╗
                         
-                        Scrollbar 
+                    Deletes Scrollbar 
                         
   ╚══════════════════════════════════════════════════╝*/
 *::-webkit-scrollbar {
-    width: 0.5em;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, rgba(74, 69, 69, 0.4), rgba(88, 80, 80, 0.4));
-    outline: 1px solid rgb(136, 93, 0);
-    border-radius: 10px;
+    width: 0em;
 }
 
 /*╔══════════════════════════════════════════════════╗
@@ -182,7 +159,6 @@ a:link img {
           Removes Dumb Genre Overview thingy 
           
   ╚══════════════════════════════════════════════════╝*/
-
 .desktop[data-v-aedb6876] {
     height: 0;
     visibility: hidden;
