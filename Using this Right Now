@@ -1,19 +1,16 @@
-/* Yes You could Just Use all this Code that's why it's here bro 
-I tried to make it as informative as possible. 
-Make Sure to change any image Links into what you want them to be
-Also You Could Just copy these little notes into your Css, they don't effect anything */
+/*Go Ah/
 
-/*==================================================
-                  Makes Bio Longer 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                     Makes Bio Longer
+  ╚══════════════════════════════════════════════════╝*/
 .about > .content-wrap {
   transform: scale(1) !important;
   max-height: none !important;
 }
 
-/*==================================================
-               Adds Background Image 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                  Adds Background Image 
+  ╚══════════════════════════════════════════════════╝*/
 body {
     background-image: url("https://files.catbox.moe/qcogry.gif");
     background-position: 50% 50%;
@@ -22,9 +19,9 @@ body {
     background-attachment: fixed;
 }
 
-/*==================================================
-                   Removes Banner 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                      Removes Banner 
+  ╚══════════════════════════════════════════════════╝*/
 .banner {
   visibility: hidden;
 }
@@ -33,9 +30,9 @@ body {
   justify-content: center;
 }
 
-/*==================================================
-                    Change Cursor 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                      Changes Cursor 
+  ╚══════════════════════════════════════════════════╝*/
 * {
     cursor: url(https://files.catbox.moe/a25jxf.png), auto;
 }
@@ -53,9 +50,9 @@ a:link img {
     cursor: url(https://files.catbox.moe/sr0ii2.png), auto !important;
 }
 
-/*==================================================
-         Changes AL Home Logo & Adds Hover 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+            Changes AL Home Logo & Adds Hover 
+  ╚══════════════════════════════════════════════════╝*/
 .logo img[data-v-4fbac4e1] {
     content: url(https://files.catbox.moe/uerses.png);
 }
@@ -66,9 +63,9 @@ a:link img {
     overflow: hidden;
 }
 
-/*==================================================
-       Adds a gif or image to search button 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+          Adds a gif or image to search button 
+  ╚══════════════════════════════════════════════════╝*/
 .search[data-v-4fbac4e1]:hover svg {
     background: url(https://files.catbox.moe/ah4mqn.gif);
     background-repeat: no-repeat;
@@ -77,23 +74,23 @@ a:link img {
     transform: scale(10) translate(0px, 13px) !important;
 }
 
-/*==================================================
+/*╔══════════════════════════════════════════════════╗
              Disable 'follows you' badge 
-==================================================*/
+  ╚══════════════════════════════════════════════════╝*/
 .follower-badge[data-v-5445dac8] {
     display: none;
 }
 
-/*==================================================
-          Removes 'using custom css' notice 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+             Removes 'using custom css' notice 
+  ╚══════════════════════════════════════════════════╝*/
 .about[data-v-2cf72664] .markdown h5 a {
     display: none;
 }
 
-/*==================================================
-                   Chrome scrollbar 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                     Chrome scrollbar 
+  ╚══════════════════════════════════════════════════╝*/
 ::-webkit-scrollbar {
     width: 6px;
     background: rgb(36,37,56,0);
@@ -106,9 +103,9 @@ a:link img {
     -webkit-border-radius: 1ex;
 }
 
-/*==================================================
-       Changes Nav section. - Shorter navbar
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+           Changes Nav section - Shorter navbar
+  ╚══════════════════════════════════════════════════╝*/
 .nav-wrap[data-v-5445dac8] {
     background: rgb(var(--color-foreground));
     width: 80%;
@@ -119,9 +116,9 @@ a:link img {
     padding: 0px;
 }
 
-/*==================================================
-   Re-aligns more stuff... Part of shorter navbar
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+      Re-aligns more stuff - Part of shorter navbar
+  ╚══════════════════════════════════════════════════╝*/
 .content.container {
     max-width: 80%;
     padding-left: 0px;
@@ -135,9 +132,9 @@ a:link img {
     margin-left: 1%;
 }
 
-/*==================================================
-                      Scrollbar 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                         Scrollbar 
+  ╚══════════════════════════════════════════════════╝*/
 *::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -148,18 +145,18 @@ a:link img {
     border-radius: 10px;
 }
 
-/*==================================================
-    Removes that stupid Genres Overview Widget 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+           Removes Dumb Genre Overview thingy 
+  ╚══════════════════════════════════════════════════╝*/
 
 .desktop[data-v-aedb6876] {
     height: 0;
     visibility: hidden;
 }
 
-/*==================================================
-             Adds text before 'activity' 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                Adds text before 'activity' 
+  ╚══════════════════════════════════════════════════╝*/
   .section-header[data-v-09492909]::before {
       transition: transform .7s ease-in-out;
       visibility: visible;
@@ -167,9 +164,9 @@ a:link img {
       color: #ffffff
   }
  
-/*==================================================
-       Adds text at bottom of activity boxes 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+          Adds text at bottom of activity boxes 
+  ╚══════════════════════════════════════════════════╝*/
   .activity-markdown[data-v-1bf2cf4e]:after {
       content: "Daisuki! ♡                 ";
       white-space: pre-wrap;
@@ -178,9 +175,9 @@ a:link img {
       display: flex;
   }
 
-/*==================================================
-      Transparent Container around everything
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+         Transparent Container around everything
+  ╚══════════════════════════════════════════════════╝*/
   .header-wrap > .nav-wrap {
     max-width: 80%;
     margin: 0 auto;
@@ -219,9 +216,9 @@ a:link img {
     box-shadow: var(--bays-bs);
   }
 
-/*==================================================
-Changes stuff inside container(hover and other stuff) 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+    Changes stuff inside container(hover and stuffs) 
+  ╚══════════════════════════════════════════════════╝*/
   .content > .overview {
     margin-top: 0;
   }
@@ -301,23 +298,23 @@ Changes stuff inside container(hover and other stuff)
     opacity: 1;
   }
  
- /*==================================================
-                Favorites section bugfix 
- ==================================================*/
+ /*╔══════════════════════════════════════════════════╗
+                  Favorites section bugfix 
+   ╚══════════════════════════════════════════════════╝*/
   .favourites-wrap[data-v-1496db1c]{
       overflow: visible;
   }
 
-  /*==================================================
-               Hover for different things 
-  ==================================================*/
+  /*╔══════════════════════════════════════════════════╗
+                    Hover for some stuffs 
+    ╚══════════════════════════════════════════════════╝*/
   .overview .favourites > .favourites-wrap {
     overflow: visible;
   }
 
-  /*==================================================
-                Favorites section hover 
-  ==================================================*/
+  /*╔══════════════════════════════════════════════════╗
+                    Favorites section hover 
+    ╚══════════════════════════════════════════════════╝*/
   .favourites .favourite:hover {
     transition: transform 0.69s ease-in-out;
     transform: scale(1.15);
@@ -336,9 +333,9 @@ Changes stuff inside container(hover and other stuff)
       transform: scale(1.05);
   }
  
- /*==================================================
-                 Navbar Buttons Hover 
- ==================================================*/
+ /*╔══════════════════════════════════════════════════╗
+                    Navbar Buttons Hover 
+   ╚══════════════════════════════════════════════════╝*/
 .link[data-v-4fbac4e1] {
     transition: transform 0.69s ease-in-out;
 }
@@ -347,9 +344,9 @@ Changes stuff inside container(hover and other stuff)
     color: #808080
 }
 
-/*==================================================
-                 Changes Top Navbar 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                    Changes Top Navbar 
+  ╚══════════════════════════════════════════════════╝*/
 .wrap[data-v-4fbac4e1] {
     max-width: 75%;
     position: relative;
@@ -368,9 +365,9 @@ Changes stuff inside container(hover and other stuff)
     background-color: rgba(255,255,255,0) !important;
 }
 
-/*==================================================
-                Changes Username Font 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                  Changes Username Font 
+  ╚══════════════════════════════════════════════════╝*/
 .name[data-v-4f7beb35] {
     font-size: 5rem;
     padding: 10px 15px 11px 15px;
@@ -380,9 +377,9 @@ Changes stuff inside container(hover and other stuff)
     align-items: center;
 }
 
-/*==================================================
-       More Username Font Stuffs - Use both^^
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+         More Username Font Stuffs - Use both^^
+  ╚══════════════════════════════════════════════════╝*/
 @font-face {
   font-family: 'Satisfy';
   font-style: normal;
@@ -392,9 +389,9 @@ Changes stuff inside container(hover and other stuff)
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/*==================================================
-       Adds Search Anilist Bar at Top Navbar 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+          Adds Search Anilist Bar at Top Navbar 
+  ╚══════════════════════════════════════════════════╝*/
   .nav .wrap {
       display: grid;
       grid-template-columns: 70px auto auto 70px;
@@ -423,27 +420,27 @@ Changes stuff inside container(hover and other stuff)
       margin-left: -15px;
   }
 
-/*==================================================
-            Content - Anime & Manga List 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+              Content - Anime & Manga List 
+  ╚══════════════════════════════════════════════════╝*/
 .content > .medialist {
   margin-top: 0;
 }
-/*==================================================
-                 Content - Favorites 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                    Content - Favorites 
+  ╚══════════════════════════════════════════════════╝*/
 .favourites {
   margin-top: 0 !important;
 }
-/*==================================================
-                   Content - Stats 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                     Content - Stats 
+  ╚══════════════════════════════════════════════════╝*/
 .content > .stats {
   margin-top: 0;
 }
-/*==================================================
-                  Content - Social 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                    Content - Social 
+  ╚══════════════════════════════════════════════════╝*/
 .content > .user-social {
   margin-top: 0;
 }
@@ -470,9 +467,9 @@ Changes stuff inside container(hover and other stuff)
       background: rgba(var(--color-shadow),.4);
 }
 
-/*==================================================
-                    Changes Footer
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                       Changes Footer
+  ╚══════════════════════════════════════════════════╝*/
 .wrap > .footer {
   position: relative;
   background: rgb(0,0,0,0.5);
@@ -491,9 +488,9 @@ a, a:visited {
     color: rgb(var(--color-text));
 }
 
-/*==================================================
-           Adds Hover to Stats Overview
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+              Adds Hover to Stats Overview
+  ╚══════════════════════════════════════════════════╝*/
 .list-stats[data-v-815ccddc]{
       transition: transform 0.69s;
   }
@@ -501,9 +498,9 @@ a, a:visited {
       transform: scale(1.02);
   }
 
-/*==================================================
-                     Large Stats 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                  Changes Stats Overview 
+  ╚══════════════════════════════════════════════════╝*/
 .favourite[data-v-5d0e8ada] {
     border-radius: 7px !important;
 }
@@ -579,9 +576,9 @@ a, a:visited {
     position: relative;
 }
 
-/*================================================== 
-         Changes the font for a few things 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+          Changes the font for a couple things 
+  ╚══════════════════════════════════════════════════╝*/
 body {
     font-family: cursive;
 }
@@ -609,39 +606,39 @@ body {
      border: 3px solid #000;
 }
 
-/*==================================================
-           Rounds the bio video borders 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+               Rounds the bio video borders 
+  ╚══════════════════════════════════════════════════╝*/
 .markdown video {
   border-radius: 15px;
 }
 
-/*==================================================
-          Border Around (almost) Everything
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+             Border Around (almost) Everything
+  ╚══════════════════════════════════════════════════╝*/
 .overview .wrap, .overview .content-wrap {
     border: 3px solid #000;
 
 }
 
-/*==================================================
-               Border around Favorites 
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                 Border around Favorites 
+  ╚══════════════════════════════════════════════════╝*/
 .favourite[data-v-0317d914] {
     border: 3px solid #000;
 }
 
- /*==================================================
-             Border around Activity Creator
-  ==================================================*/
+ /*╔══════════════════════════════════════════════════╗
+               Border around Activity Creator
+   ╚══════════════════════════════════════════════════╝*/
 .input {
     border: 3px solid #000;
     overflow: hidden;
 }
 
-/*==================================================
-                 About section hover 
-  ==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                    About section hover 
+  ╚══════════════════════════════════════════════════╝*/
 .about[data-v-5c30286e] {
       transition: transform 0.69s;
   }
@@ -649,9 +646,9 @@ body {
       transform: scale(1.015);
   }
   
-  /*==================================================
-                    Changes the Spoiler
-  ==================================================*/
+  /*╔══════════════════════════════════════════════════╗
+                     Changes the Spoilers
+    ╚══════════════════════════════════════════════════╝*/
 .markdown .markdown-spoiler::before {
      color: #fff;
      font-weight: 500;
@@ -662,9 +659,9 @@ body {
      padding: 4px 7px;
 }
 
-/*==================================================
-Deletes the "Submissions" & "Reviews" Link on Navbar
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+    Deletes "Submissions" & "Reviews" Link on Navbar
+  ╚══════════════════════════════════════════════════╝*/
 .link[data-v-4f7beb35]:nth-child(7) {
     display: none;
     visibility: hidden;
@@ -675,17 +672,17 @@ Deletes the "Submissions" & "Reviews" Link on Navbar
     visibility: hidden;
 }
 
-/*==================================================
-              Changes Navbar Links font
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+                Changes Navbar Links font
+  ╚══════════════════════════════════════════════════╝*/
 .link[data-v-4f7beb35] {
     font-family: cursive;
     font-size: 2rem;
 }
 
-  /*==================================================
+/*╔══════════════════════════════════════════════════╗
      Circle Avatars in Activities (also adds hover)
-  ==================================================*/
+  ╚══════════════════════════════════════════════════╝*/
 .wrap > .text > .header > .avatar, .reply > .header > .avatar {
     border-radius: 20px;
     border: 1px solid  #000;
@@ -696,18 +693,18 @@ Deletes the "Submissions" & "Reviews" Link on Navbar
     transform: scale(1.65);
 }
  
- /*==================================================
-     Changes Peoples Usernames Font in activities
-==================================================*/
+ /*╔══════════════════════════════════════════════════╗
+       Changes Peoples Usernames Font in activities
+   ╚══════════════════════════════════════════════════╝*/
 .name[data-v-1bf2cf4e] {
     font-family: "Satisfy";
     font-weight: bold;
     font-size: 1.6rem;
 }
 
-  /*==================================================
-                  Badge next to name
-==================================================*/
+  /*╔══════════════════════════════════════════════════╗
+                  Badge next to Big Username
+    ╚══════════════════════════════════════════════════╝*/
   .name[data-v-4f7beb35]::after {
     content: "Drowning in the Rain";
     position: relative;
@@ -729,9 +726,9 @@ Deletes the "Submissions" & "Reviews" Link on Navbar
     animation-timing-function: ease-in-out;
 }
 
-/*==================================================
-             Badge next to People's names
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+               Badge next to People's names
+  ╚══════════════════════════════════════════════════╝*/
 .text > .header > .name::after, .reply > .header > .name::after {
      content: 'Soaked';
      position: relative;
@@ -750,9 +747,9 @@ Deletes the "Submissions" & "Reviews" Link on Navbar
      animation-timing-function: ease-in-out;
 }
 
-/*==================================================
-       Special Badges - Only for Certain People
-==================================================*/
+/*╔══════════════════════════════════════════════════╗
+        Special Badges - Only for Certain People
+  ╚══════════════════════════════════════════════════╝*/
 a[href="/user/Bays/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Drowning'; }
 
 a[href="/user/Polaarr/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after { content: 'Drenched'; }
