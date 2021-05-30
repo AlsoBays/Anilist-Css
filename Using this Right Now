@@ -620,10 +620,6 @@ a, a:visited {
     visibility: hidden;
 }
 
-.banner-content[data-v-5445dac8] {
-    position: relative;
-}
-
 /*╔══════════════════════════════════════════════════╗
          
            Changes the font for a couple things
