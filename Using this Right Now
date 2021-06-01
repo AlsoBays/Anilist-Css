@@ -345,7 +345,7 @@ a:link img {
     z-index: 20;
   }
   .activity-history[data-v-514856af] {
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.69s ease-in-out;
   }
   .activity-history:hover {
       transform: scale(1.05);
@@ -535,7 +535,7 @@ a, a:visited {
       transition: transform 0.69s ease-in-out;
   }
   .list-stats:hover {
-      transform: scale(1.02);
+      transform: scale(1.05);
   }
 
 /*╔══════════════════════════════════════════════════╗
@@ -690,7 +690,7 @@ body {
                     
   ╚══════════════════════════════════════════════════╝*/
 .about[data-v-5c30286e] {
-      transition: transform 0.69s;
+      transition: transform 0.69s ease-in-out;
   }
   .about:hover {
       transform: scale(1.015);
