@@ -3,6 +3,8 @@
 
 Here's me trying to try my own original CSS, we'll see how this turns out.
 
+Idk If I'll work on this very often tho.
+
 */
 /*╔══════════════════════════════════════════════════╗
 
@@ -89,6 +91,7 @@ Here's me trying to try my own original CSS, we'll see how this turns out.
   max-width: 80%;
   padding: 30px;
   box-shadow:10px black;
+  margin-top:-35px !important;
 }
 /*╔══════════════════════════════════════════════════╗
     
@@ -206,7 +209,7 @@ Here's me trying to try my own original CSS, we'll see how this turns out.
               Adds Hover to Stats Overview
               
   ╚══════════════════════════════════════════════════╝*/
-.list-stats[data-v-815ccddc]{
+.list-stats {
   transition: transform 0.75s ease-in-out;
 }
 .list-stats:hover {
@@ -225,7 +228,7 @@ Here's me trying to try my own original CSS, we'll see how this turns out.
 .overview .favourites > .favourites-wrap {
   overflow: visible;
 }
-.activity-history[data-v-514856af] {
+.activity-history {
   transition: transform 0.75s ease-in-out;
 }
 .activity-history:hover {
@@ -251,7 +254,7 @@ Here's me trying to try my own original CSS, we'll see how this turns out.
                    About section hover
                     
   ╚══════════════════════════════════════════════════╝*/
-.about[data-v-5c30286e] {
+.about {
   transition: transform 0.75s ease-in-out;
 }
 .about:hover {
@@ -397,4 +400,34 @@ Here's me trying to try my own original CSS, we'll see how this turns out.
 .wrap > .text > .header > .avatar:hover, .reply > .header > .avatar:hover{
     transform: scale(1.4);
     border-color: #000;
+}
+
+
+.container{
+  margin-top:250px;
+}
+.banner-content[data-v-4f7beb35] {
+  align-items:center !important;
+  flex-direction:column;
+  padding: 30px;
+{
+
+.avatar[data-v-4f7beb35] {
+  border: 1px solid #808080;
+  border-radius: 100%;
+  transition: transform 0.75s ease-in-out;
+  padding: 30px;
+}
+.avatar[data-v-4f7beb35]:hover {
+  transform: scale(1.1);
+}
+
+.name[data-v-4f7beb35] {
+    font-size: 5rem;
+    padding: 10px 15px 11px 15px;
+    color: #fff;
+    font-family: "FontAwesome";
+    display: flex;
+    align-items: center;
+    margin-top:-50px;
 }
