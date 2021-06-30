@@ -8,6 +8,5 @@ If you need any help with anything or have any questions, you can contact me on 
 
 Obviously the layouts will get better as I get better at understanding it. 
 Always been somewhat Interested in code and shit like that, 
-but I'm still learning. I use references, st![wp5980844-pink-cloud-aesthetic-desktop-wallpapers_waifu2x_art_noise3_scale_tta_1 (1)](https://user-images.githubusercontent.com/76270539/123912352-c9f78980-d931-11eb-9e2d-d392d9cfc8bd.png)
-eal the codes, and try to make 
+but I'm still learning. I use references, steal the codes, and try to make 
 them into my own using what I know. Css is confusing as hell.
