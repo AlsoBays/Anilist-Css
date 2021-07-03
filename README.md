@@ -10,3 +10,10 @@ Obviously the layouts will get better as I get better at understanding it.
 Always been somewhat Interested in code and shit like that, 
 but I'm still learning. I use references, steal the codes, and try to make 
 them into my own using what I know. Css is confusing as hell.
+
+
+Update: I completed the entire CSS thing on w3schools.com
+But I don't remember shit
+Like my mind just goes blank
+I can't even center align some shit
+How the fuck did I get an 88% on that test
