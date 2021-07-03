@@ -13,7 +13,7 @@ them into my own using what I know. Css is confusing as hell.
 
 
 Update: I completed the entire CSS thing on w3schools.com
-But I don't remember shit
-Like my mind just goes blank
-I can't even center align some shit
-How the fuck did I get an 88% on that test
+But I don't remember shit.
+Like my mind just goes blank.
+I can't even center align some shit.
+How the fuck did I get an 88% on that test.
