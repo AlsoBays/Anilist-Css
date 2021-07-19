@@ -1,5 +1,818 @@
-/* 
+/*
+Bays's CSS Codes
 
-Time to Store that sweet Milim CSS
+Too Many people were taking the last one
+So I decided to write a new original one
+I tried not to make it similar to anyone elses 
+but I mean it's always gonna be near someones so yeah
 
+Changes with "=" borders are broad changes
+Changes with "-" borders are specific changes
+
+Ask me before you use it...
+I dont mind if people use it
+I would just like to be notified via Private or Regular Message
+
+Find my Discord and a bunch of other things here https://bays-anilist-extras.carrd.co
+
+I hope you like it :)
 */
+/*
+==================================================
+                 Importing Fonts
+==================================================
+*/
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css%22");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css%22");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22");
+/*
+/*
+==================================================
+                Importing Animations
+==================================================
+*/
+@keyframes spin {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+/*
+==================================================
+                Setting Variables
+==================================================
+*/
+:root {
+    --tr: 0, 0, 0, 0.15;
+    --bl: 15px;
+    --bd:  2.5px solid rgb(var(--cl));
+    --cl: 252, 157, 214; /* CHANGE THESE NUMBERS TO THE RGB NUMBERS YOU WANT THE BORDERS TO BE DM ME IF YOU NEED HELP*/
+    --ft: #fff; /* CHANGE THESE NUMBERS TO THE RGB NUMBERS YOU WANT THE BASE FONT COLOR TO BE DM ME IF YOU NEED HELP*/
+    --sp: spin 2s infinite linear;
+    --hv: transform 0.75s ease-in-out;
+    --sd: 0 0 7.5px black;
+}
+/*
+==================================================
+        Adding Background & Removing Banner
+==================================================
+*/
+.banner[data-v-4f7beb35] {
+    visibility: hidden;
+}
+.container[data-v-4f7beb35] {
+    visibility: visible;
+}
+body {
+    background: url("https://files.catbox.moe/bdnahn.png") no-repeat fixed;
+}
+/*
+==================================================
+               Most Top Navbar Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.wrap[data-v-4fbac4e1] {
+    background-color: rgba(var(--tr));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+    border-radius: 75px;
+    margin-top: 1.5em;
+    padding-right: 1.5em;
+    height: 3.8em;
+}
+.nav[data-v-4fbac4e1] {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+                  Adds Search Bar
+--------------------------------------------------
+*/
+.links[data-v-4fbac4e1] {
+    width: 400px;
+}
+.search[data-v-4fbac4e1] {
+    width: 400px;
+    padding: 5px 0 7.5px 10px;
+    margin: 0 100px 0 50px;
+    border: var(--bd);
+    border-radius: 75px;
+    background-color: rgba(var(--tr));
+    backdrop-filter: blur(var(--bl));
+    cursor: text;
+}
+.search[data-v-4fbac4e1]::after {
+    content: "Search AniList";
+    margin-left: 12.5px;
+    font-family: cursive;
+    font-size: 2rem;
+}
+/*
+--------------------------------------------------
+                  Deletes AL Icon
+--------------------------------------------------
+*/
+.logo[data-v-4fbac4e1] {
+    display:none;
+}
+/*
+--------------------------------------------------
+    Deletes "Manga List" and "Anime List" Links
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1]:nth-child(3) {
+    display: none;
+}
+.link[data-v-4fbac4e1]:nth-child(4) {
+    display: none;
+}
+/*
+--------------------------------------------------
+                Changes Link Fonts
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1] {
+    font-family: cursive;
+    font-size: 2rem;
+}
+/*
+--------------------------------------------------
+                Changes Link Hovers
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1]:hover {
+    text-shadow: var(--sd);
+    color: rgb(var(--cl));
+}
+/*
+--------------------------------------------------
+       Changes "Browse" Dropdown Background
+--------------------------------------------------
+*/
+.dropdown[data-v-38edf8f8] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 20px !important;
+}
+/*
+--------------------------------------------------
+        Changes Dropdown Font Color to White
+--------------------------------------------------
+*/
+.primary-link[data-v-38edf8f8] {
+    color: var(--ft);
+}
+.secondary-links[data-v-38edf8f8] {
+    color: var(--ft);
+}
+path[data-v-38edf8f8] {
+    color: var(--ft);
+}
+.footer[data-v-38edf8f8] {
+    background-color: transparent !important;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+              Adds Dropdown Font Hover
+--------------------------------------------------
+*/
+.primary-link-text[data-v-38edf8f8]:hover {
+    color: rgb(var(--cl)) !important;
+    text-shadow: var(--sd) !important;
+}
+a[data-v-38edf8f8]:hover {
+    color: rgb(var(--cl)) !important;
+    text-shadow: var(--sd) !important;
+}
+path[data-v-38edf8f8]:hover {
+    color: rgb(var(--cl)) !important;
+    text-shadow: var(--sd) !important;
+    box-shadow: var(--sd) !important;
+}
+/*
+==================================================
+               All Dropdown Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.dropdown[data-v-04b245e6] {
+    background-color: rgba(var(--tr));
+    backdrop-filter: blur(var(--bl));
+    border: var(--bd);
+    border-radius: 20px;
+    margin-top: 0.25em;
+}
+.footer[data-v-04b245e6] {
+    display: none;
+}
+/*
+--------------------------------------------------
+    Changes to Icons & Deletes Everything Else
+--------------------------------------------------
+*/
+.primary-link[data-v-04b245e6] {
+    font-size: 0;
+    float: left;
+}
+.secondary-link[data-v-04b245e6] {
+    font-size: 0;
+}
+.primary-link[data-v-04b245e6]:nth-child(1) {
+    display: none !important;
+}
+.primary-link[data-v-04b245e6]:nth-child(3) {
+    margin-left: 50px;
+}
+.icon[data-v-04b245e6] {
+    background-color: black;
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 5rem !important;
+    margin-left: -7.5px;
+}
+path[data-v-04b245e6] {
+    color: var(--ft);
+    transition: var(--hv);
+}
+path[data-v-04b245e6]:hover {
+    color: rgb(var(--cl));
+}
+/*
+==================================================
+                  All Pfp Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                   Aligning Pfp
+--------------------------------------------------
+*/
+.banner {
+    margin-top: 100px;
+}
+.container[data-v-4f7beb35] {
+    justify-content: center;
+}
+.banner-content[data-v-4f7beb35] {
+    width: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+               Turns PFP into Circle
+--------------------------------------------------
+*/
+.avatar[data-v-4f7beb35] {
+    width: 0;
+    height: 0;
+    background-image: url("https://files.catbox.moe/r2u7h0.png") !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 3px solid var(--ft);
+    border-radius: 100%;
+    padding: 100px;
+    z-index: 100;
+}
+/*
+--------------------------------------------------
+               Adds PFP Spin Hover
+--------------------------------------------------
+*/
+.banner-content[data-v-4f7beb35]:hover {
+    transform: scale(1.5);
+}
+.avatar[data-v-4f7beb35]:hover {
+    animation: var(--sp);
+}
+/*
+--------------------------------------------------
+               Changes Username Font
+--------------------------------------------------
+*/
+.name[data-v-4f7beb35] {
+    font-size: 3rem;
+    font-family: cursive;
+    width: 100px;
+    text-shadow: var(--sd);
+    filter: none !important;
+}
+/*
+--------------------------------------------------
+            Adds Badge after Username
+--------------------------------------------------
+*/
+.name[data-v-4f7beb35]::after {
+    content: "Calamity Class DRIP Lord";
+    color: var(--ft);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 12.5px;
+    margin-top: 10px;
+    padding: 7.5px;
+    width: 202.5px;
+    transition: 1s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-timing-function: ease-in-out;
+    display: block;
+}
+/*
+==================================================
+               Bottom Navbar Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+         Removes "Reviews" & "Subbmissions"
+--------------------------------------------------
+*/
+.link[data-v-4f7beb35]:nth-child(7) {
+    display: none;
+}
+.link[data-v-4f7beb35]:nth-child(8) {
+    display: none;
+}
+/*
+--------------------------------------------------
+                Removes Background
+--------------------------------------------------
+*/
+.nav-wrap[data-v-4f7beb35] {
+    visibility: hidden;
+}
+/*
+--------------------------------------------------
+              Turns them into Buttons
+--------------------------------------------------
+*/
+.link[data-v-4f7beb35] {
+    background-color: rgba(var(--tr));
+    backdrop-filter: blur(var(--bl));
+    box-shadow: -2.5px 2.5px black;
+    border: var(--bd);
+    border-radius: 10px;
+    visibility: visible !important;
+}
+/*
+--------------------------------------------------
+        Changes them to Icons & Spaces them
+--------------------------------------------------
+*/
+.link[data-v-4f7beb35]:nth-child(1), .link[data-v-4f7beb35]:nth-child(2), .link[data-v-4f7beb35]:nth-child(3), .link[data-v-4f7beb35]:nth-child(4), .link[data-v-4f7beb35]:nth-child(5), .link[data-v-4f7beb35]:nth-child(6) {
+    margin: 0 30px;
+    font-size: 0;
+}
+.link[data-v-4f7beb35]:nth-child(1)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+.link[data-v-4f7beb35]:nth-child(2)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+.link[data-v-4f7beb35]:nth-child(3)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+.link[data-v-4f7beb35]:nth-child(4)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+.link[data-v-4f7beb35]:nth-child(5)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+.link[data-v-4f7beb35]:nth-child(6)::after {
+    content: "BAYS";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+}
+/*
+==================================================
+               About Section Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+        Increases Length / Removes Scrollbar
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] > .content-wrap[data-v-5c30286e] {
+    max-height: none !important;
+}
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] > .content-wrap[data-v-5c30286e] { 
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 12.5px !important;
+    font-family: cursive;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] { 
+    transition: var(--hv);
+}
+.about[data-v-5c30286e]:hover { 
+    transform: scale(1.025);
+}
+/*
+==================================================
+               Stats Overview Changes
+==================================================
+*/
+/*
+==================================================
+
+   HOLY SHIT BRO I DON'T WANNA CRY EVEN MORE RN
+ I'LL ALIGN IT LATER [MAKE SURE TO ACTUALLY DO IT]
+
+==================================================
+*/
+
+/*
+==================================================
+      Section Header & Activity Editor Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+           Adds Text instead of "Activity
+--------------------------------------------------
+*/
+.section-header[data-v-09492909] {
+    font-size: 0;
+}
+.section-header[data-v-09492909]::before {
+    content: "PLEASE SEND ANIME THIGHS";
+    font-size: 2rem;
+    font-family: cursive;
+}
+.section-header[data-v-09492909]:hover {
+    cursor: text;
+}
+/*
+--------------------------------------------------
+             Changes Font for "Filter"
+--------------------------------------------------
+*/
+.el-dropdown[data-v-09492909] {
+    font-size: 2rem !important;
+    font-family: cursive;
+}
+/*
+--------------------------------------------------
+              Changes Filter Dropdown
+--------------------------------------------------
+*/
+.el-dropdown-menu[data-v-09492909] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 12.5px !important;
+}
+.el-dropdown-menu__item[data-v-09492909]:hover {
+    background-color: rgb(var(--cl)) !important;
+}
+/*
+--------------------------------------------------
+         Changes Markdown Editor Background
+--------------------------------------------------
+*/
+.markdown-editor[data-v-c574a71c] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 12.5px !important;
+}
+/*
+--------------------------------------------------
+         Changes Activity Editor Background
+--------------------------------------------------
+*/
+.input[data-v-c574a71c], .el-textarea[data-v-c574a71c] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 25px;
+    transition: var(--hv) !important;
+}
+.el-textarea__inner {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+           Adds Hover to Activty Editor
+--------------------------------------------------
+*/
+.input[data-v-c574a71c]:hover {
+    transform: scale(1.05);
+}
+/*
+==================================================
+               Activity Feed Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.wrap[data-v-1bf2cf4e] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 25px !important;
+    transition: var(--hv) !important;
+}
+.reply[data-v-732ef224] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 25px !important;
+    transition: var(--hv) !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.wrap[data-v-1bf2cf4e]:hover {
+    transform: scale(1.05)
+}
+.reply[data-v-732ef224]:hover {
+    transform: scale(1.1)
+}
+/*
+--------------------------------------------------
+    Adds Circle Around PFPs & Makes them Bigger
+--------------------------------------------------
+*/
+.avatar[data-v-1bf2cf4e], .avatar[data-v-732ef224] {
+    border: 1.5px solid rgb(var(--cl));
+    border-radius: 100% !important;
+    opacity: 0.75;
+    transform: scale(1.4) !important;
+}
+/*
+--------------------------------------------------
+              Adds Spin Hover Animation
+--------------------------------------------------
+*/
+/*
+--------------------------------------------------
+   Adds Circle around users who liked the post
+--------------------------------------------------
+*/
+.user[data-v-0bd85c1d] {
+    border: 1.5px solid rgb(var(--cl));
+    border-radius: 100% !important;
+    opacity: 0.8;
+}
+.users[data-v-0bd85c1d] {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+Adds Spin Hover to PFP of users who liked the post
+--------------------------------------------------
+*/
+/*
+--------------------------------------------------
+              Changes Username Fonts
+--------------------------------------------------
+*/
+.name[data-v-1bf2cf4e] {
+    font-size: 2rem;
+    font-family: cursive;
+}
+.name[data-v-732ef224]{
+    font-size: 1.75rem;
+    font-family: cursive;
+}
+/*
+--------------------------------------------------
+              Adds Username Hover
+--------------------------------------------------
+*/
+.name[data-v-1bf2cf4e]:hover, .name[data-v-732ef224]:hover {
+    text-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+              Changes Main Text Font
+--------------------------------------------------
+*/
+.activity-markdown[data-v-1bf2cf4e], .status[data-v-1bf2cf4e], .reply-markdown[data-v-732ef224] {
+    font-size: 1.25rem;
+    font-family: cursive;
+    color: white;
+}
+/*
+--------------------------------------------------
+                 Time Hover fix
+--------------------------------------------------
+*/
+.time[data-v-1bf2cf4e] {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+   Changes "Load More" Button Background & Font
+--------------------------------------------------
+*/
+.load-more[data-v-6f203cf2] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 50px !important;
+    font-family: cursive;
+    font-size: 2rem;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+              Adds "Load More" Hover
+--------------------------------------------------
+*/
+.load-more[data-v-6f203cf2]:hover {
+    text-shadow: var(--sd);
+    box-shadow: var(--sd);
+    transform: scale(1.075);
+    transition: var(--hv);
+}
+/*
+==================================================
+              Activity History Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+         Changes font for "Activity History"
+--------------------------------------------------
+*/
+.section-header[data-v-b79eb0f0] {
+    font-size: 2rem;
+    font-family: cursive;
+}
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.activity-history[data-v-b79eb0f0] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 20px !important;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.activity-history[data-v-b79eb0f0]:hover {
+    transform: scale(1.075);
+}
+/*
+--------------------------------------------------
+  Adds Hover for Each Square & makes them Circles
+--------------------------------------------------
+*/
+.history-day[data-v-b79eb0f0], .lv-1[data-v-b79eb0f0], .lv-0[data-v-b79eb0f0] {
+    border-radius: 100%;
+    transition: var(--hv);
+}
+.history-day[data-v-b79eb0f0]:hover, .lv-1[data-v-b79eb0f0]:hover, .lv-0[data-v-b79eb0f0]:hover {
+    transform: scale(1.1);
+}
+/*
+==================================================
+      Removes Entire "Genre Overview" Widget
+==================================================
+*/
+.desktop[data-v-aedb6876] {
+    display: none;
+}
+/*
+==================================================
+             Favorites Section Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+Changes font for Headers ("Anime" "Characters" etc)
+--------------------------------------------------
+*/
+.section-header[data-v-ddf96a3c] {
+    font-size: 2rem;
+    font-family: cursive;
+}
+/*
+--------------------------------------------------
+          Adds Border & Lowers Brightness
+--------------------------------------------------
+*/
+.favourite[data-v-0317d914] {
+    opacity: 0.75;
+    border: var(--bd);
+    border-radius: 20px !important;
+    transition: var(--hv);
+    overflow: visible;
+    z-index: 999;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.favourite[data-v-0317d914]:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    overflow: visible;
+    z-index: 999;
+}
+/*
+==================================================
+                  Footer Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.footer[data-v-a5dce466] {
+    background-color: rgba(var(--tr)) !important;
+    backdrop-filter: blur(var(--bl)) !important;
+    border: var(--bd);
+    border-radius: 20px 20px 0 0 !important;
+    max-width: 80%;
+    margin: auto;
+}
+/*
+--------------------------------------------------
+         Changes Links and "Site Theme" Font
+--------------------------------------------------
+*/
+.links[data-v-a5dce466] {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: var(--ft);
+}
+a[data-v-a5dce466]:hover {
+    color: rgb(var(--cl));
+    text-shadow: var(--sd);
+}
+h2[data-v-a5dce466] {
+    font-family: cursive;
+    font-size: 1.75rem;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+                Adds "USE DARK MODE"
+--------------------------------------------------
+*/
+.theme-selector[data-v-a5dce466]::after {
+    content: "USE DARK MODE";
+    font-family: cursive;
+    font-size: 1.75rem;
+    color: rgb(var(--cl));
+    text-shadow: 0 0 5px black;
+}
+.theme-selector[data-v-a5dce466]:hover {
+    cursor: text;
+}
