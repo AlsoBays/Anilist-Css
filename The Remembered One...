@@ -392,7 +392,7 @@ a:link img {
                  Changes Username Font
                  
   ╚══════════════════════════════════════════════════╝*/
-.name[data-v-4f7beb35] {
+.name[data-v-2431f6d8] {
     font-size: 5rem;
     padding: 10px 15px 11px 15px;
     color: #fff;
@@ -716,12 +716,12 @@ body {
     Deletes "Submissions" & "Reviews" Link on Navbar
     
   ╚══════════════════════════════════════════════════╝*/
-.link[data-v-4f7beb35]:nth-child(7) {
+.link[data-v-2431f6d8]:nth-child(7) {
     display: none;
     visibility: hidden;
 }
 
-.link[data-v-4f7beb35]:nth-child(8) {
+.link[data-v-2431f6d8]:nth-child(8) {
     display: none;
     visibility: hidden;
 }
@@ -731,7 +731,7 @@ body {
                 Changes Navbar Links font
                 
   ╚══════════════════════════════════════════════════╝*/
-.link[data-v-4f7beb35] {
+.link[data-v-2431f6d8] {
     font-family: cursive;
     font-size: 2rem;
 }
@@ -867,7 +867,7 @@ body {
                   Badge next to Big Username
                   
     ╚══════════════════════════════════════════════════╝*/
-  .name[data-v-4f7beb35]::after {
+  .name[data-v-2431f6d8]::after {
     content: "Drowning in the Rain";
     position: relative;
     left: 10px;
