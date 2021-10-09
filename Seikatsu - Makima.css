@@ -1,0 +1,963 @@
+/*
+Seikatsu - Makima CSS
+Made by Bays
+
+I wanna say not to use this one
+Just for the fact that It's our Seikatsu one
+But if you really like it that much
+Then message me for permission
+
+Changes with "=" borders are broad changes
+Changes with "-" borders are specific changes
+
+Find my Discord and a bunch of others things here https://bays-anilist-extras.carrd.co
+
+I hope you like it :)
+*/
+/*
+==================================================
+                 Importing Fonts
+==================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/*
+==================================================
+                Importing Animations
+==================================================
+*/
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes pop {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+/*
+==================================================
+                Setting Variables
+==================================================
+*/
+:root {
+    --bg1: #0f0f0f;
+    --bg2: #191919;
+    --cl: #e13333; /* CHANGE THESE NUMBERS TO THE HEX YOU WANT THE BORDERS TO BE DM ME IF YOU NEED HELP*/
+    --ft: #fff; /* CHANGE THESE TO THE HEX YOU WANT THE BASE FONT COLOR TO BE DM ME IF YOU NEED HELP*/
+    --sp: spin 2s infinite linear;
+    --hv: all 0.5s ease-in-out, transform 0.75s ease-in-out, animation 0.75s ease-in-out;
+    --sd: 0 0 5px black;
+}
+/*
+==================================================
+                Changes the Cursor
+==================================================
+*/
+/*
+==================================================
+                Changes the Spoiler
+==================================================
+*/
+.markdown .markdown-spoiler::before {
+    content: "Reveal the Secret";
+    font-family: Nunito;
+    font-size: 1rem;
+    color: var(--ft) !important;
+    border-radius: 10px;
+    background-color: var(--bg1);
+}
+/*
+==================================================
+              Changes Background Color
+==================================================
+*/
+body {
+    background-color: var(--bg1);
+}
+/*
+==================================================
+                 Top Navbar Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.wrap[data-v-4fbac4e1] {
+    background-color: var(--bg2);
+    border-radius: 0 0 20px 20px;
+    padding-right: 1.5em;
+    max-height: 80%;
+    max-width: 80%;
+    align-content: center;
+}
+.links[data-v-4fbac4e1], .search[data-v-4fbac4e1], .user[data-v-4fbac4e1] {
+    margin: auto;
+}
+.nav[data-v-4fbac4e1] {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+                  Adds Search Bar
+--------------------------------------------------
+*/
+.links[data-v-4fbac4e1] {
+    width: 400px;
+    padding-bottom: 2em;
+}
+.search[data-v-4fbac4e1] {
+    width: 400px;
+    padding: 5px 0 7.5px 10px;
+    border-radius: 75px;
+    background-color: var(--bg1);
+    cursor: text;
+    margin: 0 -1em 0 -1em
+}
+.search[data-v-4fbac4e1]::after {
+    content: "Search AniList";
+    margin-left: 12.5px;
+    margin-top: 3px;
+    font-family: Nunito;
+    font-size: 2rem;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+         Changes the Actual Search Interface
+--------------------------------------------------
+*/
+.quick-search[data-v-bcbe965e] {
+    backdrop-filter: blur(6px);
+}
+.input[data-v-bcbe965e] {
+    border-radius: 100px;
+    background-color: var(--bg1);
+}
+.result-col[data-v-bcbe965e] {
+    box-shadow: 6px 10px 2px rgba(0,0,0,0.5);
+    background-color: var(--bg2);
+    border-radius: 15px;
+    color: var(--ft) !important;
+}
+.title[data-v-bcbe965e] {
+    font-size: 3rem !important;
+    font-family: "Rock Salt";
+    color: var(--ft) !important;
+}
+.result[data-v-bcbe965e] {
+    font-size: 2rem;
+    font-family: Nunito;
+    color: var(--ft) !important;
+}
+.result[data-v-bcbe965e] > a {
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+                  Deletes AL Icon
+--------------------------------------------------
+*/
+.logo[data-v-4fbac4e1] {
+    display: none;
+}
+/*
+--------------------------------------------------
+    Deletes "Manga List" and "Anime List" Links
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1]:nth-child(3) {
+    display: none;
+}
+.link[data-v-4fbac4e1]:nth-child(4) {
+    display: none;
+}
+/*
+--------------------------------------------------
+                Changes Link Fonts
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1] {
+    font-family: "Rock Salt";
+    font-size: 2rem;
+    color: var(--ft) !important;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                Changes Link Hovers
+--------------------------------------------------
+*/
+.link[data-v-4fbac4e1]:hover {
+    text-shadow: var(--sd) !important;
+    color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+       Changes "Browse" Dropdown Background
+--------------------------------------------------
+*/
+.dropdown[data-v-38edf8f8] {
+    background-color: var(--bg1) !important;
+    border-radius: 20px !important;
+}
+/*
+--------------------------------------------------
+   Changes "Browse" Dropdown Font Color to White
+--------------------------------------------------
+*/
+.primary-link-text[data-v-38edf8f8] {
+    color: var(--ft) !important;
+    font-family: "Rock Salt";
+}
+.secondary-links[data-v-38edf8f8]  > a {
+    color: var(--ft) !important;
+    font-family: Nunito;
+}
+path[data-v-38edf8f8] {
+    color: var(--ft) !important;
+}
+.footer[data-v-38edf8f8] > a {
+    background-color: transparent !important;
+    color: var(--ft) !important;
+    font-family: Nunito;
+}
+.footer[data-v-38edf8f8] {
+    background-color: transparent !important;
+    font-family: Nunito;
+}
+/*
+--------------------------------------------------
+         Adds "Browse" Dropdown Font Hover
+--------------------------------------------------
+*/
+.primary-link-text[data-v-38edf8f8]:hover {
+    color: var(--cl) !important;
+    text-shadow: var(--sd) !important;
+}
+a[data-v-38edf8f8]:hover {
+    color: var(--cl) !important;
+    text-shadow: var(--sd) !important;
+}
+path[data-v-38edf8f8]:hover {
+    color: var(--cl) !important;
+    filter: drop-shadow(var(--sd)) !important;
+}
+/*
+==================================================
+               All Dropdown Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.dropdown[data-v-04b245e6] {
+    background-color: var(--bg1) !important;
+    border-radius: 20px;
+    margin-top: -6.5px;
+}
+.footer[data-v-04b245e6] {
+    background-color: transparent;
+}
+/*
+--------------------------------------------------
+                   Changes Font
+--------------------------------------------------
+*/
+.primary-link[data-v-04b245e6] {
+    font-family: "Rock Salt";
+    color: var(--ft) !important;
+    transition: var(--hv);
+}
+.secondary-link[data-v-04b245e6] {
+    font-family: Nunito;
+    color: var(--ft) !important;
+    transition: var(--hv);
+ }
+.primary-link[data-v-04b245e6]:hover,  .secondary-link[data-v-04b245e6]:hover {
+    color: var(--cl) !important;
+}
+/*
+==================================================
+                Banner Area Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+              Changes Banner Position
+--------------------------------------------------
+*/
+.banner[data-v-1cc2919e] {
+    max-width: 77.5%;
+    margin: auto;
+    margin-top: 5em;
+    border-radius: 10px 10px 0 0;
+}
+/*
+--------------------------------------------------
+              Changes Username Font
+--------------------------------------------------
+*/
+.name[data-v-1cc2919e] {
+    font-family: "Rock Salt";
+    font-size: 1.85em;
+    color: var(--ft);
+    transition: var(--hv);
+}
+/*
+==================================================
+               Bottom Navbar Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+             Combines Navbar & Banner
+--------------------------------------------------
+*/
+.nav-wrap[data-v-1cc2919e] {
+    background-color: var(--bg2);
+    max-width: 77.5%;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+}
+/*
+--------------------------------------------------
+                    Adds Icons
+--------------------------------------------------
+*/
+.link[data-v-1cc2919e]:nth-child(1)::after {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+.link[data-v-1cc2919e]:nth-child(2)::after {
+    content: "\f26c";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+.link[data-v-1cc2919e]:nth-child(3)::after {
+    content: "\f02d";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+.link[data-v-1cc2919e]:nth-child(4)::after {
+    content: "\f004";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+.link[data-v-1cc2919e]:nth-child(5)::after {
+    content: "\f012";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+.link[data-v-1cc2919e]:nth-child(6)::after {
+    content: "\f27a";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+/*
+--------------------------------------------------
+         Removes "Reviews" & "Subbmissions"
+--------------------------------------------------
+*/
+.link[data-v-1cc2919e]:nth-child(7) {
+    display: none;
+}
+.link[data-v-1cc2919e]:nth-child(8) {
+    display: none;
+}
+/*
+--------------------------------------------------
+                   Changes Font
+--------------------------------------------------
+*/
+.link[data-v-1cc2919e] {
+    font-family: Nunito;
+    font-size: 1.25em;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.link[data-v-1cc2919e] {
+    transition: var(--hv);
+}
+.link[data-v-1cc2919e]:hover {
+    transform: scale(1.1);
+    color: var(--cl) !important;
+}
+/*
+==================================================
+               About Section Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+        Increases Length / Removes Scrollbar
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] > .content-wrap[data-v-5c30286e] {
+    max-height: none !important;
+}
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.content-wrap[data-v-5c30286e] { 
+    background-color: var(--bg2) !important;
+    border-radius: 10px !important;
+    font-family: Nunito;
+    color: var(--ft);
+}
+a {
+    color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] { 
+    transition: var(--hv);
+}
+.about[data-v-5c30286e]:hover { 
+    transform: scale(1.025);
+}
+/*
+--------------------------------------------------
+              Adds Load In animation
+--------------------------------------------------
+*/
+.about[data-v-5c30286e] {
+    animation: fade 1s 1 ease-in-out;
+}
+/*
+==================================================
+      Section Header & Activity Editor Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+           Adds Text instead of "Activity
+--------------------------------------------------
+*/
+.section-header[data-v-09492909] {
+    font-size: 0;
+}
+.section-header[data-v-09492909]::before {
+    content: "Drop A Message";
+    font-size: 2rem;
+    font-family: "Rock Salt";
+    font-weight: bold;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+             Changes Font for "Filter"
+--------------------------------------------------
+*/
+.el-dropdown[data-v-09492909] {
+    font-size: 2rem;
+    font-family: "Rock Salt";
+    font-weight: bold;
+    color: var(--ft) !important;
+}
+.el-dropdown-menu__item[data-v-09492909] {
+    font-size: 1rem;
+    font-family: Nunito; 
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+              Changes Filter Dropdown
+--------------------------------------------------
+*/
+.el-dropdown-menu[data-v-09492909] {
+    background-color: var(--bg2);
+    border-radius: 12.5px;
+    color: var(--ft) !important;
+}
+.el-dropdown-menu__item[data-v-09492909]:hover {
+    background-color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+         Changes Markdown Editor Background
+--------------------------------------------------
+*/
+.markdown-editor[data-v-c574a71c] {
+    background-color: var(--bg2);
+    border-radius: 12.5px;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+         Changes Activity Editor Background
+--------------------------------------------------
+*/
+.input[data-v-c574a71c]{
+    background-color: var(--bg2);
+    box-shadow: 1.5px 3px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: var(--ft) !important;
+    transition: var(--hv) !important;
+}
+.el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+           Adds Hover to Activty Editor
+--------------------------------------------------
+*/
+.input[data-v-c574a71c]:hover {
+    transform: scale(1.05);
+}
+/*
+==================================================
+               Activity Feed Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.wrap[data-v-1bf2cf4e] {
+    background-color: var(--bg2);
+    border-radius: 15px;
+    transition: var(--hv) !important;
+    color: var(--ft) !important;
+}
+.reply[data-v-732ef224] {
+    background-color: var(--bg2);
+    border-radius: 15px;
+    transition: var(--hv) !important;
+    color: var(--ft) !important;
+}
+.activity-text[data-v-1bf2cf4e] > .wrap[data-v-1bf2cf4e] {
+    border-left: 5px solid red;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.activity-message[data-v-1bf2cf4e] > .wrap[data-v-1bf2cf4e] {
+    border-left: 5px solid var(--cl);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.activity-manga_list[data-v-1bf2cf4e] > .wrap[data-v-1bf2cf4e] {
+    border-left: 5px solid green;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.activity-anime_list[data-v-1bf2cf4e] > .wrap[data-v-1bf2cf4e] {
+    border-left: 5px solid blue;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.wrap[data-v-1bf2cf4e]:hover {
+    transform: translate(20px);
+}
+/*
+--------------------------------------------------
+     Changes Background for editing Interface
+--------------------------------------------------
+*/
+.el-dialog__body {
+    background-color: var(--bg1);
+    border-radius: 25px;
+    transition: var(--hv) !important;
+    color: var(--ft) !important;
+}
+.el-dialog__wrapper {
+    overflow: visible !important;
+}
+/*
+--------------------------------------------------
+    Adds Circle Around PFPs & Makes them Bigger
+--------------------------------------------------
+*/
+.avatar[data-v-1bf2cf4e], .avatar[data-v-732ef224] {
+    border: 1.5px solid black;
+    border-radius: 100% !important;
+    opacity: 50% !important;
+    transition: var(--hv) !important;
+}
+/*
+--------------------------------------------------
+              Adds Spin Hover Animation
+--------------------------------------------------
+*/
+.wrap:hover .avatar[data-v-1bf2cf4e], .reply:hover .avatar[data-v-732ef224] {
+    opacity: 100% !important;
+    animation: var(--sp);
+}
+/*
+--------------------------------------------------
+   Adds Circle around users who liked the post
+--------------------------------------------------
+*/
+.user[data-v-0bd85c1d] {
+    border: 1.5px solid black;
+    border-radius: 100% !important;
+    animation: var(--sp);
+}
+.users[data-v-0bd85c1d] {
+    background-color: transparent !important;
+    overflow: visible;
+}
+/*
+--------------------------------------------------
+              Changes Username Fonts
+--------------------------------------------------
+*/
+.name[data-v-1bf2cf4e] {
+    font-size: 2rem;
+    font-family: "Rock Salt";
+    color: var(--cl) !important;
+}
+.name[data-v-732ef224] {
+    font-size: 1.75rem;
+    font-family: "Rock Salt";
+    color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+          Adds Badge after Everyones Name
+--------------------------------------------------
+*/
+.name[data-v-1bf2cf4e]::after {
+    content: "Future Cultist";
+    color: var(--ft);
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    font-family: Nunito;
+    font-size: 1.5rem;
+    margin: 0 0 5px 5px;
+    border-radius: 30px;
+    padding: 4px 8px;
+    transition: 1s;
+    animation: rainbow 20s infinite ease-in-out;
+}
+.name[data-v-732ef224]::after {
+    content: "Future Cultist";
+    color: var(--ft);
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    margin: 0 0 5px 5px;
+    border-radius: 20px;
+    padding: 4px 8px;
+    transition: 1s;
+    animation: rainbow 20s infinite ease-in-out;
+}
+/*
+--------------------------------------------------
+        Adds Badges only for certain people
+--------------------------------------------------
+*/
+a[href="/user/SeikatsuOfficial/"].name::after {
+    content: "Best Waifu" !important;
+}
+/*
+--------------------------------------------------
+                 Time Hover fix
+--------------------------------------------------
+*/
+.time[data-v-1bf2cf4e] {
+    background-color: transparent !important;
+    font-size: 1.5rem;
+    font-family: "Rock Salt";
+    color: var(--ft) !important;
+}
+.actions[data-v-732ef224] {
+    background-color: transparent !important;
+    font-size: 1.25rem;
+    font-family: "Rock Salt";
+    color: var(--ft) !important;
+}
+.action[data-v-732ef224] {
+    background-color: transparent !important;
+    color: var(--ft) !important;
+}
+time[data-v-732ef224] {
+    background-color: transparent !important;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+              Changes Main Text Font
+--------------------------------------------------
+*/
+.activity-markdown[data-v-1bf2cf4e], .reply-markdown[data-v-732ef224] {
+    font-size: 1.25rem;
+    font-family: Nunito;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+                 List Updates Font
+--------------------------------------------------
+*/
+.status[data-v-1bf2cf4e] {
+    font-size: 1.5rem;
+    font-family: Nunito;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+   Changes "Load More" Button Background & Font
+--------------------------------------------------
+*/
+.load-more[data-v-6f203cf2] {
+    background-color: var(--bg2);
+    border-radius: 50px;
+    font-family: "Rock Salt";
+    font-size: 2rem;
+    transition: var(--hv) !important;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+              Adds "Load More" Hover
+--------------------------------------------------
+*/
+.load-more[data-v-6f203cf2]:hover {
+    transform: scale(1.075);
+    color: var(--cl) !important;
+}
+.load-more[data-v-6f203cf2]:active {
+    background-color: var(--cl) !important;
+    text-shadow: 0 0 5px black;
+}
+/*
+--------------------------------------------------
+     Changes Mod Badge & Private Message Badge
+--------------------------------------------------
+*/
+.donator-badge[data-v-1bf2cf4e] {
+    background-color: var(--bg1);
+    border-radius: 50px;
+    font-family: "Rock Salt";
+    font-size: 1.75rem;
+    padding: 7.5px !important;
+}
+/*
+--------------------------------------------------
+              Adds Load In animation
+--------------------------------------------------
+*/
+.wrap[data-v-1bf2cf4e] {
+    animation: pop 0.75s 1 ease-in-out;
+}
+.load-more[data-v-6f203cf2] {
+    animation: pop 0.75s 1 ease-in-out;
+}
+.reply[data-v-732ef224] {
+    animation: pop 0.25s 1 ease-in-out;
+}
+/*
+==================================================
+                  Footer Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.footer[data-v-a5dce466] {
+    background-color: var(--bg2);
+    border-radius: 20px 20px 0 0;
+    max-width: 80%;
+    margin: auto;
+}
+/*
+--------------------------------------------------
+             Changes Font & Font Colors
+--------------------------------------------------
+*/
+h2[data-v-a5dce466] {
+    font-family: Nunito;
+    color: var(--cl) !important;
+}
+a[data-v-a5dce466] {
+    font-family: Nunito;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+a[data-v-a5dce466]:hover {
+    color: var(--cl) !important;
+    text-shadow: 0 0 7.5px black;
+}
+/*
+==================================================
+                SOCIALS TAB CHANGES
+==================================================
+*/
+/*
+--------------------------------------------------
+             Turns Pfps into Circles
+--------------------------------------------------
+*/
+.avatar[data-v-39573fe2] {
+    border: 2px solid black;
+    border-radius: 100% !important;
+    transition: var(--hv) !important;
+}
+.follow-card[data-v-39573fe2] {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover 
+--------------------------------------------------
+*/
+.avatar[data-v-39573fe2]:hover {
+    transform: scale(1.15);
+    border: 3px solid var(--cl);
+}
+.name[data-v-39573fe2] {
+    font-family: "Rock Salt";
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,0.35) !important;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+       Changes Background for Forum Threads
+--------------------------------------------------
+*/
+.thread-card[data-v-70ae1ba4] {
+    background-color: var(--bg2);
+    border-radius: 20px;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+          Changes Font for Forum Threads
+--------------------------------------------------
+*/
+.title[data-v-70ae1ba4] {
+    font-family: "Rock Salt";
+    font-size: 2rem;
+    color: var(--ft) !important;
+}
+.body-preview[data-v-70ae1ba4] {
+    font-family: Nunito;
+    font-size: 1.5rem;
+    color: var(--ft) !important;
+}
+.body-preview[data-v-70ae1ba4] {
+    font-family: Nunito;
+    font-size: 1.65rem;
+    color: var(--ft) !important;
+}
+.category[data-v-51e37344] {
+    background-color: var(--bg1) !important;
+    color: var(--ft) !important;
+}
+.category[data-v-51e37344]:hover {
+    color: var(--cl) !important;
+    text-shadow: 0 0 7.5px black;
+}
+/*
+--------------------------------------------------
+       Changes Background for Forum Comments
+--------------------------------------------------
+*/
+.comment-wrap[data-v-64641129] {
+    background-color: var(--bg2);
+    border-radius: 20px;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+          Changes Font for Forum Comments
+--------------------------------------------------
+*/
+.title[data-v-ee1a47a4] {
+    font-family: "Rock Salt";
+    font-size: 2.5rem;
+    color: var(--ft) !important;
+}
+.title[data-v-ee1a47a4]:hover {
+    color: var(--cl) !important;
+    text-shadow: 0 0 7.5px black;
+}
+.header[data-v-64641129] {
+    font-family: "Rock Salt";
+    font-size: 1.75rem;
+    color: var(--cl) !important;
+}
+.markdown[data-v-64641129] {
+    font-family: Nunito;
+    font-size: 1.25rem;
+    color: var(--ft) !important;
+}
+.time[data-v-64641129] {
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+          Changes Background for Filters
+--------------------------------------------------
+*/
+.theme-switch {
+    background-color: var(--bg2);
+    border-radius: 10px;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+             Changes Font for Filters
+--------------------------------------------------
+*/
+.group-header[data-v-e4963b98] {
+    font-family: "Rock Salt";
+    font-size: 3rem;
+    color: var(--ft) !important;
+}
+span[data-v-e4963b98] {
+    font-family: Nunito;
+    font-size: 2rem;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+      CAN'T STYLE THE BOTTOM THREE SECTION
+        CUZ THEY'RE HOH FEATURES :SADGE:
+--------------------------------------------------
+*/
