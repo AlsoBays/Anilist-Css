@@ -10,6 +10,6 @@ If you need any help with anything or have any questions, you can contact me on 
 
 First CSS - [{ Screenshot }]()
 
-Milim CSS - [{ Screenshot }](https://files.catbox.moe/gwsrl6.png)
+Milim CSS - 『[Screenshot](https://files.catbox.moe/gwsrl6.png)』
 
 Seikatsu Makima CSS - [{ Screenshot }](https://files.catbox.moe/x03pg4.png)
