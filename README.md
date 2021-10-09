@@ -6,7 +6,10 @@ If you need any help with anything or have any questions, you can contact me on 
 
 [Guide on how custom css on anilist works and simple features](https://github.com/Kurisu-chan/anilist-css#super-easy-installation-guide)
 
-Obviously the layouts will get better as I get better at understanding it. 
-Always been somewhat Interested in code and shit like that, 
-but I'm still learning. I use references, steal the codes, and try to make 
-them into my own using what I know. Css is confusing as hell.
+# Screenshots
+
+First CSS - [Screenshot]()
+
+Milim CSS - [Screenshot](https://files.catbox.moe/gwsrl6.png)
+
+Seikatsu Makima CSS - [Screenshot](https://files.catbox.moe/x03pg4.png)
