@@ -13,3 +13,5 @@ First CSS - 『[Screenshot]()』
 Milim CSS - 『[Screenshot](https://files.catbox.moe/gwsrl6.png)』
 
 Seikatsu Makima CSS - 『[Screenshot](https://files.catbox.moe/zo9adg.png)』
+
+Otachan CSS - 『[Screenshot]()』
