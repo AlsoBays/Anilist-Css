@@ -1,0 +1,1352 @@
+/*
+Bays - Otachan CSS
+Made by Bays
+
+Wooooooo I'm Back
+Coming back with a New CSS
+This type of Design is completely new to me too
+
+Changes with "=" borders are broad changes
+Changes with "-" borders are specific changes
+
+Notifiy me via Private Message or Discord Message
+Before you use it, don't worry I'll still allow you if you want
+
+Find my Discord and a bunch of others things here https://bays-anilist-extras.carrd.co
+
+(this time I data-v proofed it, so don't worry about things just completely unstyling)
+
+I hope you like it :)
+*/
+/*
+==================================================
+                 Importing Fonts
+==================================================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Delius+Swash+Caps&family=Gloria+Hallelujah&family=Kalam&family=Mali&family=Nunito&family=Rock+Salt&family=Sedgwick+Ave&family=Ubuntu&family=Walter+Turncoat&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22");
+/*
+==================================================
+                Importing Animations
+==================================================
+*/
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes pop {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rainbow {
+    0% {
+        background-color: rgb(0, 105, 255);
+    }
+
+    10% {
+        background-color: rgb(100, 0, 255);
+    }
+
+    20% {
+        background-color: rgb(255, 0, 139);
+    }
+
+    30% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    40% {
+        background-color: rgb(255, 96, 0);
+    }
+
+    50% {
+        background-color: rgb(202, 255, 0);
+    }
+
+    60% {
+        background-color: rgb(0, 255, 139);
+    }
+
+    70% {
+        background-color: rgb(202, 255, 0);
+    }
+
+    80% {
+        background-color: rgb(255, 96, 0);
+    }
+
+    85% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    90% {
+        background-color: rgb(255, 0, 139);
+    }
+
+    95% {
+        background-color: rgb(100, 0, 255);
+    }
+
+    to {
+        background-color: rgb(0, 105, 255);
+    }
+}
+/*
+==================================================
+                Setting Variables
+==================================================
+*/
+:root {
+    --tr: 0, 0, 0, 0.2;
+    --sd: 0 0 5px rgba(0, 0, 0, 0.75);
+    --cl: #c063ff; /* BASE LINK COLOR */
+    --ft: #fff; /* BASE FONT COLOR */
+    --sp: spin 2s infinite linear;
+    --hv: all 0.5s ease-in-out, transform 0.75s ease-in-out, animation 0.75s ease-in-out;
+}
+/*
+==================================================
+                Changes the Cursor
+==================================================
+*/
+/*
+==================================================
+                Changes the Spoiler
+==================================================
+*/
+.markdown .markdown-spoiler::before {
+    content: "Is it Nudes?";
+    font-family: "Walter Turncoat";
+    font-size: 1.5rem;
+    color: var(--ft);
+    border-radius: 5px;
+    box-shadow: var(--sd);
+    background-color: rgba(var(--tr));
+    transition: var(--hv);
+}
+.markdown .markdown-spoiler:hover::before {
+    color: var(--cl);
+}
+/*
+==================================================
+        Adding Background & Removing Banner
+==================================================
+*/
+.banner {
+    visibility: hidden;
+}
+.banner > .container {
+    visibility: visible;
+}
+body {
+    background: url("https://files.catbox.moe/ym3507.png") no-repeat fixed;
+}
+/*
+==================================================
+                 Top Navbar Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+             Changes Each into Buttons
+--------------------------------------------------
+*/
+.links > .link, .browse-wrap {
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    margin: 0 15px;
+    width: 100px;
+    height: 35px;
+    padding: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+.wrap > .links {
+    width: 600px;
+}
+#nav {
+    background-color: transparent !important;
+}
+
+/*
+--------------------------------------------------
+                Changes Link Fonts
+--------------------------------------------------
+*/
+.links > .link, .browse-wrap, .browse-wrap > .link {
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    color: var(--ft);
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                Changes Link Hovers
+--------------------------------------------------
+*/
+.links > .link:hover, .browse-wrap:hover, .browse-wrap > .link:hover {
+    text-shadow: var(--sd);
+    color: var(--cl);
+}
+/*
+--------------------------------------------------
+    Deletes "Manga List" and "Anime List" Links
+--------------------------------------------------
+*/
+.links > .link:nth-child(3), .links > .link:nth-child(4) {
+    display: none;
+}
+/*
+--------------------------------------------------
+                  Deletes AL Logo
+--------------------------------------------------
+*/
+.wrap > .logo {
+    display: none;
+}
+/*
+--------------------------------------------------
+       Changes "Browse" Dropdown Background
+--------------------------------------------------
+*/
+.browse-wrap > .dropdown {
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 20px;
+    text-align: left !important;
+    margin-top: 9px;
+}
+.browse-wrap > .dropdown::before {
+    display: none;
+}
+/*
+--------------------------------------------------
+   Changes "Browse" Dropdown Font Color to White
+                 and Changes Fonts
+--------------------------------------------------
+*/
+.dropdown > .primary-links > .primary-link > section > .primary-link-text {
+    color: var(--ft);
+    transition: var(--hv);
+    font-family: "Walter Turncoat";
+}
+.dropdown > .primary-links > .primary-link > section > .secondary-links > a {
+    color: var(--ft);
+    transition: var(--hv);
+    font-family: "Mali";
+}
+.primary-link > a > .icon > path, .footer > a > .icon > path {
+    color: var(--ft);
+    transition: var(--hv);
+}
+.browse-wrap > .dropdown > .footer > a {
+    background-color: transparent;
+    color: var(--ft);
+    transition: var(--hv);
+    font-family: "Mali";
+}
+.browse-wrap > .dropdown > .footer {
+    background-color: transparent;
+}
+/*
+--------------------------------------------------
+         Adds "Browse" Dropdown Font Hover
+--------------------------------------------------
+*/
+.dropdown > .primary-links > .primary-link > section > .primary-link-text:hover {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.dropdown > .primary-links > .primary-link > section > .secondary-links > a:hover {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.primary-link > a > .icon > path:hover, .footer > a > .icon > path:hover  {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.browse-wrap > .dropdown > .footer > a:hover {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+                  Adds Search Bar
+--------------------------------------------------
+*/
+.search {
+    width: 400px;
+    padding: 5px 0 7.5px 10px;
+    box-shadow: var(--sd);
+    border-radius: 75px;
+    background-color: rgba(var(--tr));
+    cursor: text;
+}
+.search::after {
+    content: "Search AniList";
+    margin-left: 12.5px;
+    margin-top: 3px;
+    font-family: "Mali";
+    font-size: 2rem;
+    color: var(--ft);
+}
+.search > .svg-inline--fa > path {
+    transition: var(--hv);
+    color: var(--ft);
+}
+.search:hover .svg-inline--fa > path {
+    color: var(--cl) !important;
+    text-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+        Puts Circle around Top Right Avatar
+--------------------------------------------------
+*/
+.wrap > .user >.user-wrap > .avatar {
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.chevron > path {
+    display: none;
+}
+/*
+--------------------------------------------------
+         Changes User Dropdown Background
+--------------------------------------------------
+*/
+.user-wrap > .dropdown {
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 7.5px;
+    margin-top: 5px;
+}
+.user-wrap > .dropdown::before {
+    display: none;
+}
+.user-wrap > .dropdown > .footer {
+    background-color: transparent;
+}
+/*
+--------------------------------------------------
+ Deletes "Profile" and Tiny Links except "Logout"
+--------------------------------------------------
+*/
+.user-wrap > .dropdown > .primary-links > .primary-link:nth-child(1) {
+    display: none;
+}
+.user-wrap > .dropdown > .footer > .secondary-link {
+    display: none;
+    width: 116px;
+    height: 23px;
+}
+.user-wrap > .dropdown > .footer > .secondary-link:nth-child(4) {
+    display: initial !important;
+}
+.user-wrap > .dropdown > .primary-links {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.user-wrap > .dropdown > .footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+/*
+--------------------------------------------------
+  Changes Fonts for User Dropdown and Adds Hover
+--------------------------------------------------
+*/
+.user-wrap > .dropdown > .primary-links > .primary-link {
+    color: var(--ft);
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    transition: var(--hv);
+}
+.user-wrap > .dropdown > .footer > .secondary-link {
+    color: var(--ft);
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    transition: var(--hv);
+}
+.user-wrap > .dropdown > .primary-links > .primary-link > .icon {
+    color: var(--ft);
+    font-size: 2rem;
+    transition: var(--hv);
+}
+.user-wrap > .dropdown > .primary-links > .primary-link:hover {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.user-wrap > .dropdown > .primary-links > .primary-link:hover .icon {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.user-wrap > .dropdown > .footer > .secondary-link:hover {
+    color: var(--cl);
+    text-shadow: var(--sd);
+}
+.user-wrap > .dropdown > .footer > .secondary-link > .svg-inline--fa {
+    margin-right: -1px;
+}
+/*
+==================================================
+           Main PFP and Username Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+              Turns PFP into a Circle
+--------------------------------------------------
+*/
+.banner {
+    margin-top: 50px;
+}
+.container > .banner-content > .avatar {
+    background-image: url("https://files.catbox.moe/aw5yhq.png");
+    background-position: 50% 0%;
+    background-size: 155%;
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    padding: 125px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                     Adds Hover
+--------------------------------------------------
+*/
+.container > .banner-content > .avatar:hover {
+    transform: scale(1.075);
+}
+/*
+--------------------------------------------------
+              Changes Username Font
+--------------------------------------------------
+*/
+.banner-content > .name-wrapper > .name {
+    font-family: "Walter Turncoat";
+    font-size: 3rem;
+    color: var(--ft);
+    text-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+          Changes Follow Button Background
+--------------------------------------------------
+*/
+.container > .banner-content > .actions > .nav-btn {
+    font-family: "Mali";
+    font-size: 1.5rem;
+    color: var(--ft);
+    text-shadow: var(--sd);
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 7.5px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+             Adds Follow Button Hover
+--------------------------------------------------
+*/
+.container > .banner-content > .actions > .nav-btn:hover {
+    color: var(--cl);
+}
+/*
+--------------------------------------------------
+          Deletes "Block/Report" Dropdown
+--------------------------------------------------
+*/
+.container > .banner-content > .actions > .dropdown {
+    display: none;
+}
+/*
+--------------------------------------------------
+             Deletes "Follows You" Box
+--------------------------------------------------
+*/
+.container > .banner-content > .mod-badge-wrap {
+    display: none;
+}
+/*
+--------------------------------------------------
+            Aligns Everything Correctly
+--------------------------------------------------
+*/
+.header-wrap > .container > .banner-content { 
+    justify-content: center;
+    align-items: center;
+}
+.container > .banner-content > .actions {
+    margin: auto;
+}
+/*
+==================================================
+               Bottom Navbar Changes
+==================================================*/
+/*
+--------------------------------------------------
+         Removes "Reviews" & "Subbmissions"
+--------------------------------------------------
+*/
+.nav > .link:nth-child(7), .nav > .link:nth-child(8) {
+    display: none !important;
+}
+/*
+--------------------------------------------------
+           Aligns everything to the Left
+--------------------------------------------------
+*/
+.user > .container {
+    max-width: 90%;
+}
+.user > .container > .overview {
+    grid-template-columns: 480px auto !important;
+}
+.header-wrap > .banner > .container {
+    padding: 0;
+    margin: 0;
+}
+.container > .banner-content { 
+    margin-bottom: 20px;
+}
+.header-wrap > .nav-wrap > .nav {
+    margin: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    column-gap: 15px;
+    row-gap: 15px;
+    width: 480px;
+}
+.header-wrap {
+    width: 480px;
+    margin-left: 10.15%;
+}
+/*
+--------------------------------------------------
+     Turns them into Buttons and Changes Font
+--------------------------------------------------
+*/
+.nav-wrap {
+    visibility: hidden;
+    width: 480px !important;
+}
+.nav > .link {
+    width: 140px;
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    visibility: visible;
+    transition: var(--hv);
+    color: var(--ft) !important;
+    font-family: "Walter Turncoat";
+    text-shadow: var(--sd);
+    font-size: 2rem;
+    padding: 15px 0;
+}
+/*
+--------------------------------------------------
+                 Adds Button Hover
+--------------------------------------------------
+*/
+.nav > .link:hover {
+    color: var(--cl) !important;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+.nav > .router-link-active, .nav > .router-link-exact-active {
+    color: var(--cl) !important;
+}
+/*
+==================================================
+               About Section Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+        Increases Length / Removes Scrollbar
+--------------------------------------------------
+*/
+.about > .content-wrap {
+    max-height: none !important;
+}
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+.about > .content-wrap { 
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 12.5px;
+    font-family: "Mali";
+}
+.markdown {
+    color: var(--ft) !important;
+}
+a {
+    color: var(--cl);
+}
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.about { 
+    transition: var(--hv);
+}
+.about:hover { 
+    transform: scale(1.025);
+}
+/*
+--------------------------------------------------
+              Adds Load In animation
+--------------------------------------------------
+*/
+.about {
+    animation: fade 1s 1 ease-in-out;
+}
+/*
+==================================================
+               Stats Overview Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+               Fucking Deletes them
+--------------------------------------------------
+*/
+.section > .stats-wrap {
+    display: none;
+}
+/*
+==================================================
+      Section Header & Activity Editor Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+ Deletes "Activity" and Adds "PLEASE SEND THIGHS"
+--------------------------------------------------
+*/
+.section > .activity-feed-wrap > .section-header {
+    font-size: 0;
+}
+.section > .activity-feed-wrap > .section-header::before {
+    content: "PLEASE SEND THIGHS";
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    color: var(--ft);
+}
+.section > .activity-feed-wrap > .section-header:hover::before {
+    cursor: text;
+}
+.activity-edit > .section-header {
+    font-family: "Walter Turncoat";
+    font-size: 1.5rem;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+       Changes "Filter" and Filter Dropdown
+--------------------------------------------------
+*/
+.section > .activity-feed-wrap > .section-header > .el-dropdown {
+    font-family: "Walter Turncoat";
+    font-size: 2rem !important;
+    color: var(--ft) !important;
+}
+.el-dropdown-menu {
+    font-family: "Mali";
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 2.5px;
+}
+.el-dropdown-menu__item {
+    transition: var(--hv);
+    color: var(--ft) !important;
+    font-family: "Mali";
+}
+.el-dropdown-menu__item:hover {
+    background-color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+      Changes background for Activity Editor
+--------------------------------------------------
+*/
+.activity-edit > .markdown-editor {
+    font-family: "Mali" !important;
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 2.5px;
+    transition: var(--hv);
+}
+.activity-edit > .input {
+    font-family: "Mali" !important;
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 15px;
+    transition: var(--hv);
+}
+.el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner {
+    background-color: transparent !important;
+    font-family: "Mali" !important;
+    color: var(--ft) !important;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+           Adds hover for Activity Editor
+--------------------------------------------------
+*/
+.activity-edit > .input:hover {
+     transform: scale(1.05);
+}
+/*
+==================================================
+               Activity Feed Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+               Aligns it at the Top
+--------------------------------------------------
+*/
+.overview > .section:nth-child(2) {
+    margin-top: -440px;
+}
+/*
+--------------------------------------------------
+        Changes Activity & Reply Backgrounds
+--------------------------------------------------
+*/
+.activity-entry > .wrap {
+    font-family: "Mali";
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    transition: var(--hv);
+}
+.reply-wrap > .activity-replies > .reply {
+    font-family: "Mali" !important;
+    color: var(--ft);
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px;
+    transition: var(--hv);
+}
+h1, h2 {
+    color:var(--ft) !important;
+}
+.time {
+    font-family: "Mali" !important;
+    color: var(--ft) !important;
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+        Adds Hover for Activities & Replies
+--------------------------------------------------
+*/
+.activity-entry > .wrap:hover {
+    transform: scale(1.025);
+}
+.reply-wrap > .activity-replies > .reply:hover {
+    transform: scale(1.0420);
+}
+/*
+--------------------------------------------------
+    Adds Circle Around PFPs & Makes them Bigger
+--------------------------------------------------
+*/
+.wrap > .text > .header > .avatar {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 100% !important;
+    opacity: 50%;
+    transition: var(--hv);
+    margin-right: 0.5em;
+}
+.reply > .header > .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 100% !important;
+    opacity: 50% !important;
+    transition: var(--hv);
+    margin-right: 0.5em;
+}
+/*
+--------------------------------------------------
+                  Adds PFP Hover
+--------------------------------------------------
+*/
+.text > .header > .avatar, .reply > .header > .avatar {
+    transform: scale(1.075);
+}
+.wrap:hover .text > .header > .avatar, .reply:hover .header > .avatar {
+    opacity: 100% !important;
+}
+/*
+--------------------------------------------------
+              Changes Username Fonts
+--------------------------------------------------
+*/
+.wrap > .text > .header > .name {
+    font-size: 2rem;
+    font-family: "Walter Turncoat";
+    color: var(--cl) !important;
+}
+.reply > .header > .name {
+    font-size: 1.75rem;
+    font-family: "Walter Turncoat";
+    color: var(--cl) !important;
+}
+.reply > .header {
+    display: flex;
+    align-items: center;
+}
+/*
+--------------------------------------------------
+                Adds Username Hover
+--------------------------------------------------
+*/
+.header > .name:hover {
+    text-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+   Adds Circle around users who liked the post
+--------------------------------------------------
+*/
+.like-wrap > .users > .user {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 100% !important;
+    animation: var(--sp);
+    transition: var(--hv);
+}
+.like-wrap > .users > .user:hover {
+    animation: none;
+}
+.like-wrap > .users {
+    background-color: transparent !important;
+    overflow: visible;
+}
+/*
+--------------------------------------------------
+         Changes Reply Preview Background
+--------------------------------------------------
+*/
+.activity-edit > .reply {
+    font-family: "Mali";
+    color: var(--ft);
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+             Adds Reply Preview Hover
+--------------------------------------------------
+*/
+.activity-edit > .reply:hover {
+    transform: scale(1.025);
+}
+/*
+--------------------------------------------------
+           Changes Load More Background
+--------------------------------------------------
+*/
+.scroller > .load-more {
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    color: var(--ft);
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                Adds Load More Hover
+--------------------------------------------------
+*/
+.scroller > .load-more:hover {
+    transform: scale(1.1);
+    box-shadow: var(--sd);
+}
+/*
+--------------------------------------------------
+Makes WebM, img, & Yt inserts have Rounded corners
+--------------------------------------------------
+*/
+img, video, .youtube {
+    border-radius: 2.5em;
+}
+/*
+==================================================
+              Activity History Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+        Removes header "Activtity History"
+--------------------------------------------------
+*/
+.desktop:nth-child(2) > .section-header, .desktop:nth-child(3) > .section-header {
+    display: none;
+}
+/*
+--------------------------------------------------
+        Changes it into the Discord Thingy
+--------------------------------------------------
+*/
+.desktop > .activity-history {
+    visibility: hidden;
+}
+.desktop:nth-child(2) {
+    background: url("https://discord.c99.nl/widget/theme-2/734882428900081685.png") center no-repeat;
+    background-size: 100%;
+    width: 480px;
+    height: 100px;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+            Adds Discord Thingy Hover
+--------------------------------------------------
+*/
+.desktop:nth-child(2):hover {
+    transform: scale(1.05);
+}
+/*
+==================================================
+              Genre Overview Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+               Fucking Deletes It
+--------------------------------------------------
+*/
+.desktop > .genre-overview {
+    display: none;
+}
+/*
+==================================================
+             Favorites Section Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+               Changes Header Fonts
+--------------------------------------------------
+*/
+.desktop > .section-header {
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+               Rounds their Corners
+--------------------------------------------------
+*/
+.favourites > .favourites-wrap > .favourite {
+    border-radius: 15px;
+    box-shadow: var(--sd);
+    opacity: 50%;
+    transition: var(--hv);
+}
+
+/*
+--------------------------------------------------
+                    Adds Hover
+--------------------------------------------------
+*/
+.favourites > .favourites-wrap > .favourite:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+/*
+--------------------------------------------------
+                 Fixes the Hover
+--------------------------------------------------
+*/
+.favourites > .favourites-wrap {
+    overflow: visible;
+    background-color: transparent;
+}
+/*
+==================================================
+                  Footer Changes
+==================================================
+*/
+/*
+--------------------------------------------------
+                Changes Background
+--------------------------------------------------
+*/
+#app > .wrap > .footer {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px 20px 0 0;
+    max-width: 90%;
+    margin: auto;
+}
+/*
+--------------------------------------------------
+         Changes Links and "Site Theme" Font
+--------------------------------------------------
+*/
+.footer > .container > .links {
+    font-family: "Mali";
+    font-size: 1.5rem;
+    color: var(--ft);
+}
+.links > section > a {
+    color: var(--ft) !important;
+}
+.links > section > a:hover {
+    color: var(--cl) !important;
+    text-shadow: var(--sd);
+}
+.footer > .container > .theme-selector > h2 {
+    font-family: "Mali";
+    font-size: 1.75rem;
+    color: var(--ft);
+}
+/*
+--------------------------------------------------
+                Adds "USE DARK MODE"
+--------------------------------------------------
+*/
+.footer > .container > .theme-selector::after {
+    content: "USE DARK MODE";
+    font-family: "Mali";
+    font-size: 1.75rem;
+    color: var(--cl);
+    text-shadow: 0 0 5px black;
+}
+/*
+==================================================
+          ANIME LIST & MANGA LIST CHANGES
+==================================================
+*/
+/*
+--------------------------------------------------
+            Aligns Everything Correctly
+--------------------------------------------------
+*/
+.content > .medialist {
+    display: grid;
+    grid-template-columns: 480px auto;
+}
+.medialist > .lists {
+    margin-top: -440px;
+}
+/*
+--------------------------------------------------
+          Changes Fonts for Filter Headers
+--------------------------------------------------
+*/
+.filter-group > .group-header {
+    font-family: "Walter Turncoat";
+    font-size: 1.75rem;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+           Changes Background for Filters
+--------------------------------------------------
+*/
+.filters-wrap > .filter-mobile-wrap > .el-input {
+    font-family: "Mali" !important;
+    font-size: 1.5rem;
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px;
+    transition: var(--hv);
+}
+.el-input__prefix > .el-input__icon {
+    color: var(--ft);
+    font-weight: bolder;
+}
+.filter-group > span {
+    font-family: "Mali" !important;
+    font-size: 1.25rem !important;
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    margin-bottom: 15px !important;
+    padding: 8px 10px !important;
+    transition: var(--hv);
+}
+.filter-group > span > .count {
+    padding-right: 10px;
+}
+.filter-group > .el-select > .el-input {
+    font-family: "Mali" !important;
+    font-size: 1.25rem;
+    color: var(--ft) !important;
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 5px;
+    max-width: 480px;
+    width: 100%;
+    margin: 2px auto;
+    transition: var(--hv);
+}
+.el-input__suffix, .el-icon-arrow-up:before {
+    color: var(--ft) !important;
+    transition: var(--hv);
+}
+.filter-group {
+    display: grid;
+    grid-template-columns: 480px;
+    color: var(--ft) !important;
+}
+.filters-wrap {
+    color: (--ft) !important;
+}
+/*
+--------------------------------------------------
+             Changes Filter Dropdowns
+--------------------------------------------------
+*/
+.popper__arrow, .popper__arrow::after {
+    display: none;
+}
+.el-select-dropdown {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 5px;
+}
+.el-select-dropdown__item {
+    font-family: "Mali" !important;
+    color: var(--ft) !important;
+    transition: var(--hv);
+}
+/*
+--------------------------------------------------
+                Changes Year Slider
+--------------------------------------------------
+*/
+.el-slider__runway, .el-slider__button {
+    background-color: rgba(var(--tr));
+    box-shadow: var(--sd);
+}
+.hohStepper {
+    color: var(--ft);
+    opacity: 100%;
+}
+/*
+--------------------------------------------------
+              Adds Hovers for Filters
+--------------------------------------------------
+*/
+.el-input:hover .el-input__icon {
+    color: var(--cl);
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: var(--cl) !important;
+}
+.el-input:hover .el-input__suffix, .el-input:hover .el-icon-arrow-up:before {
+    color: var(--cl) !important;
+}
+.filter-group > span:hover .count {
+    color: var(--cl) !important;
+}
+.filter-group > span:hover .hohCount {
+    color: var(--cl) !important;
+}
+/*
+--------------------------------------------------
+        Changes List Section Headers Fonts
+--------------------------------------------------
+*/
+.lists > .list-wrap > .section-name {
+    font-family: "Walter Turncoat";
+    font-size: 3rem;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+         Changes List Backgrounds & Fonts
+--------------------------------------------------
+*/
+.lists > .list-wrap > .list-section {
+    background-color: transparent;
+}
+.lists > .list-wrap > .list-section {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.lists > .list-wrap > .list-section > .list-head {
+    font-family: "Walter Turncoat";
+    font-size: 2rem;
+    color: var(--ft) !important;
+}
+.lists > .list-wrap > .list-section > .list-entries > .entry {
+    font-family: "Mali";
+    font-size: 1.5rem;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+               Changes Theme Switch
+--------------------------------------------------
+*/
+.lists > .actions > .theme-switch {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    margin-top: 45px;
+    color: var(--ft);
+}
+
+/*
+==================================================
+               STATS SECTION CHANGES
+==================================================
+*/
+/*
+--------------------------------------------------
+                
+--------------------------------------------------
+*/
+/*
+==================================================
+                SOCIALS TAB CHANGES
+==================================================
+*/
+/*
+--------------------------------------------------
+            Aligns Everything Correctly
+--------------------------------------------------
+*/
+.filters > .filter-group {
+    width: 480px;
+}
+.content > .user-social {
+    grid-template-columns: 480px auto;
+}
+.content > .user-social > .user-follow {
+    margin-top: -435px;
+}
+/*
+--------------------------------------------------
+              Changes Theme Switch
+--------------------------------------------------
+*/
+.filters > .hohThemeSwitch {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 10px;
+    color: var(--ft);
+}
+
+/*
+--------------------------------------------------
+             Turns Pfps into Circles
+--------------------------------------------------
+*/
+.wrap > .follow-card > .avatar {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 100% !important;
+    transition: var(--hv);
+}
+.wrap > .follow-card {
+    background-color: transparent !important;
+}
+/*
+--------------------------------------------------
+                    Adds Hover 
+--------------------------------------------------
+*/
+.wrap > .follow-card > .avatar:hover {
+    transform: scale(1.15);
+}
+.wrap > .follow-card > .avatar > .name {
+    font-family: "Mali";
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,0.5) !important;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+        Changes Background for Forum Comments
+--------------------------------------------------
+*/
+.wrap > .comment-wrap {
+    background-color: rgba(var(--tr)) !important;
+    box-shadow: var(--sd);
+    border-radius: 20px !important;
+    color: var(--ft) !important;
+}
+/*
+--------------------------------------------------
+          Changes Font for Forum Comments
+--------------------------------------------------
+*/
+.wrap > .title {
+    font-family: "Walter Turncoat" !important;
+    font-size: 2.5rem !important;
+    color: var(--ft) !important;
+}
+.wrap > .title:hover {
+    color: var(--cl) !important;
+}
+.comment-wrap > .comment > .header {
+    font-family: "Walter Turncoat";
+    font-size: 1.75rem;
+    color: var(--cl) !important;
+}
+.comment-wrap > .comment > .markdown {
+    font-family: "Mali";
+    font-size: 1.25rem;
+    color: var(--ft) !important;
+}
+.comment-wrap > .comment > .header > .time {
+    color: var(--ft) !important;
+}
